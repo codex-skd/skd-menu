@@ -10,10 +10,12 @@
 | Mod ID | `skd_menu` |
 | Display name | `SKD Menu` |
 | Minecraft | `26.2` |
-| NeoForge | `26.2.0.35-beta` |
+| NeoForge | `26.2.0.32-beta` |
 | Package | `com.skd.menu` |
-| Rama production | `minecraft/26.2/neoforge-26.2.0.35-beta/production` |
-| Rama main | `minecraft/26.2/neoforge-26.2.0.35-beta/main` |
+| Rama production | `minecraft/26.2/neoforge-26.2.0.32-beta/production` |
+| Rama main | `minecraft/26.2/neoforge-26.2.0.32-beta/main` |
+| JAR | `skd_menu-26.2-neoforge-<version>.jar` |
+| Tag | `26.2-neoforge-<version>` |
 
 ## Descripción
 
