@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.2 (2026-07-27)
+
+### Fix
+- NeoForge dependency changed from 26.2.0.35-beta to 26.2.0.32-beta for compatibility
+
 ## 0.0.0-beta.1 (2026-07-27)
 
 ### Features
