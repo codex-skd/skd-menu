@@ -1,25 +1,32 @@
+# SKD Menu
 
-Installation information
-=======
+Fully customize your Minecraft main menu. Change backgrounds, reposition buttons, add custom buttons, and overlay images — all through an easy JSON config file.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Features
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- **Custom Backgrounds** — panorama, static image, solid color, or animated frame sequences
+- **Button Layout** — reposition every vanilla button (singleplayer, multiplayer, options, quit, language, accessibility, mods)
+- **Hide Buttons** — remove any vanilla button from the menu
+- **Custom Buttons** — add new buttons that execute commands, open screens, open URLs, or quit
+- **Image Overlays** — render images at any position
+- **JSON Config** — all settings in `config/skd_menu_menu.json`, auto-generated on first launch
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Requirements
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+| Dependency | Version |
+|---|---|
+| Minecraft | 26.2 |
+| NeoForge | 26.2.0.35-beta |
+| Java | 25 |
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Installation
+
+1. Download the JAR from CurseForge
+2. Place it in your `mods/` folder
+3. Launch Minecraft
+4. Edit `config/skd_menu_menu.json` to customize the menu
+
+## Links
+
+- [CurseForge]()
+- [GitHub](https://github.com/santiagolosadaborrajo/skd-menu)
