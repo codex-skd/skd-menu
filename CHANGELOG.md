@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.6 (2026-07-27)
+
+### Fix
+- Crash on launch: `extractPanorama` method doesn't exist on `TitleScreen`. Removed injection, now cancels `extractRenderState` directly instead.
+
 ## 0.0.0-beta.5 (2026-07-27)
 
 ### Fix
