@@ -1,7 +1,18 @@
 # Flujo de trabajo — SKD Menu (NeoForge)
 
-> **Versión del workflow**: 1.0.0
-> Basado en `codex-docs/WORKFLOW_GENERIC.md` v1.2.7
+> **Versión del workflow**: 1.0.1
+> Basado en `codex-docs/WORKFLOW_GENERIC.md` v1.4.0
+
+## Organización en el workspace
+
+```
+skd_menu/               # Carpeta padre (organizativa, sin .git)
+└── 26.2/               # Repositorio independiente en GitLab
+    ├── .git/
+    ├── build.gradle
+    ├── src/
+    └── ...
+```
 
 ## Específico del proyecto
 
