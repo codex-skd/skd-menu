@@ -1,5 +1,11 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.4 (2026-07-27)
+
+### Features
+- Default animated background with 3 AI-generated fantasy images (cycling every 8s)
+- Custom panorama config structure
+
 ## 0.0.0-beta.3 (2026-07-27)
 
 ### Features
