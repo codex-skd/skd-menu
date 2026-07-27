@@ -56,9 +56,7 @@ public class TitleScreenMixin {
 
         List<AbstractWidget> widgets = new ArrayList<>();
         for (Renderable r : screen.renderables) {
-            if (r instanceof AbstractWidget w) {
-                widgets.add(w);
-            }
+            if (r instanceof AbstractWidget w) widgets.add(w);
         }
 
         if (!config.buttons.hide.isEmpty()) {
@@ -67,9 +65,7 @@ public class TitleScreenMixin {
                 if (msg != null) {
                     String text = msg.getString().toLowerCase();
                     for (String hidden : config.buttons.hide) {
-                        if (text.contains(hidden.toLowerCase())) {
-                            widget.visible = false;
-                        }
+                        if (text.contains(hidden.toLowerCase())) widget.visible = false;
                     }
                 }
             }
@@ -111,8 +107,8 @@ public class TitleScreenMixin {
         setupButtonAnimation(config, widgets);
     }
 
-    @Inject(method = "extractBackground", at = @At("HEAD"))
-    private void onExtractBackground(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+    @Inject(method = "extractRenderState", at = @At("TAIL"))
+    private void onExtractRenderStateTail(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         if (!Config.ENABLE_MOD.getAsBoolean()) return;
         renderImageOverlays(extractor, MenuConfig.getInstance());
     }
@@ -136,31 +132,25 @@ public class TitleScreenMixin {
 
         if (progress >= 1.0f) {
             for (Map.Entry<AbstractWidget, MenuConfig.Position> e : animatedWidgets.entrySet()) {
-                AbstractWidget w = e.getKey();
-                MenuConfig.Position target = e.getValue();
-                w.setX(target.x);
+                e.getKey().setX(e.getValue().x);
             }
             animatedWidgets.clear();
             animationStartTime = 0;
         }
     }
 
-    @Inject(method = "extractRenderState", at = @At("HEAD"), cancellable = true)
-    private void onExtractRenderState(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+    @Inject(method = "extractPanorama", at = @At("HEAD"), cancellable = true)
+    private void onExtractPanorama(GuiGraphicsExtractor extractor, float partialTick, CallbackInfo ci) {
         if (!Config.ENABLE_MOD.getAsBoolean()) return;
 
         MenuConfig config = MenuConfig.getInstance();
         String type = config.background.type;
 
-        if ("custom_panorama".equals(type)) {
-            return;
-        }
+        if ("panorama".equals(type)) return;
+        if ("custom_panorama".equals(type)) return;
 
-        if (!"panorama".equals(type)) {
-            renderCustomBackground(extractor, config);
-            renderTitleWidgets(extractor, mouseX, mouseY, partialTick);
-            ci.cancel();
-        }
+        renderCustomBackground(extractor, config);
+        ci.cancel();
     }
 
     @Unique
@@ -173,11 +163,11 @@ public class TitleScreenMixin {
         for (int i = 0; i < 6; i++) {
             String path = files.get(i);
             if (path == null || path.isEmpty()) continue;
+            int idx = i;
             try {
                 NativeImage image = loadNativeImage(path);
                 if (image != null) {
-                    String debugName = "skd_menu_panorama_" + i;
-                    mc.getTextureManager().register(PANORAMA_PATHS[i], new DynamicTexture(() -> debugName, image));
+                    mc.getTextureManager().register(PANORAMA_PATHS[idx], new DynamicTexture(() -> "skd_pano_" + idx, image));
                 }
             } catch (Exception ignored) {}
         }
@@ -188,18 +178,14 @@ public class TitleScreenMixin {
         try {
             Path filePath = Path.of(path);
             if (Files.exists(filePath)) {
-                try (InputStream is = Files.newInputStream(filePath)) {
-                    return NativeImage.read(is);
-                }
+                try (InputStream is = Files.newInputStream(filePath)) { return NativeImage.read(is); }
             }
         } catch (Exception ignored) {}
         try {
             Identifier loc = Identifier.parse(path);
             var resource = Minecraft.getInstance().getResourceManager().getResource(loc).orElse(null);
             if (resource != null) {
-                try (InputStream is = resource.open()) {
-                    return NativeImage.read(is);
-                }
+                try (InputStream is = resource.open()) { return NativeImage.read(is); }
             }
         } catch (Exception ignored) {}
         return null;
@@ -209,16 +195,12 @@ public class TitleScreenMixin {
     private void setupButtonAnimation(MenuConfig config, List<AbstractWidget> widgets) {
         String animType = config.buttonAnimation.type;
         if (animType == null || "none".equals(animType)) return;
-
         animationStartTime = System.currentTimeMillis();
         animatedWidgets.clear();
-
         for (AbstractWidget w : widgets) {
             if (!w.visible) continue;
             animatedWidgets.put(w, new MenuConfig.Position(w.getX(), w.getY()));
-            if ("slide_right".equals(animType)) {
-                w.setX(w.getX() - config.buttonAnimation.offset);
-            }
+            if ("slide_right".equals(animType)) w.setX(w.getX() - config.buttonAnimation.offset);
         }
     }
 
@@ -240,7 +222,7 @@ public class TitleScreenMixin {
         }
         try {
             Identifier loc = Identifier.parse(imagePath);
-            extractor.blit(loc, 0, 0, 0, 0, screen.width, screen.height, screen.width, screen.height);
+            extractor.blit(loc, 0, 0, screen.width, screen.height, 0.0F, 1.0F, 0.0F, 1.0F);
         } catch (Exception e) {
             renderFallback(extractor, screen);
         }
@@ -257,21 +239,12 @@ public class TitleScreenMixin {
         if (!config.background.animation.loop && frameIndex >= frames.size()) {
             frameIndex = frames.size() - 1;
         }
-        String framePath = frames.get(Math.min(frameIndex, Math.max(0, frames.size() - 1)));
-        renderImageBackground(extractor, screen, framePath);
+        renderImageBackground(extractor, screen, frames.get(Math.min(frameIndex, Math.max(0, frames.size() - 1))));
     }
 
     @Unique
     private void renderFallback(GuiGraphicsExtractor extractor, TitleScreen screen) {
         extractor.fill(0, 0, screen.width, screen.height, 0xFF000000);
-    }
-
-    @Unique
-    private void renderTitleWidgets(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick) {
-        TitleScreen screen = (TitleScreen)(Object)this;
-        for (Renderable renderable : screen.renderables) {
-            renderable.extractRenderState(extractor, mouseX, mouseY, partialTick);
-        }
     }
 
     @Unique
@@ -282,7 +255,7 @@ public class TitleScreenMixin {
                 Identifier loc = Identifier.parse(overlay.path);
                 int w = overlay.width > 0 ? overlay.width : 256;
                 int h = overlay.height > 0 ? overlay.height : 256;
-                extractor.blit(loc, overlay.x, overlay.y, 0, 0, w, h, w, h);
+                extractor.blit(loc, overlay.x, overlay.y, overlay.x + w, overlay.y + h, 0.0F, 1.0F, 0.0F, 1.0F);
             } catch (Exception ignored) {}
         }
     }
@@ -294,9 +267,8 @@ public class TitleScreenMixin {
         TitleScreen screen = (TitleScreen)(Object)this;
         switch (btn.action) {
             case "command" -> {
-                if (mc.player != null && btn.command != null && !btn.command.isEmpty()) {
+                if (mc.player != null && btn.command != null && !btn.command.isEmpty())
                     mc.player.connection.sendCommand(btn.command);
-                }
             }
             case "open_singleplayer" -> mc.setScreenAndShow(new SelectWorldScreen(screen));
             case "open_multiplayer" -> mc.setScreenAndShow(new JoinMultiplayerScreen(screen));
@@ -304,9 +276,8 @@ public class TitleScreenMixin {
             case "quit" -> mc.stop();
             case "open_url" -> {
                 if (btn.command != null && !btn.command.isEmpty()) {
-                    try {
-                        java.awt.Desktop.getDesktop().browse(new java.net.URI(btn.command));
-                    } catch (Exception ignored) {}
+                    try { java.awt.Desktop.getDesktop().browse(new java.net.URI(btn.command)); }
+                    catch (Exception ignored) {}
                 }
             }
         }
