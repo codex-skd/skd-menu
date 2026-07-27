@@ -1,6 +1,6 @@
 # Flujo de trabajo — SKD Menu (NeoForge)
 
-> **Versión del workflow**: 1.4.0 (codex-docs)
+> **Versión del workflow**: 1.5.0 (codex-docs)
 > Este archivo pertenece al proyecto **SKD Menu**. Cada proyecto tiene su propio `WORKFLOW_<MOD_ID>_<MC-VERSION>.md`.
 > No es un archivo central ni template compartido. Los cambios aquí solo afectan a este proyecto.
 > Para actualizar este workflow, revisar la última versión en `codex-docs/WORKFLOW_GENERIC.md`.
@@ -32,6 +32,18 @@ Reglas:
 - Las config keys en camelCase: `skdMenu.enableFeature`
 
 ## Organización en el workspace
+
+Todos los mods siguen esta estructura en el directorio raíz (`Mods_Minecraft/`), tengan una o varias versiones de Minecraft:
+
+```
+skd_menu/               # Único repositorio Git (un solo .git/)
++-- 26.2/               # Solo existe en su rama: minecraft/26.2/neoforge-26.2.0.32-beta/production
+|   +-- src/
+|   +-- docs/
+|   +-- ...
+```
+
+Cada versión de Minecraft es una **rama** dentro del mismo repositorio. La carpeta de cada versión **solo existe en su propia rama** — no hay rastro de otras versiones al cambiar de rama.
 
 Todos los mods siguen esta estructura en el directorio raíz (`Mods_Minecraft/`), tengan una o varias versiones de Minecraft:
 
