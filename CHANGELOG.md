@@ -1,5 +1,15 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.3 (2026-07-27)
+
+### Features
+- Custom 360° panorama: 6-image cube panorama (`background.type: "custom_panorama"`)
+- Button slide-right animation (`buttonAnimation.type: "slide_right"`)
+- External image loading for panorama faces and backgrounds
+
+### Changes
+- Config renamed from `skd_menu_menu.json` to `skd_menu.json`
+
 ## 0.0.0-beta.2 (2026-07-27)
 
 ### Fix
@@ -8,7 +18,7 @@
 ## 0.0.0-beta.1 (2026-07-27)
 
 ### Features
-- Custom main menu with JSON config (`config/skd_menu_menu.json`)
+- Custom main menu with JSON config (`config/skd_menu.json`)
 - Background types: panorama, image, solid color, animated frames
 - Button position customization for all vanilla buttons
 - Hide unwanted buttons

@@ -34,7 +34,7 @@ Mod que permite personalizar completamente el menú principal de Minecraft:
 | `src/main/java/com/skd/menu/mixin/ScreenInvoker.java` | Invoker para addRenderableWidget |
 | `src/main/java/com/skd/menu/MenuConfig.java` | Carga JSON de configuración del menú |
 | `src/main/java/com/skd/menu/Config.java` | Config spec de NeoForge (enableMod, reloadJsonOnTitle) |
-| `config/skd_menu_menu.json` | Config del menú (se genera automáticamente) |
+| `config/skd_menu.json` | Config del menú (se genera automáticamente) |
 
 ## APIs de Minecraft 26.2 usadas
 

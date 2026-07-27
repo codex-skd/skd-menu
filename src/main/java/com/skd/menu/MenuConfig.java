@@ -19,6 +19,7 @@ public class MenuConfig {
     public TitleConfig title = new TitleConfig();
     public ButtonsConfig buttons = new ButtonsConfig();
     public List<ImageOverlay> images = new ArrayList<>();
+    public ButtonAnimation buttonAnimation = new ButtonAnimation();
 
     public static MenuConfig getInstance() {
         if (instance == null) {
@@ -28,7 +29,7 @@ public class MenuConfig {
     }
 
     public static void load() {
-        configPath = Path.of("config", "skd_menu_menu.json");
+configPath = Path.of("config", "skd_menu.json");
         if (Files.exists(configPath)) {
             try (Reader reader = Files.newBufferedReader(configPath)) {
                 instance = GSON.fromJson(reader, MenuConfig.class);
@@ -47,6 +48,9 @@ public class MenuConfig {
         if (instance.background.animation == null) instance.background.animation = new AnimationConfig();
         if (instance.background.image == null) instance.background.image = new ImageConfig();
         if (instance.background.color == null) instance.background.color = new ColorConfig();
+        if (instance.background.panorama == null) instance.background.panorama = new PanoramaConfig();
+        if (instance.background.panorama.files == null) instance.background.panorama.files = new ArrayList<>();
+        if (instance.buttonAnimation == null) instance.buttonAnimation = new ButtonAnimation();
         if (instance.title == null) instance.title = new TitleConfig();
         if (instance.buttons == null) instance.buttons = new ButtonsConfig();
         if (instance.buttons.positions == null) instance.buttons.positions = new HashMap<>();
@@ -71,6 +75,7 @@ public class MenuConfig {
         public ImageConfig image = new ImageConfig();
         public ColorConfig color = new ColorConfig();
         public AnimationConfig animation = new AnimationConfig();
+        public PanoramaConfig panorama = new PanoramaConfig();
     }
 
     public static class ImageConfig {
@@ -85,6 +90,16 @@ public class MenuConfig {
         public List<String> frames = new ArrayList<>();
         public int frameTimeMs = 50;
         public boolean loop = true;
+    }
+
+    public static class PanoramaConfig {
+        public List<String> files = new ArrayList<>();
+    }
+
+    public static class ButtonAnimation {
+        public String type = "slide_right";
+        public int duration = 600;
+        public int offset = 300;
     }
 
     public static class TitleConfig {

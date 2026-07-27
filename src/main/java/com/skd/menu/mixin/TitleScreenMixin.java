@@ -1,5 +1,6 @@
 package com.skd.menu.mixin;
 
+import com.mojang.blaze3d.platform.NativeImage;
 import com.skd.menu.Config;
 import com.skd.menu.MenuConfig;
 import net.minecraft.client.Minecraft;
@@ -12,6 +13,7 @@ import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen;
 import net.minecraft.client.gui.screens.options.OptionsScreen;
 import net.minecraft.client.gui.screens.worldselection.SelectWorldScreen;
+import net.minecraft.client.renderer.texture.DynamicTexture;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,13 +22,18 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Supplier;
 
 @Mixin(TitleScreen.class)
 public class TitleScreenMixin {
-    @Unique private static final Identifier[] PANORAMA_OVERLAYS = new Identifier[]{
+    @Unique private static final Identifier[] PANORAMA_PATHS = new Identifier[]{
         Identifier.parse("textures/gui/title/background/panorama_0.png"),
         Identifier.parse("textures/gui/title/background/panorama_1.png"),
         Identifier.parse("textures/gui/title/background/panorama_2.png"),
@@ -34,6 +41,8 @@ public class TitleScreenMixin {
         Identifier.parse("textures/gui/title/background/panorama_4.png"),
         Identifier.parse("textures/gui/title/background/panorama_5.png")
     };
+    @Unique private long animationStartTime = 0;
+    @Unique private final Map<AbstractWidget, MenuConfig.Position> animatedWidgets = new HashMap<>();
 
     @Inject(method = "init()V", at = @At("TAIL"))
     private void onInit(CallbackInfo ci) {
@@ -42,6 +51,8 @@ public class TitleScreenMixin {
 
         MenuConfig config = MenuConfig.getInstance();
         TitleScreen screen = (TitleScreen)(Object)this;
+
+        loadCustomPanoramaTextures(config);
 
         List<AbstractWidget> widgets = new ArrayList<>();
         for (Renderable r : screen.renderables) {
@@ -96,13 +107,42 @@ public class TitleScreenMixin {
             ).bounds(customBtn.x, customBtn.y, customBtn.width, customBtn.height).build();
             ((ScreenInvoker)(Object)this).invokeAddRenderableWidget(button);
         }
+
+        setupButtonAnimation(config, widgets);
     }
 
     @Inject(method = "extractBackground", at = @At("HEAD"))
     private void onExtractBackground(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         if (!Config.ENABLE_MOD.getAsBoolean()) return;
+        renderImageOverlays(extractor, MenuConfig.getInstance());
+    }
+
+    @Inject(method = "tick", at = @At("TAIL"))
+    private void onTick(CallbackInfo ci) {
+        if (!Config.ENABLE_MOD.getAsBoolean()) return;
         MenuConfig config = MenuConfig.getInstance();
-        renderImageOverlays(extractor, config);
+        if (!"slide_right".equals(config.buttonAnimation.type)) return;
+        if (animationStartTime == 0 || animatedWidgets.isEmpty()) return;
+
+        long elapsed = System.currentTimeMillis() - animationStartTime;
+        float progress = Math.min(1.0f, (float)elapsed / config.buttonAnimation.duration);
+        float eased = 1.0f - (1.0f - progress) * (1.0f - progress);
+
+        for (Map.Entry<AbstractWidget, MenuConfig.Position> e : animatedWidgets.entrySet()) {
+            AbstractWidget w = e.getKey();
+            MenuConfig.Position target = e.getValue();
+            w.setX((int)(target.x - config.buttonAnimation.offset * (1.0f - eased)));
+        }
+
+        if (progress >= 1.0f) {
+            for (Map.Entry<AbstractWidget, MenuConfig.Position> e : animatedWidgets.entrySet()) {
+                AbstractWidget w = e.getKey();
+                MenuConfig.Position target = e.getValue();
+                w.setX(target.x);
+            }
+            animatedWidgets.clear();
+            animationStartTime = 0;
+        }
     }
 
     @Inject(method = "extractRenderState", at = @At("HEAD"), cancellable = true)
@@ -110,10 +150,75 @@ public class TitleScreenMixin {
         if (!Config.ENABLE_MOD.getAsBoolean()) return;
 
         MenuConfig config = MenuConfig.getInstance();
-        if (!"panorama".equals(config.background.type)) {
+        String type = config.background.type;
+
+        if ("custom_panorama".equals(type)) {
+            return;
+        }
+
+        if (!"panorama".equals(type)) {
             renderCustomBackground(extractor, config);
             renderTitleWidgets(extractor, mouseX, mouseY, partialTick);
             ci.cancel();
+        }
+    }
+
+    @Unique
+    private void loadCustomPanoramaTextures(MenuConfig config) {
+        if (!"custom_panorama".equals(config.background.type)) return;
+        List<String> files = config.background.panorama.files;
+        if (files == null || files.size() < 6) return;
+
+        Minecraft mc = Minecraft.getInstance();
+        for (int i = 0; i < 6; i++) {
+            String path = files.get(i);
+            if (path == null || path.isEmpty()) continue;
+            try {
+                NativeImage image = loadNativeImage(path);
+                if (image != null) {
+                    String debugName = "skd_menu_panorama_" + i;
+                    mc.getTextureManager().register(PANORAMA_PATHS[i], new DynamicTexture(() -> debugName, image));
+                }
+            } catch (Exception ignored) {}
+        }
+    }
+
+    @Unique
+    private NativeImage loadNativeImage(String path) {
+        try {
+            Path filePath = Path.of(path);
+            if (Files.exists(filePath)) {
+                try (InputStream is = Files.newInputStream(filePath)) {
+                    return NativeImage.read(is);
+                }
+            }
+        } catch (Exception ignored) {}
+        try {
+            Identifier loc = Identifier.parse(path);
+            var resource = Minecraft.getInstance().getResourceManager().getResource(loc).orElse(null);
+            if (resource != null) {
+                try (InputStream is = resource.open()) {
+                    return NativeImage.read(is);
+                }
+            }
+        } catch (Exception ignored) {}
+        return null;
+    }
+
+    @Unique
+    private void setupButtonAnimation(MenuConfig config, List<AbstractWidget> widgets) {
+        String animType = config.buttonAnimation.type;
+        if (animType == null || "none".equals(animType)) return;
+
+        animationStartTime = System.currentTimeMillis();
+        animatedWidgets.clear();
+
+        for (AbstractWidget w : widgets) {
+            if (!w.visible) continue;
+            animatedWidgets.put(w, new MenuConfig.Position(w.getX(), w.getY()));
+            if ("slide_right".equals(animType)) {
+                w.setX(w.getX() - config.buttonAnimation.offset);
+            }
         }
     }
 
