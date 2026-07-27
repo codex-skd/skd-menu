@@ -71,7 +71,7 @@ configPath = Path.of("config", "skd_menu.json");
     }
 
     public static class BackgroundConfig {
-        public String type = "panorama";
+        public String type = "animated";
         public ImageConfig image = new ImageConfig();
         public ColorConfig color = new ColorConfig();
         public AnimationConfig animation = new AnimationConfig();
@@ -79,7 +79,7 @@ configPath = Path.of("config", "skd_menu.json");
     }
 
     public static class ImageConfig {
-        public String path = "skd_menu:textures/gui/background.png";
+        public String path = "skd_menu:textures/gui/bg_default_1.png";
     }
 
     public static class ColorConfig {
@@ -87,8 +87,12 @@ configPath = Path.of("config", "skd_menu.json");
     }
 
     public static class AnimationConfig {
-        public List<String> frames = new ArrayList<>();
-        public int frameTimeMs = 50;
+        public List<String> frames = new ArrayList<>(List.of(
+            "skd_menu:textures/gui/bg_default_1.png",
+            "skd_menu:textures/gui/bg_default_2.png",
+            "skd_menu:textures/gui/bg_default_3.png"
+        ));
+        public int frameTimeMs = 8000;
         public boolean loop = true;
     }
 
