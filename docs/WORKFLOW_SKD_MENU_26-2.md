@@ -33,48 +33,20 @@ Reglas:
 
 ## Organización en el workspace
 
-Todos los mods siguen esta estructura en el directorio raíz (`Mods_Minecraft/`), tengan una o varias versiones de Minecraft:
+Todos los mods siguen esta estructura en el directorio raiz (`Mods_Minecraft/`), tengan una o varias versiones de Minecraft:
 
 ```
-skd_menu/               # Único repositorio Git (un solo .git/)
-+-- 26.2/               # Solo existe en su rama: minecraft/26.2/neoforge-26.2.0.32-beta/production
+skd_menu/                    # Carpeta padre organizativa (sin .git)
++-- 26.2/                  # Repositorio independiente con su propio .git
+|   +-- .git/
+|   +-- build.gradle
+|   +-- gradle.properties
 |   +-- src/
 |   +-- docs/
 |   +-- ...
 ```
 
-Cada versión de Minecraft es una **rama** dentro del mismo repositorio. La carpeta de cada versión **solo existe en su propia rama** — no hay rastro de otras versiones al cambiar de rama.
-
-Todos los mods siguen esta estructura en el directorio raíz (`Mods_Minecraft/`), tengan una o varias versiones de Minecraft:
-
-```
-<mod_id>/                    # Carpeta padre del mod (solo organizativa, sin .git)
-└── <minecraft_version>/     # Proyecto real con su propio .git y repositorio GitLab
-    ├── .git/
-    ├── build.gradle
-    ├── gradle.properties
-    ├── src/
-    ├── docs/
-    └── ...
-```
-
-Ejemplo real actual:
-
-```
-skd_menu/                    # Mod padre (única versión)
-└── 26.2/                    # Único repositorio
-    ├── .git/
-    ├── gradle.properties → minecraft_version=26.2
-    └── ...
-```
-
-**Reglas:**
-- La carpeta padre `<mod_id>/` es solo organizativa, **no tiene `.git`**
-- Cada `<minecraft_version>/` tiene su propio `.git/` y es un repositorio independiente en GitLab
-- El `mod_id` en `gradle.properties` debe coincidir con la carpeta padre
-- La rama default del repo es `minecraft/<mc-version>/neoforge-<neo-version>/production`
-- El nombre del workflow sigue el patrón `WORKFLOW_<MOD_ID>_<MC-VERSION>.md` (ej: `WORKFLOW_SKD_MENU_26-2.md`)
-
+Cada version de Minecraft es un **repositorio independiente** con su propio `.git/`. La carpeta padre `skd_menu/` es solo organizativa, sin `.git`.
 ## Tipografía
 
 | Ámbito | Fuente |
