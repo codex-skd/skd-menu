@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.5 (2026-07-27)
+
+### Fix
+- Corrected `blit()` UV coordinates for `GuiGraphicsExtractor` (new 26.2 API uses normalized float UV 0.0–1.0, not pixel coords)
+
 ## 0.0.0-beta.4 (2026-07-27)
 
 ### Features
