@@ -107,10 +107,19 @@ public class TitleScreenMixin {
         setupButtonAnimation(config, widgets);
     }
 
-    @Inject(method = "extractRenderState", at = @At("TAIL"))
-    private void onExtractRenderStateTail(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+    @Inject(method = "extractRenderState", at = @At("HEAD"), cancellable = true)
+    private void onExtractRenderState(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         if (!Config.ENABLE_MOD.getAsBoolean()) return;
-        renderImageOverlays(extractor, MenuConfig.getInstance());
+
+        MenuConfig config = MenuConfig.getInstance();
+        String type = config.background.type;
+
+        if ("panorama".equals(type) || "custom_panorama".equals(type)) return;
+
+        renderCustomBackground(extractor, config);
+        renderTitleWidgets(extractor, mouseX, mouseY, partialTick);
+        renderImageOverlays(extractor, config);
+        ci.cancel();
     }
 
     @Inject(method = "tick", at = @At("TAIL"))
@@ -137,20 +146,6 @@ public class TitleScreenMixin {
             animatedWidgets.clear();
             animationStartTime = 0;
         }
-    }
-
-    @Inject(method = "extractPanorama", at = @At("HEAD"), cancellable = true)
-    private void onExtractPanorama(GuiGraphicsExtractor extractor, float partialTick, CallbackInfo ci) {
-        if (!Config.ENABLE_MOD.getAsBoolean()) return;
-
-        MenuConfig config = MenuConfig.getInstance();
-        String type = config.background.type;
-
-        if ("panorama".equals(type)) return;
-        if ("custom_panorama".equals(type)) return;
-
-        renderCustomBackground(extractor, config);
-        ci.cancel();
     }
 
     @Unique
@@ -240,6 +235,14 @@ public class TitleScreenMixin {
             frameIndex = frames.size() - 1;
         }
         renderImageBackground(extractor, screen, frames.get(Math.min(frameIndex, Math.max(0, frames.size() - 1))));
+    }
+
+    @Unique
+    private void renderTitleWidgets(GuiGraphicsExtractor extractor, int mouseX, int mouseY, float partialTick) {
+        TitleScreen screen = (TitleScreen)(Object)this;
+        for (Renderable renderable : screen.renderables) {
+            renderable.extractRenderState(extractor, mouseX, mouseY, partialTick);
+        }
     }
 
     @Unique
