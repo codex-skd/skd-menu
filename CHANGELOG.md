@@ -1,5 +1,12 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.9 (2026-07-27)
+
+### Features
+- Custom Stalking Dragons logo as default title image
+- Title image animated zoom/pulse effect (`title.animated`, `animRange`, `animSpeed`)
+- Graphify knowledge graph generated
+
 ## 0.0.0-beta.8 (2026-07-27)
 
 ### Features

@@ -1,1 +1,57 @@
-done
+{
+  "build.gradle": {
+    "mtime": 1785104291.2467341,
+    "ast_hash": "3dae162e35cdbced95ea1bff9641ebf3",
+    "semantic_hash": "3dae162e35cdbced95ea1bff9641ebf3"
+  },
+  "gradlew": {
+    "mtime": 1785101394.4690752,
+    "ast_hash": "794669d78aef1dd5c7d889ef618b311a",
+    "semantic_hash": "794669d78aef1dd5c7d889ef618b311a"
+  },
+  "settings.gradle": {
+    "mtime": 1785101394.5130932,
+    "ast_hash": "58a5df05c6546d7d2671a516793e02e7",
+    "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
+  },
+  "src/main/java/com/skd/menu/Config.java": {
+    "mtime": 1785101842.1693223,
+    "ast_hash": "1dc39e42e8e6fdc944e4fa09eeda817b",
+    "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
+  },
+  "src/main/java/com/skd/menu/MenuConfig.java": {
+    "mtime": 1785241200.5025592,
+    "ast_hash": "ff350470286b9b705f2c2b9276f3bfde",
+    "semantic_hash": "ff350470286b9b705f2c2b9276f3bfde"
+  },
+  "src/main/java/com/skd/menu/SKDMenu.java": {
+    "mtime": 1785237865.7750862,
+    "ast_hash": "6ddfb499e83a7bf4a0296a8c80c8f2b6",
+    "semantic_hash": "6ddfb499e83a7bf4a0296a8c80c8f2b6"
+  },
+  "src/main/java/com/skd/menu/SKDMenuClient.java": {
+    "mtime": 1785101838.1310413,
+    "ast_hash": "8464fea233c2614e4c0cdb8d5474ccf7",
+    "semantic_hash": "8464fea233c2614e4c0cdb8d5474ccf7"
+  },
+  "src/main/java/com/skd/menu/mixin/ScreenInvoker.java": {
+    "mtime": 1785102293.3002965,
+    "ast_hash": "bc287e90e502be3a3ac941660215497c",
+    "semantic_hash": "bc287e90e502be3a3ac941660215497c"
+  },
+  "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java": {
+    "mtime": 1785241207.567114,
+    "ast_hash": "b4c1b304c59965eb0d2139dbbf10465d",
+    "semantic_hash": "b4c1b304c59965eb0d2139dbbf10465d"
+  },
+  "src/main/resources/assets/skd_menu/lang/en_us.json": {
+    "mtime": 1785101845.4998918,
+    "ast_hash": "a47d8c9ec012bc1e3ba4d92c2de8a787",
+    "semantic_hash": "a47d8c9ec012bc1e3ba4d92c2de8a787"
+  },
+  "src/main/resources/skd_menu.mixins.json": {
+    "mtime": 1785102298.165273,
+    "ast_hash": "1fa69cb718ae50c265e17ed969a950f2",
+    "semantic_hash": "1fa69cb718ae50c265e17ed969a950f2"
+  }
+}

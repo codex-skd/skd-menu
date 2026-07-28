@@ -174,11 +174,20 @@ public class TitleScreenMixin {
         if ("image".equals(config.title.type)) {
             try {
                 Identifier loc = Identifier.parse(config.title.image);
+                float s = config.title.scale;
+                if (config.title.animated) {
+                    float phase = (float)(System.currentTimeMillis() / 1000.0 * config.title.animSpeed);
+                    s *= 1.0f + (float)Math.sin(phase) * config.title.animRange;
+                }
                 int tw = 310;
                 int th = 44;
                 int tx = config.title.x;
                 int ty = config.title.y;
-                extractor.blit(loc, tx, ty, tx + (int)(tw * config.title.scale), ty + (int)(th * config.title.scale), 0.0F, 1.0F, 0.0F, 1.0F);
+                int sw = (int)(tw * s);
+                int sh = (int)(th * s);
+                int cx = tx + sw / 2;
+                int cy = ty + sh / 2;
+                extractor.blit(loc, tx, ty, tx + sw, ty + sh, 0.0F, 1.0F, 0.0F, 1.0F);
             } catch (Exception ignored) {}
         }
     }

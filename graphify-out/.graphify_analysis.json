@@ -1,0 +1,185 @@
+{
+  "communities": {
+    "0": [
+      "gson",
+      "src_main_java_com_skd_menu_menuconfig",
+      "src_main_java_com_skd_menu_menuconfig_animationconfig",
+      "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
+      "src_main_java_com_skd_menu_menuconfig_buttonanimation",
+      "src_main_java_com_skd_menu_menuconfig_buttonsconfig",
+      "src_main_java_com_skd_menu_menuconfig_colorconfig",
+      "src_main_java_com_skd_menu_menuconfig_custombutton",
+      "src_main_java_com_skd_menu_menuconfig_defaultbutton",
+      "src_main_java_com_skd_menu_menuconfig_imageconfig",
+      "src_main_java_com_skd_menu_menuconfig_imageoverlay",
+      "src_main_java_com_skd_menu_menuconfig_java_logger",
+      "src_main_java_com_skd_menu_menuconfig_menuconfig",
+      "src_main_java_com_skd_menu_menuconfig_menuconfig_getinstance",
+      "src_main_java_com_skd_menu_menuconfig_menuconfig_initdefaults",
+      "src_main_java_com_skd_menu_menuconfig_menuconfig_load",
+      "src_main_java_com_skd_menu_menuconfig_menuconfig_save",
+      "src_main_java_com_skd_menu_menuconfig_panoramaconfig",
+      "src_main_java_com_skd_menu_menuconfig_titleconfig"
+    ],
+    "1": [
+      "abstractwidget",
+      "callbackinfo",
+      "identifier",
+      "inject",
+      "nativeimage",
+      "src_main_java_com_skd_menu_menuconfig_position",
+      "src_main_java_com_skd_menu_menuconfig_position_position",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_mixin",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_addcustombuttons",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_handlecustomaction",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_loadcustompanoramatextures",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_loadnativeimage",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_oninit",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_ontick",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_processdefaultbuttons",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_setupbuttonanimation"
+    ],
+    "2": [
+      "guigraphicsextractor",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_onextractrenderstate",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderanimatedbackground",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustombackground",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustomtitle",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfallback",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderimagebackground",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderimageoverlays",
+      "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendertitlewidgets",
+      "titlescreen",
+      "unique"
+    ],
+    "3": [
+      "eventbussubscriber",
+      "fmlclientsetupevent",
+      "src_main_java_com_skd_menu_skdmenuclient",
+      "src_main_java_com_skd_menu_skdmenuclient_java_mod",
+      "src_main_java_com_skd_menu_skdmenuclient_java_modcontainer",
+      "src_main_java_com_skd_menu_skdmenuclient_skdmenuclient",
+      "src_main_java_com_skd_menu_skdmenuclient_skdmenuclient_onclientsetup",
+      "src_main_java_com_skd_menu_skdmenuclient_skdmenuclient_skdmenuclient",
+      "subscribeevent"
+    ],
+    "4": [
+      "ieventbus",
+      "src_main_java_com_skd_menu_skdmenu",
+      "src_main_java_com_skd_menu_skdmenu_java_logger",
+      "src_main_java_com_skd_menu_skdmenu_java_mod",
+      "src_main_java_com_skd_menu_skdmenu_java_modcontainer",
+      "src_main_java_com_skd_menu_skdmenu_skdmenu",
+      "src_main_java_com_skd_menu_skdmenu_skdmenu_skdmenu"
+    ],
+    "5": [
+      "booleanvalue",
+      "builder",
+      "modconfigspec",
+      "src_main_java_com_skd_menu_config",
+      "src_main_java_com_skd_menu_config_config"
+    ],
+    "6": [
+      "invoker",
+      "src_main_java_com_skd_menu_mixin_screeninvoker",
+      "src_main_java_com_skd_menu_mixin_screeninvoker_java_mixin",
+      "src_main_java_com_skd_menu_mixin_screeninvoker_screeninvoker",
+      "src_main_java_com_skd_menu_mixin_screeninvoker_screeninvoker_invokeaddrenderablewidget"
+    ],
+    "7": [
+      "gradlew",
+      "gradlew__entry",
+      "gradlew_die",
+      "gradlew_warn"
+    ],
+    "8": [
+      "build"
+    ],
+    "9": [
+      "settings"
+    ]
+  },
+  "cohesion": {
+    "0": 0.24561403508771928,
+    "1": 0.22875816993464052,
+    "2": 0.4909090909090909,
+    "3": 0.3611111111111111,
+    "4": 0.47619047619047616,
+    "5": 0.5,
+    "6": 0.6,
+    "7": 0.8333333333333334,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_com_skd_menu_menuconfig_menuconfig",
+      "label": "MenuConfig",
+      "degree": 21
+    },
+    {
+      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin",
+      "label": "TitleScreenMixin",
+      "degree": 21
+    },
+    {
+      "id": "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
+      "label": "BackgroundConfig",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_com_skd_menu_menuconfig_buttonsconfig",
+      "label": "ButtonsConfig",
+      "degree": 5
+    },
+    {
+      "id": "src_main_java_com_skd_menu_skdmenuclient_skdmenuclient",
+      "label": "SKDMenuClient",
+      "degree": 5
+    },
+    {
+      "id": "src_main_java_com_skd_menu_config_config",
+      "label": "Config",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_skd_menu_menuconfig_position",
+      "label": "Position",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_skd_menu_skdmenu_skdmenu",
+      "label": "SKDMenu",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_skd_menu_menuconfig_imageconfig",
+      "label": "ImageConfig",
+      "degree": 3
+    },
+    {
+      "id": "src_main_java_com_skd_menu_menuconfig_colorconfig",
+      "label": "ColorConfig",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TitleScreenMixin",
+      "target": "Position",
+      "source_files": [
+        "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
+        "src/main/java/com/skd/menu/MenuConfig.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
