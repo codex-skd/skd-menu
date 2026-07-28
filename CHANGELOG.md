@@ -1,5 +1,12 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.8 (2026-07-27)
+
+### Features
+- Title system: `type` can be `"image"`, `"vanilla"`, or `"hidden"`. Default: custom image with dragon logo at top-left
+- Image overlays now support `enabled` flag and auto top-right positioning (x=-1, y=-1)
+- Button system restructured: `buttons.defaults` list with per-button hide/position, custom buttons auto-place below defaults
+
 ## 0.0.0-beta.7 (2026-07-27)
 
 ### Changes

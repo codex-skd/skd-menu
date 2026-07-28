@@ -22,14 +22,12 @@ public class MenuConfig {
     public ButtonAnimation buttonAnimation = new ButtonAnimation();
 
     public static MenuConfig getInstance() {
-        if (instance == null) {
-            load();
-        }
+        if (instance == null) load();
         return instance;
     }
 
     public static void load() {
-configPath = Path.of("config", "skd_menu", "menu.json");
+        configPath = Path.of("config", "skd_menu", "menu.json");
         if (Files.exists(configPath)) {
             try (Reader reader = Files.newBufferedReader(configPath)) {
                 instance = GSON.fromJson(reader, MenuConfig.class);
@@ -43,23 +41,26 @@ configPath = Path.of("config", "skd_menu", "menu.json");
             save();
         }
         if (instance == null) instance = new MenuConfig();
-        if (instance.images == null) instance.images = new ArrayList<>();
+        initDefaults();
+    }
+
+    private static void initDefaults() {
         if (instance.background == null) instance.background = new BackgroundConfig();
         if (instance.background.animation == null) instance.background.animation = new AnimationConfig();
         if (instance.background.image == null) instance.background.image = new ImageConfig();
         if (instance.background.color == null) instance.background.color = new ColorConfig();
         if (instance.background.panorama == null) instance.background.panorama = new PanoramaConfig();
         if (instance.background.panorama.files == null) instance.background.panorama.files = new ArrayList<>();
-        if (instance.buttonAnimation == null) instance.buttonAnimation = new ButtonAnimation();
         if (instance.title == null) instance.title = new TitleConfig();
         if (instance.buttons == null) instance.buttons = new ButtonsConfig();
-        if (instance.buttons.positions == null) instance.buttons.positions = new HashMap<>();
-        if (instance.buttons.hide == null) instance.buttons.hide = new ArrayList<>();
+        if (instance.buttons.defaults == null) instance.buttons.defaults = new ArrayList<>();
         if (instance.buttons.custom == null) instance.buttons.custom = new ArrayList<>();
+        if (instance.images == null) instance.images = new ArrayList<>();
+        if (instance.buttonAnimation == null) instance.buttonAnimation = new ButtonAnimation();
     }
 
     public static void save() {
-        if (configPath == null) configPath = Path.of("config", "skd_menu_menu.json");
+        if (configPath == null) configPath = Path.of("config", "skd_menu", "menu.json");
         try {
             Files.createDirectories(configPath.getParent());
             try (Writer writer = Files.newBufferedWriter(configPath)) {
@@ -100,30 +101,31 @@ configPath = Path.of("config", "skd_menu", "menu.json");
         public List<String> files = new ArrayList<>();
     }
 
-    public static class ButtonAnimation {
-        public String type = "slide_right";
-        public int duration = 600;
-        public int offset = 300;
-    }
-
     public static class TitleConfig {
+        public String type = "image";
+        public String image = "skd_menu:textures/gui/title_default.png";
         public boolean visible = true;
-        public int x = -1;
-        public int y = -1;
+        public int x = 10;
+        public int y = 10;
         public float scale = 1.0f;
         public int color = 0xFFFFFFFF;
     }
 
     public static class ButtonsConfig {
-        public List<String> hide = new ArrayList<>();
-        public Map<String, Position> positions = new HashMap<>();
+        public List<DefaultButton> defaults = new ArrayList<>();
         public List<CustomButton> custom = new ArrayList<>();
+    }
+
+    public static class DefaultButton {
+        public String id = "";
+        public int x = -1;
+        public int y = -1;
+        public boolean hide = false;
     }
 
     public static class Position {
         public int x = -1;
         public int y = -1;
-
         public Position() {}
         public Position(int x, int y) { this.x = x; this.y = y; }
     }
@@ -132,18 +134,25 @@ configPath = Path.of("config", "skd_menu", "menu.json");
         public String text = "";
         public String action = "";
         public String command = "";
-        public int x = 0;
-        public int y = 0;
+        public int x = -999;
+        public int y = -999;
         public int width = 200;
         public int height = 20;
     }
 
     public static class ImageOverlay {
         public String path = "";
-        public int x = 0;
-        public int y = 0;
+        public boolean enabled = false;
+        public int x = -1;
+        public int y = -1;
         public int width = 0;
         public int height = 0;
         public float scale = 1.0f;
+    }
+
+    public static class ButtonAnimation {
+        public String type = "slide_right";
+        public int duration = 600;
+        public int offset = 300;
     }
 }
