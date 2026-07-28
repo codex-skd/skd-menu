@@ -29,7 +29,7 @@ public class MenuConfig {
     }
 
     public static void load() {
-configPath = Path.of("config", "skd_menu.json");
+configPath = Path.of("config", "skd_menu", "menu.json");
         if (Files.exists(configPath)) {
             try (Reader reader = Files.newBufferedReader(configPath)) {
                 instance = GSON.fromJson(reader, MenuConfig.class);
