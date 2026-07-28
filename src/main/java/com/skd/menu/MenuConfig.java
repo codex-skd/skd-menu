@@ -109,6 +109,9 @@ public class MenuConfig {
         public int y = 10;
         public float scale = 1.0f;
         public int color = 0xFFFFFFFF;
+        public boolean animated = false;
+        public float animRange = 0.05f;
+        public float animSpeed = 1.5f;
     }
 
     public static class ButtonsConfig {
