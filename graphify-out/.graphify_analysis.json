@@ -178,8 +178,16 @@
       "why": "cross-file semantic connection"
     }
   ],
-  "tokens": {
-    "input": 0,
-    "output": 0
-  }
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `MenuConfig` connect `MenuConfig` to `TitleScreenMixin`, `Unique`?",
+      "why": "High betweenness centrality (0.256) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `TitleScreenMixin` connect `TitleScreenMixin` to `Unique`?",
+      "why": "High betweenness centrality (0.091) - this node is a cross-community bridge."
+    }
+  ]
 }
