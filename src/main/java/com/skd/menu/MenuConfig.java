@@ -17,6 +17,7 @@ public class MenuConfig {
 
     public BackgroundConfig background = new BackgroundConfig();
     public TitleConfig title = new TitleConfig();
+    public LogosConfig logos = new LogosConfig();
     public ButtonsConfig buttons = new ButtonsConfig();
     public List<ImageOverlay> images = new ArrayList<>();
     public ButtonAnimation buttonAnimation = new ButtonAnimation();
@@ -51,7 +52,11 @@ public class MenuConfig {
         if (instance.background.color == null) instance.background.color = new ColorConfig();
         if (instance.background.panorama == null) instance.background.panorama = new PanoramaConfig();
         if (instance.background.panorama.files == null) instance.background.panorama.files = new ArrayList<>();
+        if (instance.background.image.effect == null) instance.background.image.effect = new EffectConfig();
         if (instance.title == null) instance.title = new TitleConfig();
+        if (instance.logos == null) instance.logos = new LogosConfig();
+        if (instance.logos.topLeft == null) instance.logos.topLeft = new LogosConfig().topLeft;
+        if (instance.logos.topRight == null) instance.logos.topRight = new LogosConfig().topRight;
         if (instance.buttons == null) instance.buttons = new ButtonsConfig();
         if (instance.buttons.defaults == null) instance.buttons.defaults = new ArrayList<>();
         if (instance.buttons.custom == null) instance.buttons.custom = new ArrayList<>();
@@ -72,7 +77,7 @@ public class MenuConfig {
     }
 
     public static class BackgroundConfig {
-        public String type = "animated";
+        public String type = "image";
         public ImageConfig image = new ImageConfig();
         public ColorConfig color = new ColorConfig();
         public AnimationConfig animation = new AnimationConfig();
@@ -80,7 +85,16 @@ public class MenuConfig {
     }
 
     public static class ImageConfig {
-        public String path = "skd_menu:textures/gui/bg_default_1.png";
+        public String path = "skd_menu:textures/gui/bg_main_default.png";
+        public String fit = "cover";
+        public EffectConfig effect = new EffectConfig();
+    }
+
+    public static class EffectConfig {
+        public String type = "zoom";
+        public int durationMs = 20000;
+        public float minScale = 1.0f;
+        public float maxScale = 1.15f;
     }
 
     public static class ColorConfig {
@@ -101,8 +115,25 @@ public class MenuConfig {
         public List<String> files = new ArrayList<>();
     }
 
+    public static class LogosConfig {
+        public LogoConfig topLeft = new LogoConfig("skd_menu:textures/gui/logo_top_left_default.png", 10);
+        public LogoConfig topRight = new LogoConfig("skd_menu:textures/gui/logo_top_right_default.png", -1);
+    }
+
+    public static class LogoConfig {
+        public boolean enabled = true;
+        public String image = "";
+        public int x = 10;
+        public int y = 10;
+        public int width = -1;
+        public int height = 48;
+
+        public LogoConfig() {}
+        public LogoConfig(String defaultImage, int defaultX) { this.image = defaultImage; this.x = defaultX; }
+    }
+
     public static class TitleConfig {
-        public String type = "image";
+        public String type = "hidden";
         public String image = "skd_menu:textures/gui/title_default.png";
         public boolean visible = true;
         public int x = 10;
@@ -115,8 +146,23 @@ public class MenuConfig {
     }
 
     public static class ButtonsConfig {
-        public List<DefaultButton> defaults = new ArrayList<>();
+        public List<DefaultButton> defaults = defaultButtonList();
         public List<CustomButton> custom = new ArrayList<>();
+        public String globalImage = "";
+    }
+
+    /** IDs hidden by default: "realms" (redundant with Multiplayer for most players) and "tw" (dev/test-only badge). */
+    private static final Set<String> HIDDEN_BY_DEFAULT = Set.of("realms", "tw");
+
+    private static List<DefaultButton> defaultButtonList() {
+        List<DefaultButton> list = new ArrayList<>();
+        for (String id : new String[]{"singleplayer", "multiplayer", "realms", "tw", "options", "quit", "language", "accessibility", "mods"}) {
+            DefaultButton db = new DefaultButton();
+            db.id = id;
+            db.hide = HIDDEN_BY_DEFAULT.contains(id);
+            list.add(db);
+        }
+        return list;
     }
 
     public static class DefaultButton {
@@ -124,6 +170,7 @@ public class MenuConfig {
         public int x = -1;
         public int y = -1;
         public boolean hide = false;
+        public String image = "";
     }
 
     public static class Position {
@@ -141,6 +188,7 @@ public class MenuConfig {
         public int y = -999;
         public int width = 200;
         public int height = 20;
+        public String image = "";
     }
 
     public static class ImageOverlay {

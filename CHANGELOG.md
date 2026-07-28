@@ -1,5 +1,22 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.11 (2026-07-29)
+
+### Features
+- Fixed single background image with a smooth zoom ("breathing") effect, replacing the rotating-frame background as the default (`background.type: "image"`, `background.image.effect`)
+- Aspect-ratio preserving `cover` fit for the background image (`background.image.fit`), avoiding distortion on small/uncommon window sizes
+- Two fixed corner logos, independently configurable (`logos.topLeft`, `logos.topRight`)
+- Image references (background, logos, title, overlays, button images) now support 3 sources: mod-bundled asset, local file path, or `http(s)://` URL (`TextureResolver`)
+- `buttons.defaults` is now pre-populated with all 8 recognized button IDs (`singleplayer`, `multiplayer`, `realms`, `options`, `quit`, `language`, `accessibility`, `mods`), each defaulting to automatic positioning (`x`/`y`: `-1`) and `hide: false`
+- Per-button custom image (`buttons.defaults[].image`, `buttons.custom[].image`) and a generic fallback image for all buttons (`buttons.globalImage`)
+- New `docs/CONFIG.md` with the full config reference
+
+### Changes
+- Custom buttons (`buttons.custom`) without both `x` and `y` explicitly defined are now hidden (not created), instead of auto-stacking below the default buttons
+- New default images: fixed background, top-left logo, and top-right logo (AI-generated)
+- Center title is now hidden by default (`title.type: "hidden"`) instead of showing a leftover placeholder image
+- Recognized default button IDs now include `realms` and `tw` (a NeoForge dev/test badge); both are hidden by default, fixing an overlap where these untracked vanilla widgets sat on top of the repositioned Multiplayer/Realms buttons
+
 ## 0.0.0-beta.10 (2026-07-27)
 
 ### Features
