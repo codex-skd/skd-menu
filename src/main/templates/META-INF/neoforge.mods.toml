@@ -33,14 +33,14 @@ displayName="${mod_name}" #mandatory
 logoFile="skd_menu.png" #optional
 
 # A text field displayed in the mod UI
-#credits="" #optional
+credits="SKD Team" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-#authors=""
+authors="SKD"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Fully customize your Minecraft main menu. Change backgrounds, reposition buttons, add custom buttons, overlay images — all through an easy JSON config file.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.

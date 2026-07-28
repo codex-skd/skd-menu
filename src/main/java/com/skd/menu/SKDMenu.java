@@ -15,7 +15,7 @@ public class SKDMenu {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public SKDMenu(IEventBus modEventBus, ModContainer modContainer) {
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC, "skd_menu/menu-common.toml");
         LOGGER.info("SKD Menu initialized");
     }
 }
