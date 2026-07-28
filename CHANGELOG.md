@@ -1,5 +1,13 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.7 (2026-07-27)
+
+### Changes
+- Configs reorganizados: `config/skd_menu/menu.json` + `config/skd_menu/menu-common.toml`
+- Template `neoforge.mods.toml` con descripción real, autores y créditos
+- Añadido `temp/` y `graphify-out/`
+- Audit items marcados como completados
+
 ## 0.0.0-beta.6 (2026-07-27)
 
 ### Fix
