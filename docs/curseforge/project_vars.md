@@ -23,7 +23,7 @@ Autenticación Core: cabecera `x-api-key`
 project_id = 1626937
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 release_type = beta
-game_versions = 12271
+game_versions = 16498,10150,9638
 
 ## Rama
 
