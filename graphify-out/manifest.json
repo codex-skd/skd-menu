@@ -20,9 +20,9 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785241200.5025592,
-    "ast_hash": "ff350470286b9b705f2c2b9276f3bfde",
-    "semantic_hash": "ff350470286b9b705f2c2b9276f3bfde"
+    "mtime": 1785280519.2751803,
+    "ast_hash": "cd1f16376d26c928281d23c7a3dd98bf",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
     "mtime": 1785237865.7750862,
@@ -40,9 +40,9 @@
     "semantic_hash": "bc287e90e502be3a3ac941660215497c"
   },
   "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java": {
-    "mtime": 1785241207.567114,
-    "ast_hash": "b4c1b304c59965eb0d2139dbbf10465d",
-    "semantic_hash": "b4c1b304c59965eb0d2139dbbf10465d"
+    "mtime": 1785281888.3814828,
+    "ast_hash": "36438c23c264606eca97b17b3571b9d9",
+    "semantic_hash": ""
   },
   "src/main/resources/assets/skd_menu/lang/en_us.json": {
     "mtime": 1785101845.4998918,
@@ -53,5 +53,150 @@
     "mtime": 1785102298.165273,
     "ast_hash": "1fa69cb718ae50c265e17ed969a950f2",
     "semantic_hash": "1fa69cb718ae50c265e17ed969a950f2"
+  },
+  "src/main/java/com/skd/menu/TextureResolver.java": {
+    "mtime": 1785278140.8182015,
+    "ast_hash": "561e49ce71b2353fe6fc5b977f550706",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1785251972.1840649,
+    "ast_hash": "58639eb7eeab703b5066abfe09fe7d9e",
+    "semantic_hash": ""
+  },
+  ".gitlab-ci.yml": {
+    "mtime": 1785103472.8053925,
+    "ast_hash": "14c0a4ad0f5bec65ebfaf8c37e148365",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1785280613.763336,
+    "ast_hash": "f6a35542be03220cc37e8bafbf9d06a6",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1785280601.1185887,
+    "ast_hash": "d456a742d543212ba9302ef1f2cea677",
+    "semantic_hash": ""
+  },
+  "docs/CONFIG.md": {
+    "mtime": 1785280595.9425502,
+    "ast_hash": "1ae279c729ac416fc13fce89e45a5fce",
+    "semantic_hash": ""
+  },
+  "docs/WORKFLOW_SKD_MENU_26-2.md": {
+    "mtime": 1785150531.8868277,
+    "ast_hash": "dee0421fd2fa5c83fcd03be49ff0c6fc",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/project_description.md": {
+    "mtime": 1785280605.610267,
+    "ast_hash": "d4faa4070cf34c20b8aa967b433d2feb",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/project_vars.md": {
+    "mtime": 1785107868.3947203,
+    "ast_hash": "416d628b596745549fa937cc59315534",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.1.md": {
+    "mtime": 1785104313.8165991,
+    "ast_hash": "400a1f2f503e094dce342fa8241deaa3",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.10.md": {
+    "mtime": 1785241797.7851954,
+    "ast_hash": "32508912baa8143a0014855919bb10b2",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.11.md": {
+    "mtime": 1785280620.0586853,
+    "ast_hash": "ad53c995a7bc108bcdef48e2a2d54e94",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.2.md": {
+    "mtime": 1785107911.273382,
+    "ast_hash": "4d7b4759d41f06c5cb0325b35eca6913",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.3.md": {
+    "mtime": 1785111147.210259,
+    "ast_hash": "adcf4af1755085d4563dbaba2b3cd4dd",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.4.md": {
+    "mtime": 1785113231.5890777,
+    "ast_hash": "46ccbf7461c34ebbb427843a695ded84",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.5.md": {
+    "mtime": 1785114909.838121,
+    "ast_hash": "bbff7a6b1d2e7c4b76aa7d3ab393b12e",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.6.md": {
+    "mtime": 1785162329.0058627,
+    "ast_hash": "dd5a03899cf01555b9c3d8f572a579c9",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.7.md": {
+    "mtime": 1785238549.3088112,
+    "ast_hash": "eb24dab6984a3ddc253852cfa9e66ebf",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.8.md": {
+    "mtime": 1785240877.0127802,
+    "ast_hash": "d8d1b53c60b9de92148d9a5de82c9f11",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.9.md": {
+    "mtime": 1785241342.5363834,
+    "ast_hash": "3f6ee875c4da197f06ed51f2f95d575b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/icon.png": {
+    "mtime": 1785104109.2308137,
+    "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/bg_default_1.png": {
+    "mtime": 1785241783.4587643,
+    "ast_hash": "eeb35b7267555229bfd6c4db4d4c2ddc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/bg_default_2.png": {
+    "mtime": 1785241783.4958954,
+    "ast_hash": "210db73fb8ecab7fa21e0248026cba9b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/bg_default_3.png": {
+    "mtime": 1785241783.5428412,
+    "ast_hash": "b81ad5eca543599a2b44c234507314b2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/bg_main_default.png": {
+    "mtime": 1785277418.4939117,
+    "ast_hash": "eeb35b7267555229bfd6c4db4d4c2ddc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/logo_top_left_default.png": {
+    "mtime": 1785277418.5674658,
+    "ast_hash": "65a5798160d460ce708c68b9ef03a367",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/logo_top_right_default.png": {
+    "mtime": 1785277418.6431687,
+    "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/title_default.png": {
+    "mtime": 1785241327.1857853,
+    "ast_hash": "773a8ba13d5f06d810a834f4fa9eabab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/skd_menu.png": {
+    "mtime": 1785104109.2308137,
+    "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
+    "semantic_hash": ""
   }
 }
