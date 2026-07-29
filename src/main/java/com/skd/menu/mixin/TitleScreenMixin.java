@@ -68,7 +68,7 @@ public class TitleScreenMixin {
         hideVanillaWidgets(vanillaWidgets);
 
         createDefaultButtons(config, screen, width, height);
-        addCustomButtons(config);
+        addCustomButtons(config, width, height);
 
         List<AbstractWidget> finalWidgets = new ArrayList<>();
         for (Renderable r : screen.renderables) {
@@ -108,30 +108,37 @@ public class TitleScreenMixin {
         int idx = 0;
 
         for (String id : MAIN_ROW_IDS) {
-            idx = addDefaultButton(config, btnMap, screen, mc, id, 200, centerX, baseY, gap, idx);
+            idx = addDefaultButton(config, btnMap, screen, mc, id, 200, width, height, centerX, baseY, gap, idx);
         }
-        idx = addIconRowButtons(config, btnMap, screen, mc, centerX, baseY, gap, idx);
+        idx = addIconRowButtons(config, btnMap, screen, mc, width, height, centerX, baseY, gap, idx);
         for (String id : BOTTOM_ROW_IDS) {
-            idx = addDefaultButton(config, btnMap, screen, mc, id, 98, centerX, baseY, gap, idx);
+            idx = addDefaultButton(config, btnMap, screen, mc, id, 98, width, height, centerX, baseY, gap, idx);
         }
+    }
+
+    /** Converts a percentage (0-100) of a screen dimension into pixels, so fixed positions stay proportional on resize. */
+    @Unique
+    private static int percentToPixels(float percent, int total) {
+        return Math.round(percent / 100f * total);
     }
 
     @Unique
     private int addDefaultButton(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap, TitleScreen screen, Minecraft mc,
-                                  String id, int width, int centerX, int baseY, int gap, int idx) {
+                                  String id, int defaultWidth, int screenWidth, int screenHeight, int centerX, int baseY, int gap, int idx) {
         MenuConfig.DefaultButton cfg = btnMap.get(id);
         if (cfg != null && cfg.hide) return idx;
 
-        int bx = (cfg != null && cfg.x != -1) ? cfg.x : centerX - width / 2;
-        int by = (cfg != null && cfg.y != -1) ? cfg.y : baseY + gap * idx;
-        addBuiltButton(config, screen, mc, id, cfg, bx, by, width);
+        int w = (cfg != null && cfg.width != -1) ? cfg.width : defaultWidth;
+        int bx = (cfg != null && cfg.x != -1) ? percentToPixels(cfg.x, screenWidth) : centerX - w / 2;
+        int by = (cfg != null && cfg.y != -1) ? percentToPixels(cfg.y, screenHeight) : baseY + gap * idx;
+        addBuiltButton(config, screen, mc, id, cfg, bx, by, w);
         return idx + 1;
     }
 
     /** Lays out Friends/Language/Accessibility/Mods as a single horizontal row, centered, reserving one row slot. */
     @Unique
     private int addIconRowButtons(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap, TitleScreen screen, Minecraft mc,
-                                   int centerX, int baseY, int gap, int idx) {
+                                   int screenWidth, int screenHeight, int centerX, int baseY, int gap, int idx) {
         List<String> autoIds = new ArrayList<>();
         List<Integer> autoWidths = new ArrayList<>();
 
@@ -139,9 +146,9 @@ public class TitleScreenMixin {
             MenuConfig.DefaultButton cfg = btnMap.get(id);
             if (cfg != null && cfg.hide) continue;
 
-            int w = mc.font.width(Component.translatable(vanillaKey(id))) + 16;
+            int w = (cfg != null && cfg.width != -1) ? cfg.width : mc.font.width(Component.translatable(vanillaKey(id))) + 16;
             if (cfg != null && cfg.x != -1 && cfg.y != -1) {
-                addBuiltButton(config, screen, mc, id, cfg, cfg.x, cfg.y, w);
+                addBuiltButton(config, screen, mc, id, cfg, percentToPixels(cfg.x, screenWidth), percentToPixels(cfg.y, screenHeight), w);
                 continue;
             }
             autoIds.add(id);
@@ -213,13 +220,16 @@ public class TitleScreenMixin {
     }
 
     @Unique
-    private void addCustomButtons(MenuConfig config) {
+    private void addCustomButtons(MenuConfig config, int screenWidth, int screenHeight) {
         for (MenuConfig.CustomButton cb : config.buttons.custom) {
             if (cb.x == -999 || cb.y == -999) continue; // no position defined -> hidden
 
+            int bx = percentToPixels(cb.x, screenWidth);
+            int by = percentToPixels(cb.y, screenHeight);
+
             String image = resolveButtonImage(cb.image, config);
             Button.Builder builder = Button.builder(Component.literal(cb.text), btn -> handleCustomAction(cb))
-                .bounds(cb.x, cb.y, cb.width, cb.height);
+                .bounds(bx, by, cb.width, cb.height);
             Button button = (image != null) ? builder.build(b -> new ImageButton(b, image)) : builder.build();
             ((ScreenInvoker)(Object)this).invokeAddRenderableWidget(button);
         }
@@ -308,8 +318,8 @@ public class TitleScreenMixin {
                 }
                 int tw = 310;
                 int th = 44;
-                int tx = config.title.x;
-                int ty = config.title.y;
+                int tx = percentToPixels(config.title.x, screen.width);
+                int ty = percentToPixels(config.title.y, screen.height);
                 int sw = (int)(tw * s);
                 int sh = (int)(th * s);
                 int cx = tx + sw / 2;
@@ -339,9 +349,10 @@ public class TitleScreenMixin {
             int[] dims = TextureResolver.dimensions(logo.image);
             w = (dims != null && dims[1] > 0) ? Math.round(h * (dims[0] / (float) dims[1])) : h;
         }
-        int x = logo.x;
-        int y = logo.y == -1 ? 10 : logo.y;
-        if (x == -1) x = anchorLeft ? 10 : screen.width - w - 10;
+        int y = (logo.y == -1) ? 10 : percentToPixels(logo.y, screen.height);
+        int x;
+        if (logo.x == -1) x = anchorLeft ? 10 : screen.width - w - 10;
+        else x = percentToPixels(logo.x, screen.width);
 
         extractor.blit(tex, x, y, x + w, y + h, 0.0F, 1.0F, 0.0F, 1.0F);
     }
@@ -462,10 +473,9 @@ public class TitleScreenMixin {
             try { loc = Identifier.parse(o.path); } catch (Exception ex) { continue; }
             int w = o.width > 0 ? o.width : 64;
             int h = o.height > 0 ? o.height : 64;
-            int x = o.x;
-            int y = o.y;
-            if (x == -1) x = ((TitleScreen)(Object)this).width - w - 10;
-            if (y == -1) y = 10;
+            TitleScreen screen = (TitleScreen)(Object)this;
+            int x = (o.x == -1) ? screen.width - w - 10 : percentToPixels(o.x, screen.width);
+            int y = (o.y == -1) ? 10 : percentToPixels(o.y, screen.height);
             e.blit(loc, x, y, x + w, y + h, 0.0F, 1.0F, 0.0F, 1.0F);
         }
     }
