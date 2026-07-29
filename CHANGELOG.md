@@ -1,5 +1,11 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.13 (2026-07-29)
+
+### Changes
+- **Breaking**: `x`/`y` fields (logos, title, image overlays, default buttons, custom buttons) are now a **percentage (0-100)** of the current window width/height instead of pixels. A fixed position now scales proportionally when the window is resized, instead of staying at a fixed pixel that ends up out of place at a different window size. `-1`/`-999` sentinel values ("automatic"/"hidden") are unchanged. `width`/`height` fields remain in pixels.
+- Added `width` to `buttons.defaults` (pixels, `-1` = automatic default width per button)
+
 ## 0.0.0-beta.12 (2026-07-29)
 
 ### Fix

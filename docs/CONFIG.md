@@ -16,11 +16,12 @@ Si `enableMod=false` en ese mismo `.toml`, el mod no toca nada de la pantalla de
 
 ## Sistema de coordenadas (`x`, `y`)
 
-Todas las coordenadas `x`/`y` de este mod (fondo, logos, título, overlays, botones) son **píxeles**, no porcentajes, y usan el mismo sistema que el resto de la GUI de Minecraft:
+Todas las coordenadas `x`/`y` de este mod (logos, título, overlays, botones) son **porcentaje (0-100) del ancho/alto de la ventana**, no píxeles:
 
 - **Origen (0,0) = esquina superior izquierda** de la ventana. `x` crece hacia la derecha, `y` crece hacia **abajo** (no hacia arriba).
-- Son los **píxeles lógicos de la GUI**, no píxeles físicos de pantalla — dependen del tamaño de ventana **y** de la opción "GUI Scale" de Minecraft (Opciones > Vídeo). El propio código usa `width`/`height` de la pantalla (en estas mismas unidades) para calcular el centro, por ejemplo `centerX = width / 2`.
-- Por eso una coordenada **fija** (`x`/`y` distinto de `-1`/`-999` según el campo) se queda siempre en ese punto exacto sin importar el tamaño de ventana — puede quedar descuadrada si cambias de resolución o de GUI Scale. La alternativa "automática" (`-1` en botones, `cover` en el fondo) recalcula la posición/ajuste cada vez según el tamaño actual.
+- `x` es un porcentaje del **ancho** actual de la ventana; `y` es un porcentaje del **alto** actual. Por ejemplo `"x": 50` sitúa el elemento a la mitad del ancho, sin importar si la ventana mide 800px o 3000px de ancho — al redimensionar la ventana, la posición se recalcula automáticamente en cada apertura de la pantalla de título, así que **la estructura del menú se mantiene proporcional** en vez de quedarse en un punto fijo de píxeles.
+- Los valores especiales de "automático" (`-1` en logos/overlays/botones por defecto, `-999` en botones custom) **no son porcentajes** — son un valor centinela que activa el cálculo de posición dinámico (o, en el caso de `-999`, oculta el botón). Solo cuando defines un valor `>= 0` se interpreta como porcentaje fijo.
+- `width`/`height` (donde existan) siguen siendo **píxeles**, no porcentaje — el tamaño de un elemento no necesita escalar con la ventana igual que su posición.
 
 ## Formas de referenciar una imagen
 
@@ -66,34 +67,34 @@ Dos logos de posición fija, siempre visibles encima del fondo: uno arriba a la 
 
 ```jsonc
 "logos": {
-  "topLeft":  { "enabled": true, "image": "skd_menu:textures/gui/logo_top_left_default.png",  "x": 10, "y": 10, "width": -1, "height": 48 },
-  "topRight": { "enabled": true, "image": "skd_menu:textures/gui/logo_top_right_default.png", "x": -1, "y": 10, "width": -1, "height": 48 }
+  "topLeft":  { "enabled": true, "image": "skd_menu:textures/gui/logo_top_left_default.png",  "x": 2,  "y": 3, "width": -1, "height": 48 },
+  "topRight": { "enabled": true, "image": "skd_menu:textures/gui/logo_top_right_default.png", "x": -1, "y": 3, "width": -1, "height": 48 }
 }
 ```
 
 - `enabled`: muestra/oculta el logo.
 - `image`: cualquiera de los 3 formatos soportados (ver arriba).
-- `x`, `y`: posición en píxeles. `x: -1` es un valor especial: ancla el logo al borde izquierdo (10px) si es `topLeft`, o al borde derecho (`width - ancho - 10px`) si es `topRight`. `y: -1` equivale a `10`.
-- `width`, `height`: tamaño en píxeles. `height` por defecto `48`. `width: -1` (por defecto) calcula el ancho automáticamente a partir de la proporción real de la imagen, para no deformarla — solo defínelo si quieres forzar un ancho concreto.
+- `x`, `y`: porcentaje (0-100) del ancho/alto de la ventana. `x: -1` es un valor especial: ancla el logo al borde izquierdo (10px) si es `topLeft`, o al borde derecho (`ancho ventana - ancho logo - 10px`) si es `topRight`. `y: -1` equivale a 10px fijos desde arriba.
+- `width`, `height`: tamaño en píxeles (no porcentaje). `height` por defecto `48`. `width: -1` (por defecto) calcula el ancho automáticamente a partir de la proporción real de la imagen, para no deformarla — solo defínelo si quieres forzar un ancho concreto.
 
 ## `title`
 
-Logo/título central superior, independiente de los dos logos fijos de esquina. `type: "image" | "hidden"`. **Por defecto está oculto (`"hidden"`)**, ya que la imagen de ejemplo incluida no encaja con la estética por defecto del mod (fondo + logos de esquina); actívalo con `type: "image"` y tu propia imagen si quieres un logo central también. Con `animated: true` aplica un efecto de escala senoidal (`animRange`, `animSpeed`).
+Logo/título central superior, independiente de los dos logos fijos de esquina. `type: "image" | "hidden"`. **Por defecto está oculto (`"hidden"`)**, ya que la imagen de ejemplo incluida no encaja con la estética por defecto del mod (fondo + logos de esquina); actívalo con `type: "image"` y tu propia imagen si quieres un logo central también. `x`/`y` son porcentaje (0-100) del ancho/alto de la ventana. Con `animated: true` aplica un efecto de escala senoidal (`animRange`, `animSpeed`).
 
 ## `buttons`
 
 ```jsonc
 "buttons": {
   "defaults": [
-    { "id": "singleplayer",  "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "multiplayer",   "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "realms",        "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "options",       "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "quit",          "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "friends",       "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "language",      "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "accessibility", "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "mods",          "x": -1, "y": -1, "hide": false, "image": "" }
+    { "id": "singleplayer",  "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "multiplayer",   "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "realms",        "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "options",       "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "quit",          "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "friends",       "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "language",      "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "accessibility", "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
+    { "id": "mods",          "x": -1, "y": -1, "width": -1, "hide": false, "image": "" }
   ],
   "custom": [],
   "globalImage": ""
@@ -105,7 +106,8 @@ Logo/título central superior, independiente de los dos logos fijos de esquina. 
 Estos son los 9 botones que Minecraft/NeoForge colocan en el menú de título. El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos.
 
 - `id`: identificador del botón. **No depende del idioma del juego** — el mod oculta siempre los botones vainilla (por su tipo de widget, no por su texto) y crea los suyos propios usando las mismas claves de traducción que usa Minecraft (`menu.singleplayer`, `menu.multiplayer`, `menu.online` para Realms, `menu.options`, `menu.quit`, `gui.friends.open`, `options.language`, el texto de accesibilidad, `fml.menu.mods`), así que el texto del botón sale siempre correctamente traducido en el idioma del juego, y reposicionar/ocultar/personalizar funciona igual sin importar el idioma. Los 9 IDs reconocidos son exactamente los de la lista de arriba.
-- `x`, `y`: posición en píxeles. **`-1` es el valor especial "automático"**: el mod calcula la posición dinámicamente según el tamaño actual de la ventana (igual que el layout vanilla, centrado y apilado). Si defines un valor distinto de `-1`, esa coordenada queda **fija** en esa posición sin importar el tamaño de ventana.
+- `x`, `y`: porcentaje (0-100) del ancho/alto de la ventana. **`-1` es el valor especial "automático"**: el mod calcula la posición dinámicamente según el tamaño actual de la ventana (igual que el layout vanilla, centrado y apilado). Si defines un valor `>= 0`, esa coordenada queda fija en ese **porcentaje** de la ventana — al redimensionar, se recalcula el píxel correspondiente, así que el botón mantiene su posición relativa en vez de quedarse clavado en un punto fijo.
+- `width`: ancho del botón **en píxeles** (no porcentaje). `-1` (por defecto) usa el ancho automático de ese botón (200px para singleplayer/multiplayer/realms, 98px para options/quit, o el ancho justo del texto traducido +16px para friends/language/accessibility/mods).
 - `hide`: `true` oculta el botón por completo (simplemente no se crea).
 - `image`: imagen propia para este botón (cualquiera de los 3 formatos). Si se define, sustituye el fondo del botón por la imagen (estirada a su tamaño), manteniendo el texto encima. Si se deja vacío, se usa `buttons.globalImage` como respaldo; si tampoco hay `globalImage`, se muestra el botón con el aspecto normal de Minecraft.
 
@@ -118,11 +120,11 @@ Si borras una entrada de la lista o dejas `"defaults": []`, ese/esos botones sim
 Botones adicionales, no vanilla.
 
 ```jsonc
-{ "text": "Discord", "action": "open_url", "command": "https://discord.gg/...", "x": 10, "y": 10, "width": 200, "height": 20, "image": "" }
+{ "text": "Discord", "action": "open_url", "command": "https://discord.gg/...", "x": 40, "y": 85, "width": 200, "height": 20, "image": "" }
 ```
 
-- `x`, `y`: **posición obligatoria** para que el botón se muestre. Si dejas `x` o `y` en su valor por defecto (`-999`), el botón **no se crea** (equivale a estar oculto). Solo se muestra cuando defines explícitamente ambas coordenadas.
-- `width`, `height`: tamaño en píxeles.
+- `x`, `y`: **posición obligatoria** para que el botón se muestre, en porcentaje (0-100) del ancho/alto de la ventana. Si dejas `x` o `y` en su valor por defecto (`-999`), el botón **no se crea** (equivale a estar oculto). Solo se muestra cuando defines explícitamente ambas coordenadas.
+- `width`, `height`: tamaño en píxeles (no porcentaje).
 - `action`: `"command"` (ejecuta `command` como comando de chat/consola), `"open_singleplayer"`, `"open_multiplayer"`, `"open_options"`, `"quit"`, `"open_url"` (abre `command` como URL en el navegador del sistema).
 - `image`: igual que en `buttons.defaults` — imagen propia, con `buttons.globalImage` como respaldo genérico.
 
@@ -132,7 +134,7 @@ Imagen aplicada a **todos** los botones (por defecto y personalizados) que no te
 
 ## `images`
 
-Overlays de imagen libres (sin cambios): `path`, `enabled`, `x`, `y` (`-1` = esquina superior derecha por defecto), `width`, `height`, `scale`.
+Overlays de imagen libres: `path`, `enabled`, `x`, `y` (porcentaje 0-100; `-1` = esquina superior derecha por defecto), `width`, `height` (píxeles), `scale`.
 
 ## `buttonAnimation`
 

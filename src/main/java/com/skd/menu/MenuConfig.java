@@ -116,28 +116,30 @@ public class MenuConfig {
     }
 
     public static class LogosConfig {
-        public LogoConfig topLeft = new LogoConfig("skd_menu:textures/gui/logo_top_left_default.png", 10);
-        public LogoConfig topRight = new LogoConfig("skd_menu:textures/gui/logo_top_right_default.png", -1);
+        public LogoConfig topLeft = new LogoConfig("skd_menu:textures/gui/logo_top_left_default.png", 2f);
+        public LogoConfig topRight = new LogoConfig("skd_menu:textures/gui/logo_top_right_default.png", -1f);
     }
 
     public static class LogoConfig {
         public boolean enabled = true;
         public String image = "";
-        public int x = 10;
-        public int y = 10;
+        /** Percentage of screen width/height (0-100), not pixels. {@code -1} anchors to the edge (left for topLeft, right for topRight). */
+        public float x = 2f;
+        public float y = 3f;
         public int width = -1;
         public int height = 48;
 
         public LogoConfig() {}
-        public LogoConfig(String defaultImage, int defaultX) { this.image = defaultImage; this.x = defaultX; }
+        public LogoConfig(String defaultImage, float defaultX) { this.image = defaultImage; this.x = defaultX; }
     }
 
     public static class TitleConfig {
         public String type = "hidden";
         public String image = "skd_menu:textures/gui/title_default.png";
         public boolean visible = true;
-        public int x = 10;
-        public int y = 10;
+        /** Percentage of screen width/height (0-100), not pixels. */
+        public float x = 3f;
+        public float y = 3f;
         public float scale = 1.0f;
         public int color = 0xFFFFFFFF;
         public boolean animated = false;
@@ -163,8 +165,11 @@ public class MenuConfig {
 
     public static class DefaultButton {
         public String id = "";
-        public int x = -1;
-        public int y = -1;
+        /** Percentage of screen width/height (0-100), not pixels. {@code -1} = automatic (vanilla-like layout). */
+        public float x = -1;
+        public float y = -1;
+        /** Button width in pixels. {@code -1} = automatic default width for this button's row. */
+        public int width = -1;
         public boolean hide = false;
         public String image = "";
     }
@@ -180,8 +185,9 @@ public class MenuConfig {
         public String text = "";
         public String action = "";
         public String command = "";
-        public int x = -999;
-        public int y = -999;
+        /** Percentage of screen width/height (0-100), not pixels. {@code -999} (either one) = not defined -> hidden. */
+        public float x = -999;
+        public float y = -999;
         public int width = 200;
         public int height = 20;
         public String image = "";
@@ -190,8 +196,9 @@ public class MenuConfig {
     public static class ImageOverlay {
         public String path = "";
         public boolean enabled = false;
-        public int x = -1;
-        public int y = -1;
+        /** Percentage of screen width/height (0-100), not pixels. {@code -1} = automatic (top-right corner). */
+        public float x = -1;
+        public float y = -1;
         public int width = 0;
         public int height = 0;
         public float scale = 1.0f;
