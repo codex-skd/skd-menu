@@ -20,8 +20,8 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785280519.2751803,
-    "ast_hash": "cd1f16376d26c928281d23c7a3dd98bf",
+    "mtime": 1785325703.4465365,
+    "ast_hash": "80b5f4e4b61382d2538c98401292cc02",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
@@ -40,8 +40,8 @@
     "semantic_hash": "bc287e90e502be3a3ac941660215497c"
   },
   "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java": {
-    "mtime": 1785281888.3814828,
-    "ast_hash": "36438c23c264606eca97b17b3571b9d9",
+    "mtime": 1785325677.7344823,
+    "ast_hash": "0a4de6b65ad40da0f3b45c7f57747414",
     "semantic_hash": ""
   },
   "src/main/resources/assets/skd_menu/lang/en_us.json": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785280613.763336,
-    "ast_hash": "f6a35542be03220cc37e8bafbf9d06a6",
+    "mtime": 1785327930.1296668,
+    "ast_hash": "dd89b53652d77c2820baddac3f0bc8d1",
     "semantic_hash": ""
   },
   "README.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "docs/CONFIG.md": {
-    "mtime": 1785280595.9425502,
-    "ast_hash": "1ae279c729ac416fc13fce89e45a5fce",
+    "mtime": 1785327987.9889662,
+    "ast_hash": "b3bb489b4940df68b2f8b21007fb337b",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SKD_MENU_26-2.md": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1785107868.3947203,
-    "ast_hash": "416d628b596745549fa937cc59315534",
+    "mtime": 1785283092.8470917,
+    "ast_hash": "1aaba980247fd1f69380462f38fa8c29",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -197,6 +197,11 @@
   "src/main/resources/skd_menu.png": {
     "mtime": 1785104109.2308137,
     "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.12.md": {
+    "mtime": 1785327938.584108,
+    "ast_hash": "b8a709a56d24ad87158b5ba71fdc2be0",
     "semantic_hash": ""
   }
 }
