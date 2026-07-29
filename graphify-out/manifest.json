@@ -20,8 +20,8 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785325703.4465365,
-    "ast_hash": "80b5f4e4b61382d2538c98401292cc02",
+    "mtime": 1785329565.9332566,
+    "ast_hash": "f90daff66adebee0499778d493c2396d",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
@@ -40,8 +40,8 @@
     "semantic_hash": "bc287e90e502be3a3ac941660215497c"
   },
   "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java": {
-    "mtime": 1785325677.7344823,
-    "ast_hash": "0a4de6b65ad40da0f3b45c7f57747414",
+    "mtime": 1785329664.1097033,
+    "ast_hash": "5098816550dd2a65e2f81aa7b7da77c6",
     "semantic_hash": ""
   },
   "src/main/resources/assets/skd_menu/lang/en_us.json": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785327930.1296668,
-    "ast_hash": "dd89b53652d77c2820baddac3f0bc8d1",
+    "mtime": 1785329853.8155417,
+    "ast_hash": "fb7571c48423f0fa2ec851382c536cf1",
     "semantic_hash": ""
   },
   "README.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "docs/CONFIG.md": {
-    "mtime": 1785327987.9889662,
-    "ast_hash": "b3bb489b4940df68b2f8b21007fb337b",
+    "mtime": 1785329764.7633595,
+    "ast_hash": "ac8274cc46dd2dc6a14fc19e81011c06",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SKD_MENU_26-2.md": {
@@ -202,6 +202,11 @@
   "docs/curseforge/versions/0.0.0-beta.12.md": {
     "mtime": 1785327938.584108,
     "ast_hash": "b8a709a56d24ad87158b5ba71fdc2be0",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.13.md": {
+    "mtime": 1785329859.8478975,
+    "ast_hash": "eec310959a94d824c19410c25a340036",
     "semantic_hash": ""
   }
 }
