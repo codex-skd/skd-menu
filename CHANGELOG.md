@@ -1,5 +1,14 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.12 (2026-07-29)
+
+### Fix
+- Default buttons (`buttons.defaults`) no longer depend on the game's language to be identified. Previously they were matched by comparing the vanilla button's *translated* text against an English substring (e.g. `"singleplayer"`), which silently failed in any non-English locale. Now the mod hides every vanilla title-screen button by class (`Button`/`SpriteIconButton`) regardless of text, and builds its own replacement buttons using Minecraft's own translation keys (`menu.singleplayer`, `menu.multiplayer`, `menu.online`, `menu.options`, `menu.quit`, `gui.friends.open`, `options.language`, `accessibility.onboarding.accessibility.button`, `fml.menu.mods`) and the exact vanilla actions, so labels stay correctly localized and positioning/hiding/custom images work in any language
+
+### Changes
+- Added `friends` as a 9th recognized default button ID; dropped the dev-only `tw` badge (only ever shown when running from an IDE, never in a real build) from the recognized ID list — no longer needed since it's never present for players
+- `realms` is no longer hidden by default (the overlap bug that caused this in beta.11 no longer exists now that vanilla buttons are always fully replaced)
+
 ## 0.0.0-beta.11 (2026-07-29)
 
 ### Features

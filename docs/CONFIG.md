@@ -87,10 +87,10 @@ Logo/título central superior, independiente de los dos logos fijos de esquina. 
   "defaults": [
     { "id": "singleplayer",  "x": -1, "y": -1, "hide": false, "image": "" },
     { "id": "multiplayer",   "x": -1, "y": -1, "hide": false, "image": "" },
-    { "id": "realms",        "x": -1, "y": -1, "hide": true,  "image": "" },
-    { "id": "tw",            "x": -1, "y": -1, "hide": true,  "image": "" },
+    { "id": "realms",        "x": -1, "y": -1, "hide": false, "image": "" },
     { "id": "options",       "x": -1, "y": -1, "hide": false, "image": "" },
     { "id": "quit",          "x": -1, "y": -1, "hide": false, "image": "" },
+    { "id": "friends",       "x": -1, "y": -1, "hide": false, "image": "" },
     { "id": "language",      "x": -1, "y": -1, "hide": false, "image": "" },
     { "id": "accessibility", "x": -1, "y": -1, "hide": false, "image": "" },
     { "id": "mods",          "x": -1, "y": -1, "hide": false, "image": "" }
@@ -102,14 +102,14 @@ Logo/título central superior, independiente de los dos logos fijos de esquina. 
 
 ### `buttons.defaults`
 
-Estos son los 9 botones que Minecraft/NeoForge colocan en el menú (los que estén realmente presentes según tu versión y mods instalados). El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos.
+Estos son los 9 botones que Minecraft/NeoForge colocan en el menú de título. El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos.
 
-- `id`: identificador del botón (coincide de forma parcial e insensible a mayúsculas con el texto del botón vanilla, incluido el texto usado solo para narración en los botones-icono como `language`/`accessibility`/`mods`). Los 9 reconocidos son exactamente los de la lista de arriba.
-- `realms` y `tw` vienen **ocultos por defecto** (`hide: true`): `realms` es el botón "Minecraft Realms" (redundante para la mayoría, y en la fila de iconos pequeños de NeoForge su posición vanilla puede solaparse con otros botones); `tw` es una insignia de NeoForge para builds de desarrollo/test, no relevante para el jugador final. Pon `hide: false` si quieres recuperarlos.
-- No existe (todavía) un ID reconocido para el botón "Friends" (multijugador social) — si tu versión lo muestra, queda en su posición vanilla sin gestionar.
+- `id`: identificador del botón. **No depende del idioma del juego** — el mod oculta siempre los botones vainilla (por su tipo de widget, no por su texto) y crea los suyos propios usando las mismas claves de traducción que usa Minecraft (`menu.singleplayer`, `menu.multiplayer`, `menu.online` para Realms, `menu.options`, `menu.quit`, `gui.friends.open`, `options.language`, el texto de accesibilidad, `fml.menu.mods`), así que el texto del botón sale siempre correctamente traducido en el idioma del juego, y reposicionar/ocultar/personalizar funciona igual sin importar el idioma. Los 9 IDs reconocidos son exactamente los de la lista de arriba.
 - `x`, `y`: posición en píxeles. **`-1` es el valor especial "automático"**: el mod calcula la posición dinámicamente según el tamaño actual de la ventana (igual que el layout vanilla, centrado y apilado). Si defines un valor distinto de `-1`, esa coordenada queda **fija** en esa posición sin importar el tamaño de ventana.
-- `hide`: `true` oculta el botón por completo.
-- `image`: imagen propia para este botón (cualquiera de los 3 formatos). Si se define, sustituye el sprite vanilla del botón por la imagen (estirada a su tamaño), manteniendo el texto encima. Si se deja vacío, se usa `buttons.globalImage` como respaldo; si tampoco hay `globalImage`, se muestra el botón vanilla normal.
+- `hide`: `true` oculta el botón por completo (simplemente no se crea).
+- `image`: imagen propia para este botón (cualquiera de los 3 formatos). Si se define, sustituye el fondo del botón por la imagen (estirada a su tamaño), manteniendo el texto encima. Si se deja vacío, se usa `buttons.globalImage` como respaldo; si tampoco hay `globalImage`, se muestra el botón con el aspecto normal de Minecraft.
+
+`friends`, `language`, `accessibility` y `mods` se agrupan automáticamente en una única fila horizontal centrada (en vez del icono cuadrado pequeño de Minecraft, se muestran como botones de texto normales con su etiqueta traducida, para que el ancho se ajuste solo al texto de cada idioma).
 
 Si borras una entrada de la lista o dejas `"defaults": []`, ese/esos botones simplemente no tienen configuración aplicada y se comportan con el layout vanilla dinámico de siempre.
 
