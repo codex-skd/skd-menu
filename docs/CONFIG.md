@@ -1,6 +1,26 @@
 # Configuración de `skd_menu`
 
-Archivo: `config/skd_menu/menu.json`. Se genera automáticamente con los valores por defecto la primera vez que se lanza el juego con el mod instalado. Si `enableMod=false` o `reloadJsonOnTitle=false` en `config/skd_menu/menu-common.toml`, aplica el comportamiento correspondiente (mod desactivado / config no se recarga al volver al menú).
+Archivo: `config/skd_menu/menu.json`. Se genera automáticamente con los valores por defecto la primera vez que se lanza el juego con el mod instalado.
+
+## Cuándo se aplican los cambios
+
+Por defecto (`reloadJsonOnTitle=false` en `config/skd_menu/menu-common.toml`) el JSON se lee **una sola vez, al arrancar el juego** — para ver un cambio hay que reiniciar Minecraft.
+
+Si pones `reloadJsonOnTitle=true` en ese `.toml`, el mod relee `menu.json` cada vez que la pantalla de título se reinicializa, lo cual ocurre al:
+- redimensionar la ventana del juego, o
+- volver a la pantalla de título desde otra pantalla (salir de una partida/servidor).
+
+No se recarga "en caliente" mientras miras la pantalla de título ya abierta sin ninguno de esos dos eventos — la forma más rápida de probar cambios con `reloadJsonOnTitle=true` es redimensionar un poco la ventana.
+
+Si `enableMod=false` en ese mismo `.toml`, el mod no toca nada de la pantalla de título (todo vainilla).
+
+## Sistema de coordenadas (`x`, `y`)
+
+Todas las coordenadas `x`/`y` de este mod (fondo, logos, título, overlays, botones) son **píxeles**, no porcentajes, y usan el mismo sistema que el resto de la GUI de Minecraft:
+
+- **Origen (0,0) = esquina superior izquierda** de la ventana. `x` crece hacia la derecha, `y` crece hacia **abajo** (no hacia arriba).
+- Son los **píxeles lógicos de la GUI**, no píxeles físicos de pantalla — dependen del tamaño de ventana **y** de la opción "GUI Scale" de Minecraft (Opciones > Vídeo). El propio código usa `width`/`height` de la pantalla (en estas mismas unidades) para calcular el centro, por ejemplo `centerX = width / 2`.
+- Por eso una coordenada **fija** (`x`/`y` distinto de `-1`/`-999` según el campo) se queda siempre en ese punto exacto sin importar el tamaño de ventana — puede quedar descuadrada si cambias de resolución o de GUI Scale. La alternativa "automática" (`-1` en botones, `cover` en el fondo) recalcula la posición/ajuste cada vez según el tamaño actual.
 
 ## Formas de referenciar una imagen
 
