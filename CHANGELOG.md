@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.14 (2026-07-29)
+
+### Fix
+- Fixed a client crash (`IllegalArgumentException: Scissor ... is out of bounds`) that could happen with `buttonAnimation.type: "slide_right"` (the default) when a button's configured width is too narrow for its label. Minecraft auto-scrolls text that doesn't fit a button, and if that button is also positioned off the left edge of the screen (as it briefly is during the slide-in animation), the resulting clipping rectangle went negative, which this Minecraft version rejects outright instead of clamping. The slide animation now never pushes a button's X below 0. Also enforced a 20px minimum button width (`buttons.defaults[].width`, `buttons.custom[].width`) as a second safety net.
+
 ## 0.0.0-beta.13 (2026-07-29)
 
 ### Changes

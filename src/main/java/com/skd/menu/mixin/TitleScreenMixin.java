@@ -47,6 +47,13 @@ public class TitleScreenMixin {
     @Unique private static final String[] MAIN_ROW_IDS = {"singleplayer", "multiplayer", "realms"};
     @Unique private static final String[] ICON_ROW_IDS = {"friends", "language", "accessibility", "mods"};
     @Unique private static final String[] BOTTOM_ROW_IDS = {"options", "quit"};
+    /**
+     * Minimum allowed button width in pixels. A narrower button forces vanilla's label to switch to
+     * horizontal auto-scrolling, whose clipping scissor rectangle can end up out of the render area
+     * (especially combined with the slide-in button animation) and crash the game with an
+     * IllegalArgumentException in GuiRenderer.enableScissor.
+     */
+    @Unique private static final int MIN_BUTTON_WIDTH = 20;
 
     @Inject(method = "init()V", at = @At("TAIL"))
     private void onInit(CallbackInfo ci) {
@@ -122,6 +129,12 @@ public class TitleScreenMixin {
         return Math.round(percent / 100f * total);
     }
 
+    /** Keeps a widget's resting position fully on-screen, in case an out-of-[0,100] percentage was configured. */
+    @Unique
+    private static int clampOnScreen(int pos, int size, int screenTotal) {
+        return Math.max(0, Math.min(pos, Math.max(0, screenTotal - size)));
+    }
+
     @Unique
     private int addDefaultButton(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap, TitleScreen screen, Minecraft mc,
                                   String id, int defaultWidth, int screenWidth, int screenHeight, int centerX, int baseY, int gap, int idx) {
@@ -172,6 +185,10 @@ public class TitleScreenMixin {
     @Unique
     private void addBuiltButton(MenuConfig config, TitleScreen screen, Minecraft mc, String id, MenuConfig.DefaultButton cfg,
                                  int x, int y, int width) {
+        width = Math.max(width, MIN_BUTTON_WIDTH);
+        x = clampOnScreen(x, width, screen.width);
+        y = clampOnScreen(y, 20, screen.height);
+
         Component text = Component.translatable(vanillaKey(id));
         String image = resolveButtonImage(cfg != null ? cfg.image : null, config);
         Button.Builder builder = Button.builder(text, btn -> runDefaultAction(mc, screen, id)).bounds(x, y, width, 20);
@@ -224,12 +241,13 @@ public class TitleScreenMixin {
         for (MenuConfig.CustomButton cb : config.buttons.custom) {
             if (cb.x == -999 || cb.y == -999) continue; // no position defined -> hidden
 
-            int bx = percentToPixels(cb.x, screenWidth);
-            int by = percentToPixels(cb.y, screenHeight);
+            int w = Math.max(cb.width, MIN_BUTTON_WIDTH);
+            int bx = clampOnScreen(percentToPixels(cb.x, screenWidth), w, screenWidth);
+            int by = clampOnScreen(percentToPixels(cb.y, screenHeight), cb.height, screenHeight);
 
             String image = resolveButtonImage(cb.image, config);
             Button.Builder builder = Button.builder(Component.literal(cb.text), btn -> handleCustomAction(cb))
-                .bounds(bx, by, cb.width, cb.height);
+                .bounds(bx, by, w, cb.height);
             Button button = (image != null) ? builder.build(b -> new ImageButton(b, image)) : builder.build();
             ((ScreenInvoker)(Object)this).invokeAddRenderableWidget(button);
         }
@@ -292,7 +310,8 @@ public class TitleScreenMixin {
         float eased = 1.0f - (1.0f - progress) * (1.0f - progress);
 
         for (Map.Entry<AbstractWidget, MenuConfig.Position> e : animatedWidgets.entrySet()) {
-            e.getKey().setX((int)(e.getValue().x - config.buttonAnimation.offset * (1.0f - eased)));
+            int x = (int)(e.getValue().x - config.buttonAnimation.offset * (1.0f - eased));
+            e.getKey().setX(Math.max(0, x));
         }
 
         if (progress >= 1.0f) {
@@ -384,7 +403,10 @@ public class TitleScreenMixin {
         for (AbstractWidget w : widgets) {
             if (!w.visible) continue;
             animatedWidgets.put(w, new MenuConfig.Position(w.getX(), w.getY()));
-            if ("slide_right".equals(t)) w.setX(w.getX() - config.buttonAnimation.offset);
+            // Never push a widget to a negative X: on this MC version, GuiRenderer's scissor rejects
+            // any out-of-bounds rectangle, which crashes the game for widgets whose label needs to
+            // auto-scroll (narrow buttons with long text) while positioned off the left edge.
+            if ("slide_right".equals(t)) w.setX(Math.max(0, w.getX() - config.buttonAnimation.offset));
         }
     }
 
