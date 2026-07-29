@@ -151,15 +151,11 @@ public class MenuConfig {
         public String globalImage = "";
     }
 
-    /** IDs hidden by default: "realms" (redundant with Multiplayer for most players) and "tw" (dev/test-only badge). */
-    private static final Set<String> HIDDEN_BY_DEFAULT = Set.of("realms", "tw");
-
     private static List<DefaultButton> defaultButtonList() {
         List<DefaultButton> list = new ArrayList<>();
-        for (String id : new String[]{"singleplayer", "multiplayer", "realms", "tw", "options", "quit", "language", "accessibility", "mods"}) {
+        for (String id : new String[]{"singleplayer", "multiplayer", "realms", "options", "quit", "friends", "language", "accessibility", "mods"}) {
             DefaultButton db = new DefaultButton();
             db.id = id;
-            db.hide = HIDDEN_BY_DEFAULT.contains(id);
             list.add(db);
         }
         return list;

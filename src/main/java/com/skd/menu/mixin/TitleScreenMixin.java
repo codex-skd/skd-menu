@@ -1,22 +1,29 @@
 package com.skd.menu.mixin;
 
 import com.mojang.blaze3d.platform.NativeImage;
+import com.mojang.realmsclient.RealmsMainScreen;
 import com.skd.menu.Config;
 import com.skd.menu.MenuConfig;
 import com.skd.menu.TextureResolver;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
-import net.minecraft.client.gui.TextAlignment;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Renderable;
+import net.minecraft.client.gui.components.SpriteIconButton;
 import net.minecraft.client.gui.screens.TitleScreen;
+import net.minecraft.client.gui.screens.friends.FriendsOverlayScreen;
 import net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen;
+import net.minecraft.client.gui.screens.multiplayer.SafetyScreen;
+import net.minecraft.client.gui.screens.options.AccessibilityOptionsScreen;
+import net.minecraft.client.gui.screens.options.LanguageSelectScreen;
+import net.minecraft.client.gui.screens.options.OnlineOptionsScreen;
 import net.minecraft.client.gui.screens.options.OptionsScreen;
 import net.minecraft.client.gui.screens.worldselection.SelectWorldScreen;
 import net.minecraft.client.renderer.texture.DynamicTexture;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.neoforged.neoforge.client.gui.ModListScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -37,10 +44,9 @@ public class TitleScreenMixin {
     };
     @Unique private long animationStartTime = 0;
     @Unique private Map<AbstractWidget, MenuConfig.Position> animatedWidgets;
-    @Unique private Map<AbstractWidget, String> defaultButtonImages;
-    @Unique private static final String[] ROW_1_IDS = {"singleplayer", "multiplayer"};
-    @Unique private static final String[] ROW_2_IDS = {"realms", "tw", "options", "quit"};
-    @Unique private static final Set<String> ICON_ROW_IDS = Set.of("language", "accessibility", "mods");
+    @Unique private static final String[] MAIN_ROW_IDS = {"singleplayer", "multiplayer", "realms"};
+    @Unique private static final String[] ICON_ROW_IDS = {"friends", "language", "accessibility", "mods"};
+    @Unique private static final String[] BOTTOM_ROW_IDS = {"options", "quit"};
 
     @Inject(method = "init()V", at = @At("TAIL"))
     private void onInit(CallbackInfo ci) {
@@ -54,20 +60,38 @@ public class TitleScreenMixin {
 
         loadCustomPanoramaTextures(config);
         animatedWidgets = new HashMap<>();
-        defaultButtonImages = new HashMap<>();
 
-        List<AbstractWidget> widgets = new ArrayList<>();
+        List<AbstractWidget> vanillaWidgets = new ArrayList<>();
         for (Renderable r : screen.renderables) {
-            if (r instanceof AbstractWidget w) widgets.add(w);
+            if (r instanceof AbstractWidget w) vanillaWidgets.add(w);
         }
+        hideVanillaWidgets(vanillaWidgets);
 
-        processDefaultButtons(config, widgets, width, height);
+        createDefaultButtons(config, screen, width, height);
         addCustomButtons(config);
-        setupButtonAnimation(config, widgets);
+
+        List<AbstractWidget> finalWidgets = new ArrayList<>();
+        for (Renderable r : screen.renderables) {
+            if (r instanceof AbstractWidget w) finalWidgets.add(w);
+        }
+        setupButtonAnimation(config, finalWidgets);
+    }
+
+    /**
+     * Hides every vanilla menu button (Singleplayer/Multiplayer/Realms/Options/Quit as {@link Button},
+     * Mods/Friends/Language/Accessibility as {@link SpriteIconButton}) unconditionally, by class rather
+     * than by matching their (locale-dependent) rendered text. {@link #createDefaultButtons} then adds
+     * our own equivalents built from Minecraft's translation keys, which works in any language.
+     */
+    @Unique
+    private void hideVanillaWidgets(List<AbstractWidget> widgets) {
+        for (AbstractWidget w : widgets) {
+            if (w instanceof Button || w instanceof SpriteIconButton) w.visible = false;
+        }
     }
 
     @Unique
-    private void processDefaultButtons(MenuConfig config, List<AbstractWidget> widgets, int width, int height) {
+    private void createDefaultButtons(MenuConfig config, TitleScreen screen, int width, int height) {
         List<MenuConfig.DefaultButton> defaults = config.buttons.defaults;
         if (defaults == null || defaults.isEmpty()) return;
 
@@ -76,82 +100,109 @@ public class TitleScreenMixin {
             btnMap.put(db.id.toLowerCase(), db);
         }
 
+        Minecraft mc = Minecraft.getInstance();
         int centerX = width / 2;
         int centerY = height / 4;
         int baseY = centerY + 48;
         int gap = 24;
+        int idx = 0;
 
-        // Singleplayer/Multiplayer, then the small icon row (Mods/Friends/Language/Accessibility)
-        // reserves its own slot between them and Options/Quit, matching the vanilla layout.
-        int idx = positionOrderedButtons(config, btnMap, widgets, ROW_1_IDS, centerX, baseY, gap, 0);
-        idx = positionIconRow(config, btnMap, widgets, centerX, baseY, gap, idx);
-        positionOrderedButtons(config, btnMap, widgets, ROW_2_IDS, centerX, baseY, gap, idx);
-    }
-
-    @Unique
-    private int positionOrderedButtons(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap,
-                                        List<AbstractWidget> widgets, String[] ids, int centerX, int baseY, int gap, int idx) {
-        for (String id : ids) {
-            MenuConfig.DefaultButton cfg = btnMap.get(id);
-            for (AbstractWidget w : widgets) {
-                Component msg = w.getMessage();
-                if (msg == null || !msg.getString().toLowerCase().contains(id)) continue;
-
-                if (cfg != null && cfg.hide) {
-                    w.visible = false;
-                    continue;
-                }
-                int targetX = (cfg != null && cfg.x != -1) ? cfg.x : centerX - w.getWidth() / 2;
-                int targetY = (cfg != null && cfg.y != -1) ? cfg.y : baseY + gap * idx;
-                w.setX(targetX);
-                w.setY(targetY);
-                w.visible = true;
-                idx++;
-
-                String image = resolveButtonImage(cfg != null ? cfg.image : null, config);
-                if (image != null) defaultButtonImages.put(w, image);
-            }
+        for (String id : MAIN_ROW_IDS) {
+            idx = addDefaultButton(config, btnMap, screen, mc, id, 200, centerX, baseY, gap, idx);
         }
-        return idx;
+        idx = addIconRowButtons(config, btnMap, screen, mc, centerX, baseY, gap, idx);
+        for (String id : BOTTOM_ROW_IDS) {
+            idx = addDefaultButton(config, btnMap, screen, mc, id, 98, centerX, baseY, gap, idx);
+        }
     }
 
-    /** Lays out Mods/Friends/Language/Accessibility as a single horizontal row, centered, reserving one row slot. */
     @Unique
-    private int positionIconRow(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap,
-                                 List<AbstractWidget> widgets, int centerX, int baseY, int gap, int idx) {
-        List<AbstractWidget> icons = new ArrayList<>();
-        for (AbstractWidget w : widgets) {
-            Component msg = w.getMessage();
-            if (msg == null) continue;
-            String text = msg.getString().toLowerCase();
+    private int addDefaultButton(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap, TitleScreen screen, Minecraft mc,
+                                  String id, int width, int centerX, int baseY, int gap, int idx) {
+        MenuConfig.DefaultButton cfg = btnMap.get(id);
+        if (cfg != null && cfg.hide) return idx;
 
-            String matchedId = ICON_ROW_IDS.stream().filter(text::contains).findFirst().orElse(null);
-            boolean isFriends = matchedId == null && text.contains("friends");
-            if (matchedId == null && !isFriends) continue;
+        int bx = (cfg != null && cfg.x != -1) ? cfg.x : centerX - width / 2;
+        int by = (cfg != null && cfg.y != -1) ? cfg.y : baseY + gap * idx;
+        addBuiltButton(config, screen, mc, id, cfg, bx, by, width);
+        return idx + 1;
+    }
 
-            MenuConfig.DefaultButton cfg = matchedId != null ? btnMap.get(matchedId) : null;
-            if (cfg != null && cfg.hide) {
-                w.visible = false;
+    /** Lays out Friends/Language/Accessibility/Mods as a single horizontal row, centered, reserving one row slot. */
+    @Unique
+    private int addIconRowButtons(MenuConfig config, Map<String, MenuConfig.DefaultButton> btnMap, TitleScreen screen, Minecraft mc,
+                                   int centerX, int baseY, int gap, int idx) {
+        List<String> autoIds = new ArrayList<>();
+        List<Integer> autoWidths = new ArrayList<>();
+
+        for (String id : ICON_ROW_IDS) {
+            MenuConfig.DefaultButton cfg = btnMap.get(id);
+            if (cfg != null && cfg.hide) continue;
+
+            int w = mc.font.width(Component.translatable(vanillaKey(id))) + 16;
+            if (cfg != null && cfg.x != -1 && cfg.y != -1) {
+                addBuiltButton(config, screen, mc, id, cfg, cfg.x, cfg.y, w);
                 continue;
             }
-            String image = resolveButtonImage(cfg != null ? cfg.image : null, config);
-            if (image != null) defaultButtonImages.put(w, image);
-            icons.add(w);
+            autoIds.add(id);
+            autoWidths.add(w);
         }
-        if (icons.isEmpty()) return idx;
+        if (autoIds.isEmpty()) return idx;
 
-        icons.sort(Comparator.comparingInt(AbstractWidget::getX));
         int spacing = 4;
-        int totalWidth = icons.stream().mapToInt(AbstractWidget::getWidth).sum() + spacing * (icons.size() - 1);
-        int rowX = centerX - totalWidth / 2;
-        int rowY = baseY + gap * idx;
-        for (AbstractWidget w : icons) {
-            w.setX(rowX);
-            w.setY(rowY);
-            w.visible = true;
-            rowX += w.getWidth() + spacing;
+        int totalWidth = autoWidths.stream().mapToInt(Integer::intValue).sum() + spacing * (autoIds.size() - 1);
+        int x = centerX - totalWidth / 2;
+        int y = baseY + gap * idx;
+        for (int i = 0; i < autoIds.size(); i++) {
+            String id = autoIds.get(i);
+            int w = autoWidths.get(i);
+            addBuiltButton(config, screen, mc, id, btnMap.get(id), x, y, w);
+            x += w + spacing;
         }
         return idx + 1;
+    }
+
+    @Unique
+    private void addBuiltButton(MenuConfig config, TitleScreen screen, Minecraft mc, String id, MenuConfig.DefaultButton cfg,
+                                 int x, int y, int width) {
+        Component text = Component.translatable(vanillaKey(id));
+        String image = resolveButtonImage(cfg != null ? cfg.image : null, config);
+        Button.Builder builder = Button.builder(text, btn -> runDefaultAction(mc, screen, id)).bounds(x, y, width, 20);
+        Button button = (image != null) ? builder.build(b -> new ImageButton(b, image)) : builder.build();
+        ((ScreenInvoker)(Object)screen).invokeAddRenderableWidget(button);
+    }
+
+    /** Vanilla translation key for each recognized default button id (see TitleScreen/CommonButtons/ModsButton). */
+    @Unique
+    private static String vanillaKey(String id) {
+        return switch (id) {
+            case "singleplayer" -> "menu.singleplayer";
+            case "multiplayer" -> "menu.multiplayer";
+            case "realms" -> "menu.online";
+            case "options" -> "menu.options";
+            case "quit" -> "menu.quit";
+            case "friends" -> "gui.friends.open";
+            case "language" -> "options.language";
+            case "accessibility" -> "accessibility.onboarding.accessibility.button";
+            case "mods" -> "fml.menu.mods";
+            default -> id;
+        };
+    }
+
+    /** Replicates the vanilla action for each recognized default button id (see TitleScreen.init()). */
+    @Unique
+    private void runDefaultAction(Minecraft mc, TitleScreen screen, String id) {
+        switch (id) {
+            case "singleplayer" -> mc.setScreenAndShow(new SelectWorldScreen(screen));
+            case "multiplayer" -> mc.setScreenAndShow(mc.options.skipMultiplayerWarning ? new JoinMultiplayerScreen(screen) : new SafetyScreen(screen));
+            case "realms" -> mc.setScreenAndShow(new RealmsMainScreen(screen));
+            case "options" -> mc.setScreenAndShow(new OptionsScreen(screen, mc.options, false));
+            case "quit" -> mc.stop();
+            case "friends" -> OnlineOptionsScreen.confirmFriendsListEnabled(mc, () -> mc.setScreenAndShow(new FriendsOverlayScreen(screen)), screen);
+            case "language" -> mc.setScreenAndShow(new LanguageSelectScreen(screen, mc.options, mc.getLanguageManager()));
+            case "accessibility" -> mc.setScreenAndShow(new AccessibilityOptionsScreen(screen, mc.options));
+            case "mods" -> mc.setScreenAndShow(new ModListScreen(screen));
+        }
     }
 
     @Unique
@@ -399,18 +450,8 @@ public class TitleScreenMixin {
 
     @Unique
     private void renderTitleWidgets(GuiGraphicsExtractor e, int mx, int my, float pt) {
-        for (Renderable r : ((TitleScreen)(Object)this).renderables) {
-            if (r instanceof AbstractWidget w && defaultButtonImages.containsKey(w)) {
-                Identifier tex = TextureResolver.resolve(defaultButtonImages.get(w));
-                if (tex != null) {
-                    e.blit(tex, w.getX(), w.getY(), w.getX() + w.getWidth(), w.getY() + w.getHeight(), 0.0F, 1.0F, 0.0F, 1.0F);
-                }
-                e.textRendererForWidget(w, GuiGraphicsExtractor.HoveredTextEffects.NONE)
-                    .accept(TextAlignment.CENTER, w.getX() + w.getWidth() / 2, w.getY() + (w.getHeight() - 8) / 2, w.getMessage());
-                continue;
-            }
+        for (Renderable r : ((TitleScreen)(Object)this).renderables)
             r.extractRenderState(e, mx, my, pt);
-        }
     }
 
     @Unique
