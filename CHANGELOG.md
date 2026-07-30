@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 1.0.1 (2026-07-30)
+
+### Changes
+- Adjusted default button layout (Options, Quit, Friends, Mods repositioned) and restored `buttons.globalImage` to the bundled button texture (Options' one-off custom image URL removed)
+
 ## 1.0.0 (2026-07-30)
 
 First stable release. New default configuration: fixed layout with percentage-based positions for singleplayer/multiplayer/options/quit/friends/mods, realms/language/accessibility hidden, and a custom image on the Options button.
