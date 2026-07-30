@@ -86,30 +86,31 @@ Logo/título central superior, independiente de los dos logos fijos de esquina. 
 ```jsonc
 "buttons": {
   "defaults": [
-    { "id": "singleplayer",  "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "multiplayer",   "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "realms",        "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "options",       "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "quit",          "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "friends",       "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "language",      "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "accessibility", "x": -1, "y": -1, "width": -1, "hide": false, "image": "" },
-    { "id": "mods",          "x": -1, "y": -1, "width": -1, "hide": false, "image": "" }
+    { "id": "singleplayer",  "x": 5,  "y": 82,   "width": 75, "hide": false, "image": "", "hideText": false },
+    { "id": "multiplayer",   "x": 10, "y": 90,   "width": 75, "hide": false, "image": "", "hideText": false },
+    { "id": "realms",        "x": -1, "y": -1,   "width": -1, "hide": true,  "image": "", "hideText": false },
+    { "id": "options",       "x": 90, "y": 81,   "width": 75, "hide": false, "image": "", "hideText": false },
+    { "id": "quit",          "x": 80, "y": 5,    "width": 92, "hide": false, "image": "", "hideText": false },
+    { "id": "friends",       "x": 90, "y": 66,   "width": 75, "hide": false, "image": "", "hideText": false },
+    { "id": "language",      "x": -1, "y": -1,   "width": -1, "hide": true,  "image": "", "hideText": false },
+    { "id": "accessibility", "x": -1, "y": -1,   "width": -1, "hide": true,  "image": "", "hideText": false },
+    { "id": "mods",          "x": 90, "y": 73.5, "width": 75, "hide": false, "image": "", "hideText": false }
   ],
   "custom": [],
-  "globalImage": ""
+  "globalImage": "skd_menu:textures/gui/button_default.png"
 }
 ```
 
 ### `buttons.defaults`
 
-Estos son los 9 botones que Minecraft/NeoForge colocan en el menú de título. El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos.
+Estos son los 9 botones que Minecraft/NeoForge colocan en el menú de título. El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos. El layout y la imagen (`globalImage`) de arriba son los valores **por defecto** del mod — puedes cambiarlos o borrarlos.
 
 - `id`: identificador del botón. **No depende del idioma del juego** — el mod oculta siempre los botones vainilla (por su tipo de widget, no por su texto) y crea los suyos propios usando las mismas claves de traducción que usa Minecraft (`menu.singleplayer`, `menu.multiplayer`, `menu.online` para Realms, `menu.options`, `menu.quit`, `gui.friends.open`, `options.language`, el texto de accesibilidad, `fml.menu.mods`), así que el texto del botón sale siempre correctamente traducido en el idioma del juego, y reposicionar/ocultar/personalizar funciona igual sin importar el idioma. Los 9 IDs reconocidos son exactamente los de la lista de arriba.
 - `x`, `y`: porcentaje (0-100) del ancho/alto de la ventana. **`-1` es el valor especial "automático"**: el mod calcula la posición dinámicamente según el tamaño actual de la ventana (igual que el layout vanilla, centrado y apilado). Si defines un valor `>= 0`, esa coordenada queda fija en ese **porcentaje** de la ventana — al redimensionar, se recalcula el píxel correspondiente, así que el botón mantiene su posición relativa en vez de quedarse clavado en un punto fijo.
 - `width`: ancho del botón **en píxeles** (no porcentaje). `-1` (por defecto) usa el ancho automático de ese botón (200px para singleplayer/multiplayer/realms, 98px para options/quit, o el ancho justo del texto traducido +16px para friends/language/accessibility/mods). Hay un mínimo de 20px aplicado siempre — un botón más estrecho que su texto activa el scroll de texto de Minecraft, que puede provocar un crash si además el botón sale animado fuera de pantalla (`buttonAnimation`).
 - `hide`: `true` oculta el botón por completo (simplemente no se crea).
 - `image`: imagen propia para este botón (cualquiera de los 3 formatos). Si se define, sustituye el fondo del botón por la imagen (estirada a su tamaño), manteniendo el texto encima. Si se deja vacío, se usa `buttons.globalImage` como respaldo; si tampoco hay `globalImage`, se muestra el botón con el aspecto normal de Minecraft.
+- `hideText`: `true` oculta la etiqueta del botón, dejando solo la imagen (propia o `globalImage`) sin texto encima. Si el botón no tiene ninguna imagen asignada, `hideText` no tiene efecto (se sigue viendo el botón vainilla con su texto).
 
 `friends`, `language`, `accessibility` y `mods` se agrupan automáticamente en una única fila horizontal centrada (en vez del icono cuadrado pequeño de Minecraft, se muestran como botones de texto normales con su etiqueta traducida, para que el ancho se ajuste solo al texto de cada idioma).
 
@@ -120,17 +121,22 @@ Si borras una entrada de la lista o dejas `"defaults": []`, ese/esos botones sim
 Botones adicionales, no vanilla.
 
 ```jsonc
-{ "text": "Discord", "action": "open_url", "command": "https://discord.gg/...", "x": 40, "y": 85, "width": 200, "height": 20, "image": "" }
+{ "text": "Discord", "action": "open_url", "command": "https://discord.gg/...", "x": 40, "y": 85, "width": 200, "height": 20, "image": "", "hideText": false }
 ```
 
 - `x`, `y`: **posición obligatoria** para que el botón se muestre, en porcentaje (0-100) del ancho/alto de la ventana. Si dejas `x` o `y` en su valor por defecto (`-999`), el botón **no se crea** (equivale a estar oculto). Solo se muestra cuando defines explícitamente ambas coordenadas.
 - `width`, `height`: tamaño en píxeles (no porcentaje).
 - `action`: `"command"` (ejecuta `command` como comando de chat/consola), `"open_singleplayer"`, `"open_multiplayer"`, `"open_options"`, `"quit"`, `"open_url"` (abre `command` como URL en el navegador del sistema).
 - `image`: igual que en `buttons.defaults` — imagen propia, con `buttons.globalImage` como respaldo genérico.
+- `hideText`: igual que en `buttons.defaults` — oculta la etiqueta cuando el botón tiene una imagen.
 
 ### `buttons.globalImage`
 
-Imagen aplicada a **todos** los botones (por defecto y personalizados) que no tengan su propio campo `image` definido. Déjalo vacío (`""`) para no aplicar ninguna imagen genérica y usar el aspecto vanilla/normal en los botones sin imagen propia.
+Imagen aplicada a **todos** los botones (por defecto y personalizados) que no tengan su propio campo `image` definido. Por defecto apunta a `skd_menu:textures/gui/button_default.png`. Déjalo vacío (`""`) para no aplicar ninguna imagen genérica y usar el aspecto vanilla/normal en los botones sin imagen propia.
+
+### Feedback visual en botones con imagen
+
+Un botón con `image` asignada sigue reaccionando al ratón/teclado igual que uno vainilla: al pasar el cursor por encima o enfocarlo con el teclado se aclara con un overlay blanco translúcido, y si está desactivado se oscurece — así no pierdes la señal visual de "esto es clicable" solo por poner una imagen personalizada.
 
 ## `images`
 

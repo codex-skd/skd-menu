@@ -81,12 +81,18 @@ public class TextureResolver {
             try (InputStream is = response.body()) {
                 if (response.statusCode() / 100 != 2) {
                     LOGGER.warn("Failed to download texture {}: HTTP {}", ref, response.statusCode());
+                    DOWNLOADING.remove(ref);
                     return;
                 }
-                registerImage(ref, NativeImage.read(is));
+                // NativeImage decode is safe off-thread, but registering a GPU texture is not:
+                // GL calls must run on the render thread, or they silently fail (wrong GL context).
+                NativeImage image = NativeImage.read(is);
+                Minecraft.getInstance().execute(() -> {
+                    registerImage(ref, image);
+                    DOWNLOADING.remove(ref);
+                });
             } catch (Exception e) {
                 LOGGER.warn("Failed to decode texture from {}", ref, e);
-            } finally {
                 DOWNLOADING.remove(ref);
             }
         }).exceptionally(e -> {
