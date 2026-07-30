@@ -20,8 +20,8 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785370871.1011858,
-    "ast_hash": "5cb6ae9da30b27577c36d9a779d82af7",
+    "mtime": 1785372692.703876,
+    "ast_hash": "3da369d4beb63276d8edd2090e0fda7e",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785371755.3593295,
-    "ast_hash": "8aabd77cc488f860f95398bf87d5fded",
+    "mtime": 1785372854.4460871,
+    "ast_hash": "471a9a89ec05976152aac3bd7bfa3d66",
     "semantic_hash": ""
   },
   "README.md": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1785283092.8470917,
-    "ast_hash": "1aaba980247fd1f69380462f38fa8c29",
+    "mtime": 1785372844.6034899,
+    "ast_hash": "325af204b07550179e5f0458afe78ea8",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -222,6 +222,11 @@
   "src/main/resources/assets/skd_menu/textures/gui/button_default.png": {
     "mtime": 1785370846.8308568,
     "ast_hash": "9ae394f6eca64f789ae31483a10c1edd",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.0.md": {
+    "mtime": 1785372864.287266,
+    "ast_hash": "1a51212356b63e5b9013610ed2b0d3c1",
     "semantic_hash": ""
   }
 }
