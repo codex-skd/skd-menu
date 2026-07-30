@@ -20,8 +20,8 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785329565.9332566,
-    "ast_hash": "f90daff66adebee0499778d493c2396d",
+    "mtime": 1785370871.1011858,
+    "ast_hash": "5cb6ae9da30b27577c36d9a779d82af7",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
@@ -40,8 +40,8 @@
     "semantic_hash": "bc287e90e502be3a3ac941660215497c"
   },
   "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java": {
-    "mtime": 1785352430.3150003,
-    "ast_hash": "5ea1ca07a1d2e4a25487e80985b16568",
+    "mtime": 1785371595.3438077,
+    "ast_hash": "7f5dc894147b8f4c6ebd1675cf819a66",
     "semantic_hash": ""
   },
   "src/main/resources/assets/skd_menu/lang/en_us.json": {
@@ -55,8 +55,8 @@
     "semantic_hash": "1fa69cb718ae50c265e17ed969a950f2"
   },
   "src/main/java/com/skd/menu/TextureResolver.java": {
-    "mtime": 1785278140.8182015,
-    "ast_hash": "561e49ce71b2353fe6fc5b977f550706",
+    "mtime": 1785371531.1440184,
+    "ast_hash": "e6c295b468984a8d1d5801473afc0027",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785352562.0443485,
-    "ast_hash": "a4a687bdf011937034f688e8da5170f8",
+    "mtime": 1785371755.3593295,
+    "ast_hash": "8aabd77cc488f860f95398bf87d5fded",
     "semantic_hash": ""
   },
   "README.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "docs/CONFIG.md": {
-    "mtime": 1785352579.705041,
-    "ast_hash": "fb2322460788d610155046b6c7a90b1f",
+    "mtime": 1785371679.7531118,
+    "ast_hash": "c1f625535f1f0e04954162f919de42a2",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SKD_MENU_26-2.md": {
@@ -212,6 +212,16 @@
   "docs/curseforge/versions/0.0.0-beta.14.md": {
     "mtime": 1785352566.3790138,
     "ast_hash": "ee5a4dc9e80b8c68b44213cbb0c11258",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.15.md": {
+    "mtime": 1785371766.731147,
+    "ast_hash": "9b32439e8809bb8590532504d9c1a474",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/button_default.png": {
+    "mtime": 1785370846.8308568,
+    "ast_hash": "9ae394f6eca64f789ae31483a10c1edd",
     "semantic_hash": ""
   }
 }
