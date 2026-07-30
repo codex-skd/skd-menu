@@ -1,5 +1,9 @@
 # Changelog — SKD Menu
 
+## 1.0.0 (2026-07-30)
+
+First stable release. New default configuration: fixed layout with percentage-based positions for singleplayer/multiplayer/options/quit/friends/mods, realms/language/accessibility hidden, and a custom image on the Options button.
+
 ## 0.0.0-beta.15 (2026-07-30)
 
 ### Fix
