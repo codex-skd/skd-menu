@@ -150,20 +150,20 @@ public class MenuConfig {
     public static class ButtonsConfig {
         public List<DefaultButton> defaults = defaultButtonList();
         public List<CustomButton> custom = new ArrayList<>();
-        public String globalImage = "skd_menu:textures/gui/button_default.png";
+        public String globalImage = "";
     }
 
-    /** {id, x, y, width, hide(1/0)} — default layout. -1 = automatic, matches DefaultButton sentinels. */
+    /** {id, x, y, width, hide, image} — default layout. -1 = automatic, matches DefaultButton sentinels. */
     private static final Object[][] DEFAULT_BUTTON_LAYOUT = {
-        {"singleplayer",  5f,   82f,   75,  false},
-        {"multiplayer",   10f,  90f,   75,  false},
-        {"realms",        -1f,  -1f,   -1,  true},
-        {"options",       90f,  81f,   75,  false},
-        {"quit",          80f,  5f,    92,  false},
-        {"friends",       90f,  66f,   75,  false},
-        {"language",      -1f,  -1f,   -1,  true},
-        {"accessibility", -1f,  -1f,   -1,  true},
-        {"mods",          90f,  73.5f, 75,  false},
+        {"singleplayer",  5f,   82f,   75,  false, ""},
+        {"multiplayer",   10f,  90f,   75,  false, ""},
+        {"realms",        -1f,  -1f,   -1,  true,  ""},
+        {"options",       85f,  75f,   75,  false, "https://node-files.skdragons.com//Minecraft/boton_minecraft.png"},
+        {"quit",          75f,  90f,   92,  false, ""},
+        {"friends",       85f,  60f,   75,  false, ""},
+        {"language",      -1f,  -1f,   -1,  true,  ""},
+        {"accessibility", -1f,  -1f,   -1,  true,  ""},
+        {"mods",          85f,  67.5f, 75,  false, ""},
     };
 
     private static List<DefaultButton> defaultButtonList() {
@@ -175,6 +175,7 @@ public class MenuConfig {
             db.y = (Float) row[2];
             db.width = (Integer) row[3];
             db.hide = (Boolean) row[4];
+            db.image = (String) row[5];
             list.add(db);
         }
         return list;
