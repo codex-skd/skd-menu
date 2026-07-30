@@ -1,5 +1,15 @@
 # Changelog — SKD Menu
 
+## 0.0.0-beta.15 (2026-07-30)
+
+### Fix
+- Fixed HTTP(S) image URLs never actually applying to buttons/backgrounds/logos: the async download callback was registering the GPU texture off the render thread, which silently fails (wrong GL context). Texture registration now runs on the render thread.
+
+### Features
+- `hideText` on `buttons.defaults`/`buttons.custom`: hides the button's label, showing only its image
+- Buttons with a custom image now react to hover/focus (translucent highlight) and disabled state (darken), matching vanilla button feedback — previously a custom image looked static regardless of mouse state
+- New default button layout and images: fixed positions/sizes for singleplayer, multiplayer, options, quit, friends, mods (percentage-based, matching a reference in-game layout); realms/language/accessibility hidden by default; `buttons.globalImage` now defaults to a bundled button texture (`button_default.png`)
+
 ## 0.0.0-beta.14 (2026-07-29)
 
 ### Fix

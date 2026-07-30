@@ -150,14 +150,31 @@ public class MenuConfig {
     public static class ButtonsConfig {
         public List<DefaultButton> defaults = defaultButtonList();
         public List<CustomButton> custom = new ArrayList<>();
-        public String globalImage = "";
+        public String globalImage = "skd_menu:textures/gui/button_default.png";
     }
+
+    /** {id, x, y, width, hide(1/0)} — default layout. -1 = automatic, matches DefaultButton sentinels. */
+    private static final Object[][] DEFAULT_BUTTON_LAYOUT = {
+        {"singleplayer",  5f,   82f,   75,  false},
+        {"multiplayer",   10f,  90f,   75,  false},
+        {"realms",        -1f,  -1f,   -1,  true},
+        {"options",       90f,  81f,   75,  false},
+        {"quit",          80f,  5f,    92,  false},
+        {"friends",       90f,  66f,   75,  false},
+        {"language",      -1f,  -1f,   -1,  true},
+        {"accessibility", -1f,  -1f,   -1,  true},
+        {"mods",          90f,  73.5f, 75,  false},
+    };
 
     private static List<DefaultButton> defaultButtonList() {
         List<DefaultButton> list = new ArrayList<>();
-        for (String id : new String[]{"singleplayer", "multiplayer", "realms", "options", "quit", "friends", "language", "accessibility", "mods"}) {
+        for (Object[] row : DEFAULT_BUTTON_LAYOUT) {
             DefaultButton db = new DefaultButton();
-            db.id = id;
+            db.id = (String) row[0];
+            db.x = (Float) row[1];
+            db.y = (Float) row[2];
+            db.width = (Integer) row[3];
+            db.hide = (Boolean) row[4];
             list.add(db);
         }
         return list;
@@ -172,6 +189,8 @@ public class MenuConfig {
         public int width = -1;
         public boolean hide = false;
         public String image = "";
+        /** Hides the button's label text, showing only the image (own or {@code buttons.globalImage}). */
+        public boolean hideText = false;
     }
 
     public static class Position {
@@ -191,6 +210,7 @@ public class MenuConfig {
         public int width = 200;
         public int height = 20;
         public String image = "";
+        public boolean hideText = false;
     }
 
     public static class ImageOverlay {

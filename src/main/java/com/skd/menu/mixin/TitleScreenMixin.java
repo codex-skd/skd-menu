@@ -191,8 +191,9 @@ public class TitleScreenMixin {
 
         Component text = Component.translatable(vanillaKey(id));
         String image = resolveButtonImage(cfg != null ? cfg.image : null, config);
+        boolean hideText = cfg != null && cfg.hideText;
         Button.Builder builder = Button.builder(text, btn -> runDefaultAction(mc, screen, id)).bounds(x, y, width, 20);
-        Button button = (image != null) ? builder.build(b -> new ImageButton(b, image)) : builder.build();
+        Button button = (image != null) ? builder.build(b -> new ImageButton(b, image, hideText)) : builder.build();
         ((ScreenInvoker)(Object)screen).invokeAddRenderableWidget(button);
     }
 
@@ -248,7 +249,7 @@ public class TitleScreenMixin {
             String image = resolveButtonImage(cb.image, config);
             Button.Builder builder = Button.builder(Component.literal(cb.text), btn -> handleCustomAction(cb))
                 .bounds(bx, by, w, cb.height);
-            Button button = (image != null) ? builder.build(b -> new ImageButton(b, image)) : builder.build();
+            Button button = (image != null) ? builder.build(b -> new ImageButton(b, image, cb.hideText)) : builder.build();
             ((ScreenInvoker)(Object)this).invokeAddRenderableWidget(button);
         }
     }
@@ -256,10 +257,12 @@ public class TitleScreenMixin {
     /** A vanilla {@link Button} that renders a custom image instead of the vanilla sprite behind its label. */
     private static class ImageButton extends Button {
         private final String imageRef;
+        private final boolean hideText;
 
-        protected ImageButton(Builder builder, String imageRef) {
+        protected ImageButton(Builder builder, String imageRef, boolean hideText) {
             super(builder);
             this.imageRef = imageRef;
+            this.hideText = hideText;
         }
 
         @Override
@@ -270,7 +273,16 @@ public class TitleScreenMixin {
             } else {
                 extractDefaultSprite(graphics);
             }
-            extractDefaultLabel(graphics.textRendererForWidget(this, GuiGraphicsExtractor.HoveredTextEffects.NONE));
+            // The image itself doesn't react to mouse state like the vanilla sprite does, so overlay a
+            // faint highlight on hover/focus and darken when inactive, matching vanilla button feedback.
+            if (!isActive()) {
+                graphics.fill(getX(), getY(), getX() + getWidth(), getY() + getHeight(), 0x80000000);
+            } else if (isHoveredOrFocused()) {
+                graphics.fill(getX(), getY(), getX() + getWidth(), getY() + getHeight(), 0x40FFFFFF);
+            }
+            if (!hideText) {
+                extractDefaultLabel(graphics.textRendererForWidget(this, GuiGraphicsExtractor.HoveredTextEffects.NONE));
+            }
         }
     }
 
