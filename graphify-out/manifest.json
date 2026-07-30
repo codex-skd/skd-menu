@@ -20,8 +20,8 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785372692.703876,
-    "ast_hash": "3da369d4beb63276d8edd2090e0fda7e",
+    "mtime": 1785407393.8125916,
+    "ast_hash": "34afdda99465d3bccc6d8d2fd54f5f40",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785372854.4460871,
-    "ast_hash": "471a9a89ec05976152aac3bd7bfa3d66",
+    "mtime": 1785407493.4090407,
+    "ast_hash": "8ccd5d2047d346e3a96a58c53cc439ff",
     "semantic_hash": ""
   },
   "README.md": {
@@ -227,6 +227,11 @@
   "docs/curseforge/versions/1.0.0.md": {
     "mtime": 1785372864.287266,
     "ast_hash": "1a51212356b63e5b9013610ed2b0d3c1",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.1.md": {
+    "mtime": 1785407498.1590998,
+    "ast_hash": "ecaf4c22fc60fe728df26e0ca35cc929",
     "semantic_hash": ""
   }
 }

@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-07-30)
 
 ## Corpus Check
-- 35 files · ~609,970 words
+- 36 files · ~610,028 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 250 nodes · 418 edges · 33 communities
+- 253 nodes · 420 edges · 35 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e57193a0`
+- Built from commit: `aeba0f25`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,11 +29,12 @@
 - CurseForge — Variables del proyecto
 - Formato de descripciones CurseForge
 - CLAUDE.md — skd_menu (26.2)
+- Formato de descripciones CurseForge
 
 ## God Nodes (most connected - your core abstractions)
 1. `TitleScreenMixin` - 33 edges
 2. `MenuConfig` - 28 edges
-3. `Changelog — SKD Menu` - 17 edges
+3. `Changelog — SKD Menu` - 18 edges
 4. `TextureResolver` - 13 edges
 5. `Flujo de trabajo — SKD Menu (NeoForge)` - 13 edges
 6. `Publicación a GitHub (CI/CD)` - 11 edges
@@ -49,19 +50,19 @@
 ## Import Cycles
 - None detected.
 
-## Communities (33 total, 0 thin omitted)
+## Communities (35 total, 0 thin omitted)
 
 ### Community 0 - "MenuConfig"
-Cohesion: 0.20
-Nodes (17): Gson, AnimationConfig, BackgroundConfig, ButtonAnimation, ButtonsConfig, ColorConfig, CustomButton, DefaultButton (+9 more)
+Cohesion: 0.25
+Nodes (16): Gson, AnimationConfig, BackgroundConfig, ButtonAnimation, ButtonsConfig, ColorConfig, CustomButton, EffectConfig (+8 more)
 
 ### Community 1 - "TitleScreenMixin"
-Cohesion: 0.15
-Nodes (14): AbstractWidget, Button, CallbackInfo, GuiGraphicsExtractor, Inject, Minecraft, Position, ImageButton (+6 more)
+Cohesion: 0.19
+Nodes (8): AbstractWidget, GuiGraphicsExtractor, Minecraft, DefaultButton, Position, TitleScreenMixin, TitleScreen, Unique
 
 ### Community 2 - "Unique"
 Cohesion: 0.06
-Nodes (32): Archivos de CurseForge, Buenas prácticas, Buenas prácticas, Commits (Conventional Commits), Convenciones de nomenclatura, ¿Cuándo incrementar versión?, Ejemplo de estructura HTML para release notes, Ejemplos (+24 more)
+Nodes (34): 1. Desarrollo, 2. Copiar a instancia de pruebas, 3. Probar en instancia, 4. Preparar versión para CurseForge, 5. Release estable, 6. Actualizar Knowledge Graph (Graphify), Archivos que pasan a GitHub, Buenas prácticas (+26 more)
 
 ### Community 3 - "SKDMenuClient.java"
 Cohesion: 0.36
@@ -85,46 +86,50 @@ Nodes (3): gradlew script, die(), warn()
 
 ### Community 10 - "Changelog — SKD Menu"
 Cohesion: 0.05
-Nodes (36): 0.0.0-beta.10 (2026-07-27), 0.0.0-beta.11 (2026-07-29), 0.0.0-beta.12 (2026-07-29), 0.0.0-beta.13 (2026-07-29), 0.0.0-beta.14 (2026-07-29), 0.0.0-beta.15 (2026-07-30), 0.0.0-beta.1 (2026-07-27), 0.0.0-beta.2 (2026-07-27) (+28 more)
+Nodes (38): 0.0.0-beta.10 (2026-07-27), 0.0.0-beta.11 (2026-07-29), 0.0.0-beta.12 (2026-07-29), 0.0.0-beta.13 (2026-07-29), 0.0.0-beta.14 (2026-07-29), 0.0.0-beta.15 (2026-07-30), 0.0.0-beta.1 (2026-07-27), 0.0.0-beta.2 (2026-07-27) (+30 more)
 
 ### Community 11 - "Configuración de `skd_menu`"
 Cohesion: 0.10
 Nodes (19): `background`, `buttonAnimation`, `buttons`, `buttons.custom`, `buttons.defaults`, `buttons.globalImage`, Configuración de `skd_menu`, Cuándo se aplican los cambios (+11 more)
 
 ### Community 12 - "TextureResolver"
-Cohesion: 0.22
-Nodes (6): HttpClient, NativeImage, Override, Identifier, Logger, TextureResolver
+Cohesion: 0.30
+Nodes (5): HttpClient, NativeImage, Identifier, Logger, TextureResolver
 
 ### Community 13 - "CurseForge — Variables del proyecto"
 Cohesion: 0.22
 Nodes (8): Changelog, CurseForge — Variables del proyecto, Proyecto, Rama, Tag, Tokens, Variables para script (lectura automática), Verificación con GET
 
 ### Community 14 - "Formato de descripciones CurseForge"
-Cohesion: 0.18
-Nodes (11): 1. Desarrollo, 2. Copiar a instancia de pruebas, 3. Probar en instancia, 4. Preparar versión para CurseForge, 5. Release estable, 6. Actualizar Knowledge Graph (Graphify), Archivos que pasan a GitHub, .gitlab-ci.yml (+3 more)
+Cohesion: 0.17
+Nodes (8): Button, CallbackInfo, Inject, Override, ImageButton, Builder, Identifier, Mixin
 
 ### Community 15 - "CLAUDE.md — skd_menu (26.2)"
 Cohesion: 0.50
 Nodes (3): CLAUDE.md — skd_menu (26.2), Paso 0 obligatorio, Prioridad de instrucciones
 
+### Community 33 - "Formato de descripciones CurseForge"
+Cohesion: 0.22
+Nodes (9): Archivos de CurseForge, Buenas prácticas, Ejemplo de estructura HTML para release notes, Elementos HTML disponibles, Elementos HTML permitidos, Estructura de la descripción general, Estructura del proyecto, Formato de descripciones CurseForge (+1 more)
+
 ## Knowledge Gaps
-- **79 isolated node(s):** `Paso 0 obligatorio`, `Prioridad de instrucciones`, `1.0.0 (2026-07-30)`, `Fix`, `Features` (+74 more)
+- **80 isolated node(s):** `Paso 0 obligatorio`, `Prioridad de instrucciones`, `Changes`, `1.0.0 (2026-07-30)`, `Fix` (+75 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `MenuConfig` connect `MenuConfig` to `TitleScreenMixin`, `TextureResolver`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+- **Why does `MenuConfig` connect `MenuConfig` to `TitleScreenMixin`, `Formato de descripciones CurseForge`?**
+  _High betweenness centrality (0.045) - this node is a cross-community bridge._
 - **Why does `Flujo de trabajo — SKD Menu (NeoForge)` connect `Unique` to `Formato de descripciones CurseForge`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
-- **Why does `TitleScreenMixin` connect `TitleScreenMixin` to `TextureResolver`?**
   _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **What connects `Paso 0 obligatorio`, `Prioridad de instrucciones`, `1.0.0 (2026-07-30)` to the rest of the system?**
-  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `TitleScreenMixin` be split into smaller, more focused modules?**
-  _Cohesion score 0.14646464646464646 - nodes in this community are weakly interconnected._
+- **Why does `TitleScreenMixin` connect `TitleScreenMixin` to `Formato de descripciones CurseForge`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **What connects `Paso 0 obligatorio`, `Prioridad de instrucciones`, `Changes` to the rest of the system?**
+  _80 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Unique` be split into smaller, more focused modules?**
-  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
 - **Should `Changelog — SKD Menu` be split into smaller, more focused modules?**
-  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
+- **Should `Configuración de `skd_menu`` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
