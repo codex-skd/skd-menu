@@ -1,5 +1,16 @@
 # Changelog — SKD Menu
 
+## 1.1.0 (2026-08-03)
+
+### Features
+- Pantalla de carga personalizada: se sustituye el loading de Minecraft (Mojang) por una pantalla de marca configurada desde `config/skd_menu/loading.json` — fondo estático (misma imagen que el menú, configurable, con soporte de URL), banner arriba a la izquierda y logo del mod arriba a la derecha (ambos ocultables), y barra de progreso propia.
+- Barra de progreso propia: marco ornamentado (`bar_track`) con relleno degradado violeta→magenta dibujado *detrás* del marco (solo se ve a través de la ranura transparente), recortado según el progreso y con glow opcional.
+- Theme para la carga temprana de NeoForge (early display): fondo, banner y barra de progreso blanca con borde vía `config/fml/theme-*.json` + sprites.
+
+### Changes
+- Nueva config `config/skd_menu/loading.json` (fondo, banner, logo, barra con posición/tamaño/colores).
+- Imágenes sin uso retiradas (icono duplicado y frames de animación de fondo sin uso).
+
 ## 1.0.2 (2026-08-02)
 
 ### Refactor
