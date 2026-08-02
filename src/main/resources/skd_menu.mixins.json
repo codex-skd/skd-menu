@@ -3,6 +3,7 @@
   "package": "com.skd.menu.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "LoadingOverlayMixin",
     "TitleScreenMixin",
     "ScreenInvoker"
   ],

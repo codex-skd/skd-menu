@@ -19,6 +19,7 @@ public class SkdMenuClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         MenuConfig.load();
+        LoadingConfig.load();
         SkdMenu.LOGGER.info("SKD Menu client setup complete");
     }
 }
