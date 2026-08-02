@@ -20,8 +20,8 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/MenuConfig.java": {
-    "mtime": 1785407393.8125916,
-    "ast_hash": "34afdda99465d3bccc6d8d2fd54f5f40",
+    "mtime": 1785698312.0030398,
+    "ast_hash": "737b450ca4b30257ad14ac11b9007acd",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SKDMenu.java": {
@@ -50,18 +50,18 @@
     "semantic_hash": "a47d8c9ec012bc1e3ba4d92c2de8a787"
   },
   "src/main/resources/skd_menu.mixins.json": {
-    "mtime": 1785102298.165273,
-    "ast_hash": "1fa69cb718ae50c265e17ed969a950f2",
-    "semantic_hash": "1fa69cb718ae50c265e17ed969a950f2"
+    "mtime": 1785707522.611747,
+    "ast_hash": "af66168f38fd33446cf182ca768372ee",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/TextureResolver.java": {
-    "mtime": 1785371531.1440184,
-    "ast_hash": "e6c295b468984a8d1d5801473afc0027",
+    "mtime": 1785696974.721159,
+    "ast_hash": "3e248feb2c954384627290591b6d7ea5",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
-    "mtime": 1785251972.1840649,
-    "ast_hash": "58639eb7eeab703b5066abfe09fe7d9e",
+    "mtime": 1785489191.5660274,
+    "ast_hash": "c334d48d43c94e148107a45e1f60d92c",
     "semantic_hash": ""
   },
   ".gitlab-ci.yml": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785407493.4090407,
-    "ast_hash": "8ccd5d2047d346e3a96a58c53cc439ff",
+    "mtime": 1785714330.155994,
+    "ast_hash": "394105fdb39f1428fd318500fa62480e",
     "semantic_hash": ""
   },
   "README.md": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SKD_MENU_26-2.md": {
-    "mtime": 1785150531.8868277,
-    "ast_hash": "dee0421fd2fa5c83fcd03be49ff0c6fc",
+    "mtime": 1785696990.545958,
+    "ast_hash": "78b15459e276a31109ccec76cd5a7018",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -154,26 +154,6 @@
     "ast_hash": "3f6ee875c4da197f06ed51f2f95d575b",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/skd_menu/icon.png": {
-    "mtime": 1785104109.2308137,
-    "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/skd_menu/textures/gui/bg_default_1.png": {
-    "mtime": 1785241783.4587643,
-    "ast_hash": "eeb35b7267555229bfd6c4db4d4c2ddc",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/skd_menu/textures/gui/bg_default_2.png": {
-    "mtime": 1785241783.4958954,
-    "ast_hash": "210db73fb8ecab7fa21e0248026cba9b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/skd_menu/textures/gui/bg_default_3.png": {
-    "mtime": 1785241783.5428412,
-    "ast_hash": "b81ad5eca543599a2b44c234507314b2",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/skd_menu/textures/gui/bg_main_default.png": {
     "mtime": 1785277418.4939117,
     "ast_hash": "eeb35b7267555229bfd6c4db4d4c2ddc",
@@ -232,6 +212,41 @@
   "docs/curseforge/versions/1.0.1.md": {
     "mtime": 1785407498.1590998,
     "ast_hash": "ecaf4c22fc60fe728df26e0ca35cc929",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/menu/LoadingConfig.java": {
+    "mtime": 1785708484.385322,
+    "ast_hash": "48f88836461fdd90d74300a6245d00a4",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/menu/SkdMenu.java": {
+    "mtime": 1785696974.7065012,
+    "ast_hash": "533b97fe039fc2d296364c280920c447",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/menu/SkdMenuClient.java": {
+    "mtime": 1785707526.544005,
+    "ast_hash": "e9f6523938b69cbdbc7c8542047c396e",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java": {
+    "mtime": 1785707640.3589582,
+    "ast_hash": "5cde5df82aca66892d98e7261b4f7c07",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.2.md": {
+    "mtime": 1785697017.2836573,
+    "ast_hash": "228850834153df8940e8642f37758e0c",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.1.0.md": {
+    "mtime": 1785714323.4433417,
+    "ast_hash": "2a3461de0964fc2c9e25e1bdfdb806a8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/skd_menu/textures/gui/bar_track.png": {
+    "mtime": 1785707194.2746992,
+    "ast_hash": "27379452abc98c749eec6036d4366c9b",
     "semantic_hash": ""
   }
 }

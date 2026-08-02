@@ -33,5 +33,19 @@
   "31": "0.0.0-beta.14.md",
   "32": "0.0.0-beta.15.md",
   "33": "Formato de descripciones CurseForge",
-  "34": "1.0.1.md"
+  "34": "1.0.1.md",
+  "35": "1.0.1.md",
+  "36": "settings.gradle",
+  "37": "Builder",
+  "38": "Mixin",
+  "39": "Builder",
+  "40": "CallbackInfo",
+  "41": "GuiGraphicsExtractor",
+  "42": "Identifier",
+  "43": "ImageConfig",
+  "44": "Inject",
+  "45": "LogoConfig",
+  "46": "Minecraft",
+  "47": "Mixin",
+  "48": "Unique"
 }
