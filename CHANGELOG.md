@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 1.0.2 (2026-08-02)
+
+### Refactor
+- Clases `SKDMenu` → `SkdMenu` y `SKDMenuClient` → `SkdMenuClient` para cumplir la convención de nomenclatura del proyecto. Sin cambios de config ni de gameplay.
+
 ## 1.0.1 (2026-07-30)
 
 ### Changes
