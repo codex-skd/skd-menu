@@ -10,20 +10,17 @@
 | Dato | Valor |
 |---|---|
 | Mod ID (`gradle.properties`) | `skd_menu` |
-| Clase principal | `SKDMenu` |
+| Clase principal | `SkdMenu` |
 | Display name (Title Case) | `SKD Menu` |
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.35-beta/production` |
 
-### Notas específicas de este mod
-
-- **Clase principal real**: `SKDMenu` (naming atípico; no aplicar la regla PascalCase genérica aquí).
 ## Convenciones de nomenclatura
 
 | Convención | Uso | Ejemplo |
 |---|---|---|
 | **snake_case** | `mod_id`, assets/, packages Java | `skd_menu` |
-| **PascalCase** | Clases Java principales | `SKDMenu` |
+| **PascalCase** | Clases Java principales | `SkdMenu` |
 | **camelCase** | Variables, métodos, config keys | `skd_menuConfig` |
 | **Title Case** | Display name (README, CHANGELOG, docs, CurseForge) | `SKD Menu` |
 

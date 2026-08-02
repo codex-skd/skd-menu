@@ -10,7 +10,7 @@ import java.nio.file.Path;
 import java.util.*;
 
 public class MenuConfig {
-    private static final Logger LOGGER = SKDMenu.LOGGER;
+    private static final Logger LOGGER = SkdMenu.LOGGER;
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static MenuConfig instance;
     private static Path configPath;
