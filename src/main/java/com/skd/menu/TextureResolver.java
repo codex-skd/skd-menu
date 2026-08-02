@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * into a registered {@link Identifier} usable with {@code GuiGraphicsExtractor.blit}.
  */
 public class TextureResolver {
-    private static final Logger LOGGER = SKDMenu.LOGGER;
+    private static final Logger LOGGER = SkdMenu.LOGGER;
     private static final HttpClient HTTP_CLIENT = HttpClient.newBuilder()
         .connectTimeout(Duration.ofSeconds(10))
         .build();
@@ -121,7 +121,7 @@ public class TextureResolver {
     }
 
     private static Identifier registerImage(String ref, NativeImage image) {
-        Identifier id = Identifier.fromNamespaceAndPath(SKDMenu.MODID, "dynamic/" + COUNTER.incrementAndGet());
+        Identifier id = Identifier.fromNamespaceAndPath(SkdMenu.MODID, "dynamic/" + COUNTER.incrementAndGet());
         Minecraft.getInstance().getTextureManager().register(id, new DynamicTexture(() -> ref, image));
         DIMENSIONS.put(ref, new int[]{image.getWidth(), image.getHeight()});
         RESOLVED.put(ref, id);
