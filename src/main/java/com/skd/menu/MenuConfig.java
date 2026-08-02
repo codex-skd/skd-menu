@@ -102,11 +102,7 @@ public class MenuConfig {
     }
 
     public static class AnimationConfig {
-        public List<String> frames = new ArrayList<>(List.of(
-            "skd_menu:textures/gui/bg_default_1.png",
-            "skd_menu:textures/gui/bg_default_2.png",
-            "skd_menu:textures/gui/bg_default_3.png"
-        ));
+        public List<String> frames = new ArrayList<>();
         public int frameTimeMs = 8000;
         public boolean loop = true;
     }
