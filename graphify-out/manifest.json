@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785714330.155994,
-    "ast_hash": "394105fdb39f1428fd318500fa62480e",
+    "mtime": 1785718531.5533495,
+    "ast_hash": "13737a9e37c3411a0c05cfd82bb569a0",
     "semantic_hash": ""
   },
   "README.md": {
@@ -225,8 +225,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/SkdMenuClient.java": {
-    "mtime": 1785707526.544005,
-    "ast_hash": "e9f6523938b69cbdbc7c8542047c396e",
+    "mtime": 1785718376.0261376,
+    "ast_hash": "86dba81410c76c4b9e28f498826bbda1",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java": {
@@ -247,6 +247,41 @@
   "src/main/resources/assets/skd_menu/textures/gui/bar_track.png": {
     "mtime": 1785707194.2746992,
     "ast_hash": "27379452abc98c749eec6036d4366c9b",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/menu/EarlyDisplayInstaller.java": {
+    "mtime": 1785718370.560563,
+    "ast_hash": "950e94dcb2019d38c76a711c96ea4ff1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/earlydisplay/theme-skd.json": {
+    "mtime": 1785718359.5865488,
+    "ast_hash": "905ea436b5cf8047d75324bba220b1d7",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.0.md": {
+    "mtime": 1785718525.8208013,
+    "ast_hash": "ec0c80f896e9cc2aab302415c787d6f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/earlydisplay/bg_main_default.png": {
+    "mtime": 1785718359.630482,
+    "ast_hash": "eeb35b7267555229bfd6c4db4d4c2ddc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/earlydisplay/logo_top_left_default.png": {
+    "mtime": 1785718359.6495595,
+    "ast_hash": "65a5798160d460ce708c68b9ef03a367",
+    "semantic_hash": ""
+  },
+  "src/main/resources/earlydisplay/progress_bar_bg.png": {
+    "mtime": 1785718359.5957003,
+    "ast_hash": "c37e4fcf81a42ab633b56735f6b8ac84",
+    "semantic_hash": ""
+  },
+  "src/main/resources/earlydisplay/progress_bar_fg.png": {
+    "mtime": 1785718359.6058998,
+    "ast_hash": "a58578ec6aefc5ad297c152d551f3727",
     "semantic_hash": ""
   }
 }
