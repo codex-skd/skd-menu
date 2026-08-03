@@ -1,5 +1,10 @@
 # Changelog — SKD Menu
 
+## 1.2.0 (2026-08-03)
+
+### Features
+- Instalación automática del theme de la carga temprana (early display) de NeoForge: en el primer arranque el mod escribe `config/fml/theme-skd.json` + sprites (fondo, banner, barra blanca con borde) y configura `config/fml.toml` (early window activo, theme `skd`, ventana 16:9). El theme se aplica desde el 2º arranque (el early display carga antes que los mods).
+
 ## 1.1.0 (2026-08-03)
 
 ### Features
