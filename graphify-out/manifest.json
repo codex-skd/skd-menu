@@ -65,13 +65,13 @@
     "semantic_hash": ""
   },
   ".gitlab-ci.yml": {
-    "mtime": 1785103472.8053925,
+    "mtime": 1785801081.2906246,
     "ast_hash": "14c0a4ad0f5bec65ebfaf8c37e148365",
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785718531.5533495,
-    "ast_hash": "13737a9e37c3411a0c05cfd82bb569a0",
+    "mtime": 1785972327.6069999,
+    "ast_hash": "1c254a8637395c8b44f89e8e37d0e48f",
     "semantic_hash": ""
   },
   "README.md": {
@@ -282,6 +282,11 @@
   "src/main/resources/earlydisplay/progress_bar_fg.png": {
     "mtime": 1785718359.6058998,
     "ast_hash": "a58578ec6aefc5ad297c152d551f3727",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.1.md": {
+    "mtime": 1785972327.6080022,
+    "ast_hash": "fb7311409fd89c1e334ccc944bd96b95",
     "semantic_hash": ""
   }
 }
