@@ -13,8 +13,9 @@
 | Clase principal | `SkdMenu` |
 | Display name (Title Case) | `SKD Menu` |
 | Versiones de Minecraft | `26.2` |
-| Rama | `minecraft/26.2/neoforge-26.2.0.35-beta/production` |
-
+| Rama | `minecraft/26.2/neoforge-26.2.0.45-beta/production` |
+| Última versión publicada | `1.2.3` (CurseForge file ID TBD) |
+| Estado | ✅ Release estable 1.2.3 |
 ## Convenciones de nomenclatura
 
 | Convención | Uso | Ejemplo |
@@ -54,7 +55,7 @@ Cada subida a CurseForge crea tag: beta `<mc>-neoforge-beta.X` · release `<mc>-
 **1. Desarrollo**
 
 ```bash
-git checkout minecraft/26.2/neoforge-26.2.0.35-beta/production
+git checkout minecraft/26.2/neoforge-26.2.0.45-beta/production
 ./gradlew.bat build
 git add -A
 git commit -m "feat: <descripción>

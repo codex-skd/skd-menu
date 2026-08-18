@@ -28,7 +28,7 @@ game_versions = 16498,10150,9638
 ## Rama
 
 ```
-minecraft/26.2/neoforge-26.2.0.32-beta/production
+minecraft/26.2/neoforge-26.2.0.45-beta/production
 ```
 
 ## Tag
