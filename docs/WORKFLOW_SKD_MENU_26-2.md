@@ -13,9 +13,9 @@
 | Clase principal | `SkdMenu` |
 | Display name (Title Case) | `SKD Menu` |
 | Versiones de Minecraft | `26.2` |
-| Rama | `minecraft/26.2/neoforge-26.2.0.45-beta/production` |
-| Última versión publicada | `1.2.3` (CurseForge file ID 8677369) |
-| Estado | ✅ Release estable 1.2.3 |
+| Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
+| Última versión publicada | `1.2.3` (CurseForge file ID 8677369) — `1.2.4` compilada localmente, pendiente de subir |
+| Estado | ⚠️ Fix de compatibilidad con NeoForge 26.2.0.57 (`ModListScreen` movido a `client.gui.modlist`) commiteado, no publicado en CurseForge |
 ## Convenciones de nomenclatura
 
 | Convención | Uso | Ejemplo |
