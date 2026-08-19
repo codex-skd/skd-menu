@@ -1,16 +1,16 @@
-# Graph Report - 26.2  (2026-08-06)
+# Graph Report - 26.2  (2026-08-19)
 
 ## Corpus Check
-- 44 files · ~428,408 words
+- 47 files · ~428,776 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 384 nodes · 565 edges · 87 communities (50 shown, 37 thin omitted)
+- 393 nodes · 635 edges · 82 communities (53 shown, 29 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fc591006`
+- Built from commit: `daf46efe`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -30,6 +30,8 @@
 - TextureResolver
 - CurseForge — Variables del proyecto
 - CLAUDE.md — skd_menu (26.2)
+- 0.0.0-beta.1.md
+- 0.0.0-beta.10.md
 - Builder
 - Mixin
 - Builder
@@ -64,24 +66,14 @@
 - 0.0.0-beta.2 (2026-07-27)
 - 0.0.0-beta.4 (2026-07-27)
 - 0.0.0-beta.4 (2026-07-27)
-- 0.0.0-beta.5 (2026-07-27)
-- 0.0.0-beta.5 (2026-07-27)
-- 0.0.0-beta.6 (2026-07-27)
 - 0.0.0-beta.6 (2026-07-27)
 - 0.0.0-beta.7 (2026-07-27)
-- 0.0.0-beta.7 (2026-07-27)
-- 0.0.0-beta.8 (2026-07-27)
-- 0.0.0-beta.9 (2026-07-27)
-- 0.0.0-beta.9 (2026-07-27)
-- 1.0.1 (2026-07-30)
 - 1.0.2 (2026-08-02)
-- 1.0.2 (2026-08-02)
-- 1.2.0 (2026-08-03)
 - 1.2.0 (2026-08-03)
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog — SKD Menu` - 43 edges
-2. `TitleScreenMixin` - 31 edges
+1. `Changelog — SKD Menu` - 46 edges
+2. `TitleScreenMixin` - 33 edges
 3. `MenuConfig` - 28 edges
 4. `LoadingConfig` - 17 edges
 5. `LoadingOverlayMixin` - 17 edges
@@ -106,15 +98,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (87 total, 37 thin omitted)
+## Communities (82 total, 29 thin omitted)
 
 ### Community 0 - "MenuConfig"
-Cohesion: 0.17
+Cohesion: 0.19
 Nodes (17): AnimationConfig, BackgroundConfig, ButtonAnimation, ButtonsConfig, ColorConfig, CustomButton, DefaultButton, EffectConfig (+9 more)
 
 ### Community 1 - "TitleScreenMixin"
-Cohesion: 0.15
-Nodes (4): AbstractWidget, TitleScreenMixin, Position, TitleScreen
+Cohesion: 0.13
+Nodes (16): AbstractWidget, Button, Position, ImageButton, Builder, CallbackInfo, GuiGraphicsExtractor, Identifier (+8 more)
 
 ### Community 2 - "Unique"
 Cohesion: 0.17
@@ -145,16 +137,16 @@ Cohesion: 0.31
 Nodes (10): BackgroundConfig, BannerConfig, BarConfig, ColorConfig, FillConfig, ImageConfig, Gson, Logger (+2 more)
 
 ### Community 10 - "Changelog — SKD Menu"
-Cohesion: 0.13
-Nodes (14): 0.0.0-beta.13 (2026-07-29), 0.0.0-beta.1 (2026-07-27), 0.0.0-beta.8 (2026-07-27), 1.0.0 (2026-07-30), 1.0.0 (2026-07-30), 1.0.1 (2026-07-30), [1.2.1] - 2026-08-05, [angelog — SKD Menu (+6 more)
+Cohesion: 0.12
+Nodes (16): 0.0.0-beta.5 (2026-07-27), 0.0.0-beta.5 (2026-07-27), 0.0.0-beta.7 (2026-07-27), 0.0.0-beta.9 (2026-07-27), 1.0.0 (2026-07-30), 1.0.0 (2026-07-30), [1.2.1] - 2026-08-05, [1.2.3] - 2026-08-18 (+8 more)
 
 ### Community 11 - "Configuración de `skd_menu`"
 Cohesion: 0.22
 Nodes (8): Changelog, CurseForge — Variables del proyecto, Proyecto, Rama, Tag, Tokens, Variables para script (lectura automática), Verificación con GET
 
 ### Community 12 - "TextureResolver"
-Cohesion: 0.22
-Nodes (8): Button, ImageButton, HttpClient, NativeImage, Override, Identifier, Logger, TextureResolver
+Cohesion: 0.26
+Nodes (6): HttpClient, NativeImage, Override, Identifier, Logger, TextureResolver
 
 ### Community 13 - "CurseForge — Variables del proyecto"
 Cohesion: 0.83
@@ -163,6 +155,26 @@ Nodes (3): gradlew script, die(), warn()
 ### Community 15 - "CLAUDE.md — skd_menu (26.2)"
 Cohesion: 0.50
 Nodes (3): CLAUDE.md — skd_menu (26.2), Prioridad de instrucciones, Workflow del mod
+
+### Community 17 - "0.0.0-beta.1.md"
+Cohesion: 0.67
+Nodes (3): 0.0.0-beta.11 (2026-07-29), Changes, Features
+
+### Community 18 - "0.0.0-beta.10.md"
+Cohesion: 0.67
+Nodes (3): 0.0.0-beta.12 (2026-07-29), Changes, Fix
+
+### Community 39 - "Builder"
+Cohesion: 0.67
+Nodes (3): 0.0.0-beta.15 (2026-07-30), Features, Fix
+
+### Community 40 - "CallbackInfo"
+Cohesion: 0.67
+Nodes (3): 0.0.0-beta.3 (2026-07-27), Changes, Features
+
+### Community 41 - "GuiGraphicsExtractor"
+Cohesion: 0.67
+Nodes (3): 1.1.0 (2026-08-03), Changes, Features
 
 ### Community 49 - "background"
 Cohesion: 0.06
@@ -176,15 +188,7 @@ Nodes (24): default, texture, colorScheme, screenBackground, text, extends, reso
 Cohesion: 0.67
 Nodes (3): 0.0.0-beta.11 (2026-07-29), Changes, Features
 
-### Community 53 - "0.0.0-beta.11 (2026-07-29)"
-Cohesion: 0.67
-Nodes (3): 0.0.0-beta.11 (2026-07-29), Changes, Features
-
 ### Community 54 - "0.0.0-beta.12 (2026-07-29)"
-Cohesion: 0.67
-Nodes (3): 0.0.0-beta.12 (2026-07-29), Changes, Fix
-
-### Community 55 - "0.0.0-beta.12 (2026-07-29)"
 Cohesion: 0.67
 Nodes (3): 0.0.0-beta.12 (2026-07-29), Changes, Fix
 
@@ -192,15 +196,7 @@ Nodes (3): 0.0.0-beta.12 (2026-07-29), Changes, Fix
 Cohesion: 0.67
 Nodes (3): 0.0.0-beta.15 (2026-07-30), Features, Fix
 
-### Community 57 - "0.0.0-beta.15 (2026-07-30)"
-Cohesion: 0.67
-Nodes (3): 0.0.0-beta.15 (2026-07-30), Features, Fix
-
 ### Community 58 - "0.0.0-beta.3 (2026-07-27)"
-Cohesion: 0.67
-Nodes (3): 0.0.0-beta.3 (2026-07-27), Changes, Features
-
-### Community 59 - "0.0.0-beta.3 (2026-07-27)"
 Cohesion: 0.67
 Nodes (3): 0.0.0-beta.3 (2026-07-27), Changes, Features
 
@@ -208,29 +204,25 @@ Nodes (3): 0.0.0-beta.3 (2026-07-27), Changes, Features
 Cohesion: 0.67
 Nodes (3): 1.1.0 (2026-08-03), Changes, Features
 
-### Community 61 - "1.1.0 (2026-08-03)"
-Cohesion: 0.67
-Nodes (3): 1.1.0 (2026-08-03), Changes, Features
-
 ## Knowledge Gaps
-- **120 isolated node(s):** `version`, `extends`, `default`, `screenBackground`, `text` (+115 more)
+- **123 isolated node(s):** `version`, `extends`, `default`, `screenBackground`, `text` (+118 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **37 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Changelog — SKD Menu` connect `Changelog — SKD Menu` to `0.0.0-beta.11 (2026-07-29)`, `0.0.0-beta.11 (2026-07-29)`, `0.0.0-beta.12 (2026-07-29)`, `0.0.0-beta.12 (2026-07-29)`, `0.0.0-beta.15 (2026-07-30)`, `0.0.0-beta.15 (2026-07-30)`, `0.0.0-beta.3 (2026-07-27)`, `0.0.0-beta.3 (2026-07-27)`, `1.1.0 (2026-08-03)`, `1.1.0 (2026-08-03)`, `0.0.0-beta.10 (2026-07-27)`, `0.0.0-beta.10 (2026-07-27)`, `0.0.0-beta.13 (2026-07-29)`, `0.0.0-beta.14 (2026-07-29)`, `0.0.0-beta.14 (2026-07-29)`, `0.0.0-beta.1 (2026-07-27)`, `0.0.0-beta.2 (2026-07-27)`, `0.0.0-beta.2 (2026-07-27)`, `0.0.0-beta.4 (2026-07-27)`, `0.0.0-beta.4 (2026-07-27)`, `0.0.0-beta.5 (2026-07-27)`, `0.0.0-beta.5 (2026-07-27)`, `0.0.0-beta.6 (2026-07-27)`, `0.0.0-beta.6 (2026-07-27)`, `0.0.0-beta.7 (2026-07-27)`, `0.0.0-beta.7 (2026-07-27)`, `0.0.0-beta.8 (2026-07-27)`, `0.0.0-beta.9 (2026-07-27)`, `0.0.0-beta.9 (2026-07-27)`, `1.0.1 (2026-07-30)`, `1.0.2 (2026-08-02)`, `1.0.2 (2026-08-02)`, `1.2.0 (2026-08-03)`, `1.2.0 (2026-08-03)`?**
-  _High betweenness centrality (0.056) - this node is a cross-community bridge._
-- **Why does `MenuConfig` connect `MenuConfig` to `TitleScreenMixin`, `TextureResolver`, `settings.gradle`?**
+- **Why does `Changelog — SKD Menu` connect `Changelog — SKD Menu` to `0.0.0-beta.1.md`, `0.0.0-beta.10.md`, `Builder`, `CallbackInfo`, `GuiGraphicsExtractor`, `Identifier`, `ImageConfig`, `Inject`, `LogoConfig`, `Minecraft`, `Mixin`, `Unique`, `0.0.0-beta.11 (2026-07-29)`, `0.0.0-beta.11 (2026-07-29)`, `0.0.0-beta.12 (2026-07-29)`, `0.0.0-beta.12 (2026-07-29)`, `0.0.0-beta.15 (2026-07-30)`, `0.0.0-beta.15 (2026-07-30)`, `0.0.0-beta.3 (2026-07-27)`, `0.0.0-beta.3 (2026-07-27)`, `1.1.0 (2026-08-03)`, `1.1.0 (2026-08-03)`, `0.0.0-beta.10 (2026-07-27)`, `0.0.0-beta.10 (2026-07-27)`, `0.0.0-beta.13 (2026-07-29)`, `0.0.0-beta.14 (2026-07-29)`, `0.0.0-beta.14 (2026-07-29)`, `0.0.0-beta.1 (2026-07-27)`, `0.0.0-beta.2 (2026-07-27)`, `0.0.0-beta.2 (2026-07-27)`, `0.0.0-beta.4 (2026-07-27)`, `0.0.0-beta.4 (2026-07-27)`, `0.0.0-beta.6 (2026-07-27)`, `0.0.0-beta.7 (2026-07-27)`, `1.0.2 (2026-08-02)`, `1.2.0 (2026-08-03)`?**
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
+- **Why does `MenuConfig` connect `MenuConfig` to `settings.gradle`, `TitleScreenMixin`?**
   _High betweenness centrality (0.039) - this node is a cross-community bridge._
 - **Why does `LoadingConfig` connect `settings.gradle` to `gradlew`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **What connects `version`, `extends`, `default` to the rest of the system?**
-  _120 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _123 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `TitleScreenMixin` be split into smaller, more focused modules?**
+  _Cohesion score 0.13297872340425532 - nodes in this community are weakly interconnected._
 - **Should `build.gradle` be split into smaller, more focused modules?**
   _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
 - **Should `Changelog — SKD Menu` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
-- **Should `background` be split into smaller, more focused modules?**
-  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

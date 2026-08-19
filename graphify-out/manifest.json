@@ -1,8 +1,8 @@
 {
   "build.gradle": {
-    "mtime": 1785104291.2467341,
-    "ast_hash": "3dae162e35cdbced95ea1bff9641ebf3",
-    "semantic_hash": "3dae162e35cdbced95ea1bff9641ebf3"
+    "mtime": 1786569058.4802678,
+    "ast_hash": "1d7f9a4cb147b6a41fff0a53c13d8667",
+    "semantic_hash": ""
   },
   "gradlew": {
     "mtime": 1785101394.4690752,
@@ -40,8 +40,8 @@
     "semantic_hash": "bc287e90e502be3a3ac941660215497c"
   },
   "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java": {
-    "mtime": 1785371595.3438077,
-    "ast_hash": "7f5dc894147b8f4c6ebd1675cf819a66",
+    "mtime": 1787156592.4712036,
+    "ast_hash": "607985c737c68305a16d858b8f7ed199",
     "semantic_hash": ""
   },
   "src/main/resources/assets/skd_menu/lang/en_us.json": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785972327.6069999,
-    "ast_hash": "1c254a8637395c8b44f89e8e37d0e48f",
+    "mtime": 1787156755.9504886,
+    "ast_hash": "c320bb00a6488c4ddfadd27d9ece74dc",
     "semantic_hash": ""
   },
   "README.md": {
@@ -85,18 +85,18 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SKD_MENU_26-2.md": {
-    "mtime": 1785696990.545958,
-    "ast_hash": "78b15459e276a31109ccec76cd5a7018",
+    "mtime": 1787156803.898507,
+    "ast_hash": "8c4a38aed4fa55328cc6d06ef909f74e",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
-    "mtime": 1785280605.610267,
-    "ast_hash": "d4faa4070cf34c20b8aa967b433d2feb",
+    "mtime": 1786567703.4696987,
+    "ast_hash": "efdeb41a81973c3ac5b06a815ea636af",
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1785372844.6034899,
-    "ast_hash": "325af204b07550179e5f0458afe78ea8",
+    "mtime": 1787156799.7231781,
+    "ast_hash": "1b80b131d723aa2c882fbc9ddcaf6d21",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -287,6 +287,21 @@
   "docs/curseforge/versions/1.2.1.md": {
     "mtime": 1785972327.6080022,
     "ast_hash": "fb7311409fd89c1e334ccc944bd96b95",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.2.md": {
+    "mtime": 1786569058.4816527,
+    "ast_hash": "3cee61cb6e93f67562c1e6c125a49fc7",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.3.md": {
+    "mtime": 1787060172.5596938,
+    "ast_hash": "30159236c921f1d892e37eba7769b3cc",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.4.md": {
+    "mtime": 1787156750.570326,
+    "ast_hash": "3c75332a4afaa6ba5bdb722010f4aa77",
     "semantic_hash": ""
   }
 }
