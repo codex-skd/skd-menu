@@ -1,6 +1,14 @@
 # Changelog — SKD Menu
 
 
+## [1.2.4] - 2026-08-19
+
+### Fix
+
+- **Crash al arrancar con NeoForge `26.2.0.57`**: el botón "Mods" del menú principal usaba `net.neoforged.neoforge.client.gui.ModListScreen`, clase que NeoForge movió a `net.neoforged.neoforge.client.gui.modlist.ModListScreen` (y sustituyó el constructor público por el factory estático `create(Screen)`). Provocaba un `NoClassDefFoundError` en `Minecraft.<init>` que crasheaba el juego antes de mostrar el menú.
+- **Actualización de NeoForge**: actualizado de 26.2.0.45-beta a 26.2.0.57.
+
+
 ## [1.2.3] - 2026-08-18
 
 ### Change
