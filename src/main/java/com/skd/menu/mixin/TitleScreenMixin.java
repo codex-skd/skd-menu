@@ -23,7 +23,7 @@ import net.minecraft.client.gui.screens.worldselection.SelectWorldScreen;
 import net.minecraft.client.renderer.texture.DynamicTexture;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
-import net.neoforged.neoforge.client.gui.ModListScreen;
+import net.neoforged.neoforge.client.gui.modlist.ModListScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -226,7 +226,7 @@ public class TitleScreenMixin {
             case "friends" -> OnlineOptionsScreen.confirmFriendsListEnabled(mc, () -> mc.setScreenAndShow(new FriendsOverlayScreen(screen)), screen);
             case "language" -> mc.setScreenAndShow(new LanguageSelectScreen(screen, mc.options, mc.getLanguageManager()));
             case "accessibility" -> mc.setScreenAndShow(new AccessibilityOptionsScreen(screen, mc.options));
-            case "mods" -> mc.setScreenAndShow(new ModListScreen(screen));
+            case "mods" -> mc.setScreenAndShow(ModListScreen.create(screen));
         }
     }
 
