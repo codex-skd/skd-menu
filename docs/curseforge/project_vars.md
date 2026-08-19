@@ -39,13 +39,13 @@ Ejemplo: `26.2-neoforge-0.0.0-beta.1`
 ## Verificación con GET
 
 ```bash
-curl -s "https://api.curseforge.com/v1/mods/1626937/files/8516892" \
+curl -s "https://api.curseforge.com/v1/mods/1626937/files/8685643" \
   -H "x-api-key: $2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO"
 ```
 
 ## Changelog
 
 ```bash
-curl -s "https://api.curseforge.com/v1/mods/1626937/files/8516892/changelog" \
+curl -s "https://api.curseforge.com/v1/mods/1626937/files/8685643/changelog" \
   -H "x-api-key: $2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO"
 ```
