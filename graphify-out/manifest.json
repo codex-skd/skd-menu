@@ -20,9 +20,9 @@
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
   "src/main/java/com/skd/menu/EarlyDisplayInstaller.java": {
-    "mtime": 1785718370.0,
-    "ast_hash": "950e94dcb2019d38c76a711c96ea4ff1",
-    "semantic_hash": "950e94dcb2019d38c76a711c96ea4ff1"
+    "mtime": 1788376216.3367355,
+    "ast_hash": "0d220de3a6a4947b3484ddf758138e75",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/LoadingConfig.java": {
     "mtime": 1785708484.0,
@@ -45,14 +45,14 @@
     "semantic_hash": "86dba81410c76c4b9e28f498826bbda1"
   },
   "src/main/java/com/skd/menu/TextureResolver.java": {
-    "mtime": 1788309369.5274134,
-    "ast_hash": "73e45efd83c93ffbb3ab94e35244f80a",
-    "semantic_hash": "73e45efd83c93ffbb3ab94e35244f80a"
+    "mtime": 1788376006.7680514,
+    "ast_hash": "53ab9a920dd78939772d3d8d05b371d8",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java": {
-    "mtime": 1788309534.11095,
-    "ast_hash": "d7a76355ba13b51178652f99bc9fa2be",
-    "semantic_hash": "d7a76355ba13b51178652f99bc9fa2be"
+    "mtime": 1788376205.8447554,
+    "ast_hash": "847059a574322344dbc1c1f62b785dc6",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/mixin/ScreenInvoker.java": {
     "mtime": 1785102293.0,
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1788337822.6901605,
-    "ast_hash": "f08467bda3bd7494f77a4230a106134b",
+    "mtime": 1788380389.9706025,
+    "ast_hash": "e3dd79305f13a319e4bed479f8c791a3",
     "semantic_hash": ""
   },
   "README.md": {
@@ -120,13 +120,13 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
-    "mtime": 1788310140.6797595,
-    "ast_hash": "e6ed8b2de065e8abdf949323f682cd5f",
+    "mtime": 1788380405.147499,
+    "ast_hash": "22495b08a19ba5086ed0ad2bd389e61a",
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1788337909.9722114,
-    "ast_hash": "15d67c10b4fd117c7fc17d79c2fe0801",
+    "mtime": 1788380505.4018698,
+    "ast_hash": "46edf329e1e276755292de1286d1faaf",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -192,6 +192,11 @@
   "src/main/resources/skd_menu.png": {
     "mtime": 1785104109.0,
     "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.3.md": {
+    "mtime": 1788380437.8518095,
+    "ast_hash": "8ef7051e3de112a1f28d418907bdd16f",
     "semantic_hash": ""
   }
 }
