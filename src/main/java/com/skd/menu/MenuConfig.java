@@ -60,6 +60,8 @@ public class MenuConfig {
         if (instance.buttons == null) instance.buttons = new ButtonsConfig();
         if (instance.buttons.defaults == null) instance.buttons.defaults = new ArrayList<>();
         if (instance.buttons.custom == null) instance.buttons.custom = new ArrayList<>();
+        if (instance.buttons.thirdParty == null) instance.buttons.thirdParty = new ThirdPartyConfig();
+        if (instance.buttons.thirdParty.entries == null) instance.buttons.thirdParty.entries = new ArrayList<>();
         if (instance.images == null) instance.images = new ArrayList<>();
         if (instance.buttonAnimation == null) instance.buttonAnimation = new ButtonAnimation();
     }
@@ -147,6 +149,7 @@ public class MenuConfig {
         public List<DefaultButton> defaults = defaultButtonList();
         public List<CustomButton> custom = new ArrayList<>();
         public String globalImage = "skd_menu:textures/gui/button_default.png";
+        public ThirdPartyConfig thirdParty = new ThirdPartyConfig();
     }
 
     /** {id, x, y, width, hide, image} — default layout. -1 = automatic, matches DefaultButton sentinels. */
@@ -156,7 +159,6 @@ public class MenuConfig {
         {"realms",        -1f,  -1f,   -1,  true,  ""},
         {"options",       90f,  81f,   75,  false, ""},
         {"quit",          80f,  16f,   92,  false, ""},
-        {"friends",       90f,  66f,   75,  false, ""},
         {"language",      -1f,  -1f,   -1,  true,  ""},
         {"accessibility", -1f,  -1f,   -1,  true,  ""},
         {"mods",          90f,  73.5f, 75,  false, ""},
@@ -208,6 +210,41 @@ public class MenuConfig {
         public int height = 20;
         public String image = "";
         public boolean hideText = false;
+    }
+
+    /**
+     * Controls buttons that other mods add to the vanilla title screen (Create, Quark, Configured, …).
+     * These are added by third-party mods via {@code ScreenEvent.Init.Post}, after the vanilla-button
+     * mixin runs, so they are handled separately. {@code entries} is auto-populated the first time each
+     * button is seen (one entry per detected {@code id}) and written back to {@code menu.json}.
+     */
+    public static class ThirdPartyConfig {
+        /** Master switch. {@code false} = do not touch any third-party button (leave each mod's own layout). */
+        public boolean enabled = true;
+        /** Auto-place every third-party button whose entry has no explicit position (x or y still -1) into the left stack. */
+        public boolean autoStack = true;
+        /** Left column X, percentage (0-100) of screen width. */
+        public float stackX = 2f;
+        /** Stack anchor Y, percentage (0-100) of screen height. Top of the column, or its bottom edge when {@code stackFromBottom}. */
+        public float stackY = 30f;
+        /** Vertical gap between stacked buttons, in pixels. */
+        public int stackGap = 4;
+        /** {@code true} = grow the column upward from {@code stackY} instead of downward. */
+        public boolean stackFromBottom = false;
+        public List<ThirdPartyButton> entries = new ArrayList<>();
+    }
+
+    public static class ThirdPartyButton {
+        /** Auto-assigned slug identifying the button (usually the owning mod id, e.g. {@code "create"}, {@code "quark"}). */
+        public String id = "";
+        /** Percentage of screen width/height (0-100), not pixels. {@code -1} = automatic (goes into the left stack when autoStack). Set BOTH x and y >= 0 to pin it. */
+        public float x = -1;
+        public float y = -1;
+        /** Forced size in pixels. {@code -1} = keep the button's native size. */
+        public int width = -1;
+        public int height = -1;
+        /** {@code true} hides the button entirely ({@code visible = false}). */
+        public boolean hide = false;
     }
 
     public static class ImageOverlay {

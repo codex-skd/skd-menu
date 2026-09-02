@@ -91,7 +91,6 @@ Logo/título central superior, independiente de los dos logos fijos de esquina. 
     { "id": "realms",        "x": -1, "y": -1,   "width": -1, "hide": true,  "image": "", "hideText": false },
     { "id": "options",       "x": 90, "y": 81,   "width": 75, "hide": false, "image": "", "hideText": false },
     { "id": "quit",          "x": 80, "y": 5,    "width": 92, "hide": false, "image": "", "hideText": false },
-    { "id": "friends",       "x": 90, "y": 66,   "width": 75, "hide": false, "image": "", "hideText": false },
     { "id": "language",      "x": -1, "y": -1,   "width": -1, "hide": true,  "image": "", "hideText": false },
     { "id": "accessibility", "x": -1, "y": -1,   "width": -1, "hide": true,  "image": "", "hideText": false },
     { "id": "mods",          "x": 90, "y": 73.5, "width": 75, "hide": false, "image": "", "hideText": false }
@@ -103,16 +102,16 @@ Logo/título central superior, independiente de los dos logos fijos de esquina. 
 
 ### `buttons.defaults`
 
-Estos son los 9 botones que Minecraft/NeoForge colocan en el menú de título. El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos. El layout y la imagen (`globalImage`) de arriba son los valores **por defecto** del mod — puedes cambiarlos o borrarlos.
+Estos son los 8 botones que Minecraft/NeoForge colocan en el menú de título. El mod los genera automáticamente con esta lista completa la primera vez, para que sea evidente qué IDs existen sin tener que adivinarlos. El layout y la imagen (`globalImage`) de arriba son los valores **por defecto** del mod — puedes cambiarlos o borrarlos.
 
-- `id`: identificador del botón. **No depende del idioma del juego** — el mod oculta siempre los botones vainilla (por su tipo de widget, no por su texto) y crea los suyos propios usando las mismas claves de traducción que usa Minecraft (`menu.singleplayer`, `menu.multiplayer`, `menu.online` para Realms, `menu.options`, `menu.quit`, `gui.friends.open`, `options.language`, el texto de accesibilidad, `fml.menu.mods`), así que el texto del botón sale siempre correctamente traducido en el idioma del juego, y reposicionar/ocultar/personalizar funciona igual sin importar el idioma. Los 9 IDs reconocidos son exactamente los de la lista de arriba.
+- `id`: identificador del botón. **No depende del idioma del juego** — el mod oculta siempre los botones vainilla (por su tipo de widget, no por su texto) y crea los suyos propios usando las mismas claves de traducción que usa Minecraft (`menu.singleplayer`, `menu.multiplayer`, `menu.online` para Realms, `menu.options`, `menu.quit`, `options.language`, el texto de accesibilidad, `fml.menu.mods`), así que el texto del botón sale siempre correctamente traducido en el idioma del juego, y reposicionar/ocultar/personalizar funciona igual sin importar el idioma. Los 8 IDs reconocidos son exactamente los de la lista de arriba.
 - `x`, `y`: porcentaje (0-100) del ancho/alto de la ventana. **`-1` es el valor especial "automático"**: el mod calcula la posición dinámicamente según el tamaño actual de la ventana (igual que el layout vanilla, centrado y apilado). Si defines un valor `>= 0`, esa coordenada queda fija en ese **porcentaje** de la ventana — al redimensionar, se recalcula el píxel correspondiente, así que el botón mantiene su posición relativa en vez de quedarse clavado en un punto fijo.
-- `width`: ancho del botón **en píxeles** (no porcentaje). `-1` (por defecto) usa el ancho automático de ese botón (200px para singleplayer/multiplayer/realms, 98px para options/quit, o el ancho justo del texto traducido +16px para friends/language/accessibility/mods). Hay un mínimo de 20px aplicado siempre — un botón más estrecho que su texto activa el scroll de texto de Minecraft, que puede provocar un crash si además el botón sale animado fuera de pantalla (`buttonAnimation`).
+- `width`: ancho del botón **en píxeles** (no porcentaje). `-1` (por defecto) usa el ancho automático de ese botón (200px para singleplayer/multiplayer/realms, 98px para options/quit, o el ancho justo del texto traducido +16px para language/accessibility/mods). Hay un mínimo de 20px aplicado siempre — un botón más estrecho que su texto activa el scroll de texto de Minecraft, que puede provocar un crash si además el botón sale animado fuera de pantalla (`buttonAnimation`).
 - `hide`: `true` oculta el botón por completo (simplemente no se crea).
 - `image`: imagen propia para este botón (cualquiera de los 3 formatos). Si se define, sustituye el fondo del botón por la imagen (estirada a su tamaño), manteniendo el texto encima. Si se deja vacío, se usa `buttons.globalImage` como respaldo; si tampoco hay `globalImage`, se muestra el botón con el aspecto normal de Minecraft.
 - `hideText`: `true` oculta la etiqueta del botón, dejando solo la imagen (propia o `globalImage`) sin texto encima. Si el botón no tiene ninguna imagen asignada, `hideText` no tiene efecto (se sigue viendo el botón vainilla con su texto).
 
-`friends`, `language`, `accessibility` y `mods` se agrupan automáticamente en una única fila horizontal centrada (en vez del icono cuadrado pequeño de Minecraft, se muestran como botones de texto normales con su etiqueta traducida, para que el ancho se ajuste solo al texto de cada idioma).
+`language`, `accessibility` y `mods` se agrupan automáticamente en una única fila horizontal centrada (en vez del icono cuadrado pequeño de Minecraft, se muestran como botones de texto normales con su etiqueta traducida, para que el ancho se ajuste solo al texto de cada idioma).
 
 Si borras una entrada de la lista o dejas `"defaults": []`, ese/esos botones simplemente no tienen configuración aplicada y se comportan con el layout vanilla dinámico de siempre.
 
@@ -137,6 +136,40 @@ Imagen aplicada a **todos** los botones (por defecto y personalizados) que no te
 ### Feedback visual en botones con imagen
 
 Un botón con `image` asignada sigue reaccionando al ratón/teclado igual que uno vainilla: al pasar el cursor por encima o enfocarlo con el teclado se aclara con un overlay blanco translúcido, y si está desactivado se oscurece — así no pierdes la señal visual de "esto es clicable" solo por poner una imagen personalizada.
+
+### `buttons.thirdParty`
+
+Controla los botones que **otros mods** añaden a la pantalla de título (p. ej. Create, Quark, Configured, Catalogue). Esos mods insertan sus botones después de que Minecraft construya el menú, así que `skd_menu` los recoloca en un segundo paso (evento `ScreenEvent.Init.Post`, después de que todos los mods hayan añadido los suyos).
+
+```jsonc
+"buttons": {
+  ...
+  "thirdParty": {
+    "enabled": true,
+    "autoStack": true,
+    "stackX": 2,
+    "stackY": 30,
+    "stackGap": 4,
+    "stackFromBottom": false,
+    "entries": [
+      { "id": "create",     "x": -1, "y": -1, "width": -1, "height": -1, "hide": false },
+      { "id": "quark",      "x": -1, "y": -1, "width": -1, "height": -1, "hide": false }
+    ]
+  }
+}
+```
+
+- **Detección genérica**: cualquier botón de la pantalla de título cuya clase no sea de Minecraft ni de `skd_menu` se considera "de terceros". No hay lista blanca — si el mod está instalado y añade un botón, se controla.
+- `enabled`: `false` deja cada botón de terceros donde lo pone su propio mod (el mod no toca nada).
+- `autoStack`: `true` coloca en una **columna vertical a la izquierda** todos los botones de terceros cuya entrada no tenga posición fija. `false` los deja en su sitio salvo que les pongas `x`/`y` explícitos.
+- `stackX`, `stackY`: posición de la columna en **porcentaje (0-100)** del ancho/alto de la ventana. `stackY` es el borde superior de la columna (o el inferior si `stackFromBottom`).
+- `stackGap`: separación vertical entre botones apilados, en **píxeles**.
+- `stackFromBottom`: `true` hace crecer la columna hacia arriba desde `stackY` en vez de hacia abajo.
+- `entries`: se **auto-genera** — la primera vez que el juego ve un botón de terceros, añade su entrada aquí (con `id` = identificador del mod, normalmente su mod id) y reescribe `menu.json`. Luego puedes editar cada entrada:
+  - `id`: identificador del botón (no lo cambies a mano; se asigna solo). Si un mod añade varios botones, el segundo y siguientes llevan sufijo (`create`, `create-2`, …), en orden de aparición.
+  - `x`, `y`: porcentaje (0-100). `-1` = automático (entra en la pila izquierda si `autoStack`). Pon **ambos** `>= 0` para clavar el botón en esa posición (queda fuera de la pila).
+  - `width`, `height`: tamaño forzado en **píxeles**. `-1` = tamaño nativo del botón.
+  - `hide`: `true` oculta el botón por completo.
 
 ## `images`
 

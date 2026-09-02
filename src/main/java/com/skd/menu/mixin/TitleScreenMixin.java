@@ -44,7 +44,7 @@ public class TitleScreenMixin {
     @Unique private long animationStartTime = 0;
     @Unique private Map<AbstractWidget, MenuConfig.Position> animatedWidgets;
     @Unique private static final String[] MAIN_ROW_IDS = {"singleplayer", "multiplayer", "realms"};
-    @Unique private static final String[] ICON_ROW_IDS = {"friends", "language", "accessibility", "mods"};
+    @Unique private static final String[] ICON_ROW_IDS = {"language", "accessibility", "mods"};
     @Unique private static final String[] BOTTOM_ROW_IDS = {"options", "quit"};
     /**
      * Minimum allowed button width in pixels. A narrower button forces vanilla's label to switch to
@@ -85,7 +85,7 @@ public class TitleScreenMixin {
 
     /**
      * Hides every vanilla menu button (Singleplayer/Multiplayer/Realms/Options/Quit as {@link Button},
-     * Mods/Friends/Language/Accessibility as {@link SpriteIconButton}) unconditionally, by class rather
+     * Mods/Language/Accessibility as {@link SpriteIconButton}) unconditionally, by class rather
      * than by matching their (locale-dependent) rendered text. {@link #createDefaultButtons} then adds
      * our own equivalents built from Minecraft's translation keys, which works in any language.
      */
@@ -230,7 +230,6 @@ public class TitleScreenMixin {
             case "realms" -> "menu.online";
             case "options" -> "menu.options";
             case "quit" -> "menu.quit";
-            case "friends" -> "gui.friends.open";
             case "language" -> "options.language";
             case "accessibility" -> "accessibility.onboarding.accessibility.button";
             case "mods" -> "fml.menu.mods";
@@ -247,7 +246,6 @@ public class TitleScreenMixin {
             case "realms" -> mc.setScreen(new RealmsMainScreen(screen));
             case "options" -> mc.setScreen(new OptionsScreen(screen, mc.options));
             case "quit" -> mc.stop();
-            case "friends" -> { /* 1.21.1 has no friends feature */ }
             case "language" -> mc.setScreen(new LanguageSelectScreen(screen, mc.options, mc.getLanguageManager()));
             case "accessibility" -> mc.setScreen(new AccessibilityOptionsScreen(screen, mc.options));
             case "mods" -> mc.setScreen(new ModListScreen(screen));

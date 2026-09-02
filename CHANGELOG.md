@@ -2,6 +2,35 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.2] - 2026-09-02
+
+### Added
+
+- **Third-party title-screen button control** (`buttons.thirdParty` in `menu.json`). Buttons that
+  other mods add to the vanilla title screen (Create, Quark, Configured, Catalogue, or any other)
+  are now detected generically — any widget whose class is not in the `net.minecraft.` or
+  `com.skd.menu.` package — and can be repositioned, resized or hidden. By default they are stacked
+  in a vertical column on the left (`stackX` / `stackY` / `stackGap` / `stackFromBottom`, all
+  percentage-based like the rest of the config). Per-button `entries` are auto-generated into
+  `menu.json` the first time each button is seen, keyed by a slug derived from the owning mod
+  (`create`, `quark`, …; `-2` / `-3` suffixes when one mod adds several). Setting both `x` and `y`
+  `>= 0` pins a button and takes it out of the stack; `hide: true` removes it.
+
+### Removed
+
+- The dead **`friends`** default button. It was carried over from the 26.2 line, but Minecraft
+  1.21.1 has no Friends feature, so the mod was generating a non-functional button that rendered the
+  raw `gui.friends.open` translation key. Dropped from `MenuConfig` defaults, `TitleScreenMixin`
+  (`ICON_ROW_IDS` / `vanillaKey` / `runDefaultAction`) and `docs/CONFIG.md`. An existing `menu.json`
+  that still lists `friends` is silently ignored — no migration needed.
+
+### Technical
+
+- New `ThirdPartyButtons` class: a client `ScreenEvent.Init.Post` subscriber at `EventPriority.LOWEST`.
+  Third-party mods add their title-screen buttons on that event, after `TitleScreen.init()` — i.e.
+  after `TitleScreenMixin` has already placed the vanilla + custom buttons — so their handling runs
+  as a separate low-priority pass over `Screen#children()`.
+
 ## [0.0.0-beta.1] - 2026-09-02
 
 ### Added
