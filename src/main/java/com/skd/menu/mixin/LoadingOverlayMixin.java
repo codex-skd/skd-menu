@@ -121,14 +121,20 @@ public abstract class LoadingOverlayMixin {
         if (tex == null) return;
 
         int[] dims = TextureResolver.dimensions(p);
-        int texW = dims != null && dims[0] > 0 ? dims[0] : 1;
-        int texH = dims != null && dims[1] > 0 ? dims[1] : 1;
+        if (dims == null) {
+            // Dimensions not resolvable yet (e.g. ResourceManager mid-reload): plain full-texture
+            // stretch blit so the image still shows instead of a 1x1 near-black rectangle.
+            g.blit(RenderPipelines.GUI_TEXTURED, tex, 0, 0, 0, 0, width, height, width, height, width, height, ARGB.white(alpha / 255.0F));
+            return;
+        }
+        int texW = dims[0] > 0 ? dims[0] : 1;
+        int texH = dims[1] > 0 ? dims[1] : 1;
 
         int srcW = texW;
         int srcH = texH;
         int u = 0;
         int v = 0;
-        if (!"stretch".equals(imgCfg.fit) && dims != null) {
+        if (!"stretch".equals(imgCfg.fit)) {
             float imgAspect = dims[0] / (float) dims[1];
             float screenAspect = width / (float) Math.max(1, height);
             float visW, visH;

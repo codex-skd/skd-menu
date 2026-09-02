@@ -1,6 +1,28 @@
 # Changelog — SKD Menu
 
 
+## [1.2.5] - 2026-09-02
+
+### Fix
+
+- **Fondo negro en la pantalla de carga durante un reload de recursos**: si las dimensiones de la
+  textura de fondo no se podían resolver mientras el `ResourceManager` se estaba reconstruyendo
+  (`TextureResolver.dimensions()` devolvía `null`), `renderCoverImage` hacía un blit de una región
+  de 1×1 píxel estirada a pantalla completa — un rectángulo casi negro. Ahora las dimensiones se
+  leen primero del classpath (`/assets/<namespace>/<path>`, disponible durante el reload) y, si
+  aún no se conocen, la imagen se dibuja con un blit de textura completa estirada en vez del
+  camino 1×1.
+
+### Technical
+
+- `TextureResolver.cacheDimensionsFromIdentifier`: intento previo vía classpath antes del
+  `ResourceManager`.
+- `LoadingOverlayMixin.renderCoverImage`: rama de respaldo cuando `dimensions()` es `null`.
+- Sin cambios en la lógica de cierre del overlay: en 26.2 la finalización del reload vive en
+  `LoadingOverlay#tick` (que el mixin no reemplaza y que ya lleva la guarda anti-bucle de
+  NeoForge), así que la rama 26.2 nunca tuvo el cuelgue que sí afectaba a la línea 1.21.1.
+
+
 ## [1.2.4] - 2026-08-19
 
 ### Fix
