@@ -30,6 +30,15 @@ git@gitlab.com:stalking-dragons/minecraft/skd-menu.git
 
 ## Historial
 
+- v0.0.0-beta.2: CurseForge file 8791065 (project 1626937, beta). Feature `buttons.thirdParty`:
+  control genérico de los botones que otros mods (Create, Quark, Configured, Catalogue, cualquiera)
+  añaden al TitleScreen — detección por clase no-`net.minecraft.`/no-`com.skd.menu.`, reposición /
+  redimensión / ocultar vía `menu.json`, pila vertical a la izquierda por defecto, `entries`
+  autogeneradas. Clase nueva `ThirdPartyButtons` (`ScreenEvent.Init.Post` a `EventPriority.LOWEST`,
+  corre tras `TitleScreenMixin`). Eliminado el botón `friends` por defecto (sin equivalente en MC
+  1.21.1; generaba un botón muerto con la clave cruda `gui.friends.open`). `clean build` LIMPIO.
+  No revisado visualmente en pantalla con esos mods instalados.
+
 - v0.0.0-beta.1: CurseForge file 8789225 (project 1626937, beta). Port de API de la línea 26.2 (`1.2.4`) a Minecraft 1.21.1 / NeoForge 21.1.249.
   10 clases, 3 mixins de cliente (`TitleScreenMixin`, `LoadingOverlayMixin`, `ScreenInvoker`),
   sin dependencias. Reversiones 26.2→1.21.1: `Identifier`→`ResourceLocation`,
