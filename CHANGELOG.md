@@ -2,6 +2,35 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.3] - 2026-09-02
+
+### Fixed
+
+- **Custom loading screen never closed on an in-game resource reload** (server resource pack,
+  `F3+T`, or changing a resource pack / shader pack from the options). `LoadingOverlayMixin`
+  replaced `LoadingOverlay#render` wholesale and cancelled it, but left out the vanilla
+  reload-finished block, so `fadeOutStart` was never set and the `onFinish` callback never fired:
+  the overlay stayed up forever with a black background and a full progress bar, hanging the game.
+  Restored that block (`reload.checkExceptions()` → `onFinish.accept(...)` → `fadeOutStart` →
+  `screen.init`). The bug never showed at startup because NeoForge uses a `LoadingOverlay`
+  subclass there that overrides `render`, so the mixin only takes effect on later plain-overlay
+  reloads.
+- **Black background on those reload screens.** `TextureResolver.dimensions()` returned `null`
+  while the `ResourceManager` was mid-rebuild, and `renderCoverImage` then blitted a 1×1 source
+  region stretched to full screen — a solid near-black rectangle. Dimensions are now read from the
+  classpath first (`/assets/<namespace>/<path>`, reload-independent), and when they are still
+  unknown the image is drawn with a plain full-texture stretch blit instead of the 1×1 path.
+
+### Changed
+
+- **`EarlyDisplayInstaller` is now a no-op on this branch.** NeoForge 21.1.x / FancyModLoader
+  1.21.1 has no `earlyLoadingScreenTheme` config key and no JSON early-display theme system (that
+  arrived in a later NeoForge), so the installer had been writing a key FML strips on every launch
+  (`Incorrect key [earlyLoadingScreenTheme] was corrected from skd to null`) and copying unused
+  files into `config/fml/`. The in-game loading / resource-reload screen is still fully themed; the
+  FML "early window" shown while mods load is not themeable on this Minecraft version. The 26.2
+  branch keeps the full installer.
+
 ## [0.0.0-beta.2] - 2026-09-02
 
 ### Added

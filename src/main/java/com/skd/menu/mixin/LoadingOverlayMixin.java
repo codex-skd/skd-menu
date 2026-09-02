@@ -19,6 +19,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.util.Optional;
+import java.util.function.Consumer;
+
 /**
  * Replaces the vanilla loading overlay (Mojang logo, red background and progress bar) with a fully
  * custom loading screen driven by {@code config/skd_menu/loading.json}: static background image,
@@ -30,6 +33,7 @@ public abstract class LoadingOverlayMixin {
     @Shadow @Final private Minecraft minecraft;
     @Shadow @Final private ReloadInstance reload;
     @Shadow @Final private boolean fadeIn;
+    @Shadow @Final private Consumer<Optional<Throwable>> onFinish;
     @Shadow private float currentProgress;
     @Shadow protected long fadeOutStart;
     @Shadow private long fadeInStart;
@@ -81,6 +85,18 @@ public abstract class LoadingOverlayMixin {
         if (fadeOutAnim < 1.0F) {
             renderProgressBar(graphics, width, height, config, 1.0F - Mth.clamp(fadeOutAnim, 0.0F, 1.0F));
         }
+        if (this.fadeOutStart == -1L && this.reload.isDone() && (!this.fadeIn || fadeInAnim >= 2.0F)) {
+            try {
+                this.reload.checkExceptions();
+                this.onFinish.accept(Optional.empty());
+            } catch (Throwable t) {
+                this.onFinish.accept(Optional.of(t));
+            }
+            this.fadeOutStart = now;
+            if (this.minecraft.screen != null) {
+                this.minecraft.screen.init(this.minecraft, width, height);
+            }
+        }
         if (fadeOutAnim >= 2.0F) {
             this.minecraft.setOverlay(null);
         }
@@ -113,14 +129,20 @@ public abstract class LoadingOverlayMixin {
         if (tex == null) return;
 
         int[] dims = TextureResolver.dimensions(p);
-        int texW = dims != null && dims[0] > 0 ? dims[0] : 1;
-        int texH = dims != null && dims[1] > 0 ? dims[1] : 1;
+        if (dims == null) {
+            // Dimensions not resolvable yet (e.g. ResourceManager mid-reload): plain full-texture
+            // stretch blit so the image still shows instead of a 1x1 near-black rectangle.
+            g.blit(tex, 0, 0, 0, 0, width, height, width, height, width, height);
+            return;
+        }
+        int texW = dims[0] > 0 ? dims[0] : 1;
+        int texH = dims[1] > 0 ? dims[1] : 1;
 
         int srcW = texW;
         int srcH = texH;
         int u = 0;
         int v = 0;
-        if (!"stretch".equals(imgCfg.fit) && dims != null) {
+        if (!"stretch".equals(imgCfg.fit)) {
             float imgAspect = dims[0] / (float) dims[1];
             float screenAspect = width / (float) Math.max(1, height);
             float visW, visH;

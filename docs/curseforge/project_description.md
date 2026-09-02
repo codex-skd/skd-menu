@@ -53,7 +53,7 @@
 <p>Render images at any position with configurable width, height and scale &mdash; watermarks, decorations, extra logos.</p>
 
 <h3>&#9203; Loading Screen</h3>
-<p>The loading / resource-reload screen gets the same custom background plus a themed progress bar, and the FML early-window can use a matching theme.</p>
+<p>The loading / resource-reload screen gets the same custom background plus a themed progress bar. (The FML early-window shown while mods load is not themeable on NeoForge 21.1.x, so it keeps the vanilla look.)</p>
 
 <h3>&#9881;&#65039; JSON Config</h3>
 <p>All settings live in <code>config/skd_menu/menu.json</code>, auto-generated on first launch. Edit with any text editor; re-open the title screen to reload. See <a href="https://gitlab.com/stalking-dragons/minecraft/skd-menu">the repository</a> for the full config reference.</p>
@@ -66,7 +66,7 @@
 <tr><th align="left">Area</th><th align="left">What it provides</th></tr>
 <tr><td><code>TitleScreenMixin</code></td><td>Button repositioning / hiding / custom buttons, the custom background, logos, title image and overlays on the title screen.</td></tr>
 <tr><td><code>LoadingOverlayMixin</code></td><td>The custom loading-screen background and progress bar.</td></tr>
-<tr><td><code>EarlyDisplayInstaller</code> / <code>LoadingConfig</code></td><td>Installs the matching FML early-window theme.</td></tr>
+<tr><td><code>LoadingConfig</code></td><td>The loading-screen JSON config model (background, banner, logo, progress bar).</td></tr>
 <tr><td><code>TextureResolver</code></td><td>Resolves image refs (bundled asset / file path / URL) to textures and caches their dimensions.</td></tr>
 <tr><td><code>Config</code> / <code>MenuConfig</code></td><td>The JSON config model and its live reload.</td></tr>
 </table>

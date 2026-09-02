@@ -130,6 +130,19 @@ public class TextureResolver {
 
     private static void cacheDimensionsFromIdentifier(String ref, ResourceLocation id) {
         if (DIMENSIONS.containsKey(ref)) return;
+        // Try classpath first — always available, reload-independent
+        try {
+            String path = "/assets/" + id.getNamespace() + "/" + id.getPath();
+            try (InputStream is = TextureResolver.class.getResourceAsStream(path)) {
+                if (is != null) {
+                    try (NativeImage image = NativeImage.read(is)) {
+                        DIMENSIONS.put(ref, new int[]{image.getWidth(), image.getHeight()});
+                        return;
+                    }
+                }
+            }
+        } catch (Exception ignored) {}
+        // Fall back to ResourceManager (may be empty during a reload)
         try {
             var resource = Minecraft.getInstance().getResourceManager().getResource(id).orElse(null);
             if (resource == null) return;
