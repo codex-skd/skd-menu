@@ -30,6 +30,20 @@ git@gitlab.com:stalking-dragons/minecraft/skd-menu.git
 
 ## Historial
 
+- v0.0.0-beta.3: CurseForge file 8795253 (project 1626937, beta). Fix del cuelgue de la pantalla
+  de carga en reloads de recursos en caliente (resource pack del servidor, F3+T, cambio de pack /
+  shader desde Opciones): `LoadingOverlayMixin` reemplazaba `LoadingOverlay#render` entero y
+  cancelaba, pero omitía el bloque de finalización del vanilla → `fadeOutStart` nunca se ponía y
+  `onFinish` nunca se llamaba → overlay eterno con fondo negro y barra al 100 %. Restaurado ese
+  bloque. + Fondo negro en esas pantallas: `TextureResolver.dimensions()` devolvía `null` con el
+  ResourceManager reconstruyéndose → `renderCoverImage` hacía un blit de región 1×1 estirada;
+  ahora lee dimensiones del classpath primero y cae a stretch de textura completa si aún no las
+  tiene. + `EarlyDisplayInstaller` pasa a no-op en 1.21.1 (NeoForge 21.1.x / FML 1.21.1 no tiene
+  `earlyLoadingScreenTheme` ni sistema de themes JSON de early display; escribía una clave que FML
+  borra cada arranque y copiaba ficheros sin uso a `config/fml/`). `clean build` LIMPIO en las dos
+  ramas (recompilado forzado + AP de mixins + jar). No revisado in-game contra un resource pack de
+  servidor.
+
 - v0.0.0-beta.2: CurseForge file 8791065 (project 1626937, beta). Feature `buttons.thirdParty`:
   control genérico de los botones que otros mods (Create, Quark, Configured, Catalogue, cualquiera)
   añaden al TitleScreen — detección por clase no-`net.minecraft.`/no-`com.skd.menu.`, reposición /
