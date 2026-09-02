@@ -30,7 +30,7 @@ git@gitlab.com:stalking-dragons/minecraft/skd-menu.git
 
 ## Historial
 
-- v0.0.0-beta.1: port de API de la línea 26.2 (`1.2.4`) a Minecraft 1.21.1 / NeoForge 21.1.249.
+- v0.0.0-beta.1: CurseForge file 8789225 (project 1626937, beta). Port de API de la línea 26.2 (`1.2.4`) a Minecraft 1.21.1 / NeoForge 21.1.249.
   10 clases, 3 mixins de cliente (`TitleScreenMixin`, `LoadingOverlayMixin`, `ScreenInvoker`),
   sin dependencias. Reversiones 26.2→1.21.1: `Identifier`→`ResourceLocation`,
   `GuiGraphicsExtractor`→`GuiGraphics` (el @Inject de `extractRenderState` pasa a `render`),
