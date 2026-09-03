@@ -30,6 +30,23 @@ git@gitlab.com:stalking-dragons/minecraft/skd-menu.git
 
 ## Historial
 
+- v0.0.0-beta.4: CurseForge file 8798757 (project 1626937, beta). Eliminada la feature de pantalla
+  de carga custom en esta rama. `LoadingOverlayMixin` reemplazaba el overlay de carga vanilla
+  entero, pero en un modpack real sus dibujos con textura (fondo, banner, logo, marco de barra) no
+  renderizaban nada durante el reload de recursos en caliente (aplicación del resource pack del
+  servidor al entrar, y otra vez al desconectar): solo se veían las primitivas `GuiGraphics.fill`
+  → pantalla negra con la barra pelada. La sonda de diagnóstico confirmó que la textura resolvía a
+  un `DynamicTexture` registrado con estado GL limpio (`shaderColor` blanco, shader `position_tex`
+  no null, `glGetError` 0); los `blit` se seguían tragando solo en la ruta del overlay (el mismo
+  `blit` funciona en el title screen), apuntando a una interacción de batching de `GuiGraphics` con
+  otro mod de cliente. Eliminados: `LoadingOverlayMixin` (fuera de `skd_menu.mixins.json`),
+  `LoadingConfig` (`config/skd_menu/loading.json`), `EarlyDisplayInstaller` (ya no-op en 21.1.x),
+  recursos `earlydisplay/` y `textures/gui/bar_track.png`. `TextureResolver` y `SkdMenuClient`
+  vuelven a su estado de beta.3. Los reloads del pack de servidor ahora usan la pantalla de carga
+  vanilla de NeoForge. La customización del title screen intacta. La rama 26.2 conserva la feature.
+  `clean build` LIMPIO. Verificado in-game: title screen sigue con su fondo/botones custom, y el
+  join/disconnect del servidor muestra la pantalla vanilla.
+
 - v0.0.0-beta.3: CurseForge file 8795253 (project 1626937, beta). Fix del cuelgue de la pantalla
   de carga en reloads de recursos en caliente (resource pack del servidor, F3+T, cambio de pack /
   shader desde Opciones): `LoadingOverlayMixin` reemplazaba `LoadingOverlay#render` entero y

@@ -19,16 +19,6 @@
     "ast_hash": "1dc39e42e8e6fdc944e4fa09eeda817b",
     "semantic_hash": "1dc39e42e8e6fdc944e4fa09eeda817b"
   },
-  "src/main/java/com/skd/menu/EarlyDisplayInstaller.java": {
-    "mtime": 1788376216.3367355,
-    "ast_hash": "0d220de3a6a4947b3484ddf758138e75",
-    "semantic_hash": ""
-  },
-  "src/main/java/com/skd/menu/LoadingConfig.java": {
-    "mtime": 1785708484.0,
-    "ast_hash": "48f88836461fdd90d74300a6245d00a4",
-    "semantic_hash": "48f88836461fdd90d74300a6245d00a4"
-  },
   "src/main/java/com/skd/menu/MenuConfig.java": {
     "mtime": 1788313327.4034176,
     "ast_hash": "decfea060e5685dfdbdaceb69111c0d1",
@@ -40,18 +30,13 @@
     "semantic_hash": "533b97fe039fc2d296364c280920c447"
   },
   "src/main/java/com/skd/menu/SkdMenuClient.java": {
-    "mtime": 1785718376.0,
-    "ast_hash": "86dba81410c76c4b9e28f498826bbda1",
-    "semantic_hash": "86dba81410c76c4b9e28f498826bbda1"
-  },
-  "src/main/java/com/skd/menu/TextureResolver.java": {
-    "mtime": 1788376006.7680514,
-    "ast_hash": "53ab9a920dd78939772d3d8d05b371d8",
+    "mtime": 1788430184.1967616,
+    "ast_hash": "8a15ac0f8ac822e9b5dea72f3793e76a",
     "semantic_hash": ""
   },
-  "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java": {
-    "mtime": 1788376205.8447554,
-    "ast_hash": "847059a574322344dbc1c1f62b785dc6",
+  "src/main/java/com/skd/menu/TextureResolver.java": {
+    "mtime": 1788430169.1694071,
+    "ast_hash": "431183c01addf88f199bd59bc60f3949",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/mixin/ScreenInvoker.java": {
@@ -69,15 +54,10 @@
     "ast_hash": "a47d8c9ec012bc1e3ba4d92c2de8a787",
     "semantic_hash": "a47d8c9ec012bc1e3ba4d92c2de8a787"
   },
-  "src/main/resources/earlydisplay/theme-skd.json": {
-    "mtime": 1785718359.0,
-    "ast_hash": "905ea436b5cf8047d75324bba220b1d7",
-    "semantic_hash": "905ea436b5cf8047d75324bba220b1d7"
-  },
   "src/main/resources/skd_menu.mixins.json": {
-    "mtime": 1785707522.0,
-    "ast_hash": "af66168f38fd33446cf182ca768372ee",
-    "semantic_hash": "af66168f38fd33446cf182ca768372ee"
+    "mtime": 1788430189.2871957,
+    "ast_hash": "1fa69cb718ae50c265e17ed969a950f2",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/menu/ThirdPartyButtons.java": {
     "mtime": 1788313631.497398,
@@ -95,8 +75,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1788380389.9706025,
-    "ast_hash": "e3dd79305f13a319e4bed479f8c791a3",
+    "mtime": 1788430709.7928617,
+    "ast_hash": "6e4b3a35cde41d46467e476f92496bf9",
     "semantic_hash": ""
   },
   "README.md": {
@@ -110,8 +90,8 @@
     "semantic_hash": ""
   },
   "docs/PORT_REPORT_1.21.1.md": {
-    "mtime": 1788309550.5129325,
-    "ast_hash": "1633d7764eb9d47ed820f44e3c1cc613",
+    "mtime": 1788430782.7050617,
+    "ast_hash": "a54aeddbc6c6930eb468b9b5eb887ee9",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SKD_MENU_26-2.md": {
@@ -120,13 +100,13 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
-    "mtime": 1788380405.147499,
-    "ast_hash": "22495b08a19ba5086ed0ad2bd389e61a",
+    "mtime": 1788430767.4348905,
+    "ast_hash": "c963044b5b311f454456c180c038fa4d",
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1788380505.4018698,
-    "ast_hash": "46edf329e1e276755292de1286d1faaf",
+    "mtime": 1788430865.736543,
+    "ast_hash": "c88708c06ed1b94e04051ed7282a5767",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -137,11 +117,6 @@
   "docs/curseforge/versions/0.0.0-beta.2.md": {
     "mtime": 1788337835.4647872,
     "ast_hash": "114e1f736bea5fc4fea0c43b6a35164f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/skd_menu/textures/gui/bar_track.png": {
-    "mtime": 1785707194.0,
-    "ast_hash": "27379452abc98c749eec6036d4366c9b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/skd_menu/textures/gui/bg_main_default.png": {
@@ -169,26 +144,6 @@
     "ast_hash": "773a8ba13d5f06d810a834f4fa9eabab",
     "semantic_hash": ""
   },
-  "src/main/resources/earlydisplay/bg_main_default.png": {
-    "mtime": 1785718359.0,
-    "ast_hash": "eeb35b7267555229bfd6c4db4d4c2ddc",
-    "semantic_hash": ""
-  },
-  "src/main/resources/earlydisplay/logo_top_left_default.png": {
-    "mtime": 1785718359.0,
-    "ast_hash": "65a5798160d460ce708c68b9ef03a367",
-    "semantic_hash": ""
-  },
-  "src/main/resources/earlydisplay/progress_bar_bg.png": {
-    "mtime": 1785718359.0,
-    "ast_hash": "c37e4fcf81a42ab633b56735f6b8ac84",
-    "semantic_hash": ""
-  },
-  "src/main/resources/earlydisplay/progress_bar_fg.png": {
-    "mtime": 1785718359.0,
-    "ast_hash": "a58578ec6aefc5ad297c152d551f3727",
-    "semantic_hash": ""
-  },
   "src/main/resources/skd_menu.png": {
     "mtime": 1785104109.0,
     "ast_hash": "a59f8bb15ea2720cfecf033dcda8741f",
@@ -197,6 +152,11 @@
   "docs/curseforge/versions/0.0.0-beta.3.md": {
     "mtime": 1788380437.8518095,
     "ast_hash": "8ef7051e3de112a1f28d418907bdd16f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.4.md": {
+    "mtime": 1788430722.4183428,
+    "ast_hash": "8e6ff891a66d063936dccc1f96dd7947",
     "semantic_hash": ""
   }
 }

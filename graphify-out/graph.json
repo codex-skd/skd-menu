@@ -130,206 +130,6 @@
       "norm_label": "modconfigspec"
     },
     {
-      "label": "EarlyDisplayInstaller.java",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_earlydisplayinstaller",
-      "community": 6,
-      "norm_label": "earlydisplayinstaller.java"
-    },
-    {
-      "label": "EarlyDisplayInstaller",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller",
-      "community": 6,
-      "norm_label": "earlydisplayinstaller"
-    },
-    {
-      "label": "Logger",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_earlydisplayinstaller_java_logger",
-      "community": 6,
-      "norm_label": "logger"
-    },
-    {
-      "label": ".EarlyDisplayInstaller()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller_earlydisplayinstaller",
-      "community": 6,
-      "norm_label": ".earlydisplayinstaller()"
-    },
-    {
-      "label": ".install()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller_install",
-      "community": 6,
-      "norm_label": ".install()"
-    },
-    {
-      "label": "LoadingConfig.java",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig",
-      "community": 7,
-      "norm_label": "loadingconfig.java"
-    },
-    {
-      "label": "LoadingConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "community": 7,
-      "norm_label": "loadingconfig"
-    },
-    {
-      "label": "Logger",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_java_logger",
-      "community": 7,
-      "norm_label": "logger"
-    },
-    {
-      "label": "Gson",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_java_gson",
-      "community": 7,
-      "norm_label": "gson"
-    },
-    {
-      "label": ".getInstance()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_getinstance",
-      "community": 7,
-      "norm_label": ".getinstance()"
-    },
-    {
-      "label": ".load()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_load",
-      "community": 7,
-      "norm_label": ".load()"
-    },
-    {
-      "label": ".initDefaults()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "community": 7,
-      "norm_label": ".initdefaults()"
-    },
-    {
-      "label": ".save()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_save",
-      "community": 7,
-      "norm_label": ".save()"
-    },
-    {
-      "label": "BackgroundConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "community": 7,
-      "norm_label": "backgroundconfig"
-    },
-    {
-      "label": "ImageConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L74",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_imageconfig",
-      "community": 7,
-      "norm_label": "imageconfig"
-    },
-    {
-      "label": "ColorConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L81",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_colorconfig",
-      "community": 7,
-      "norm_label": "colorconfig"
-    },
-    {
-      "label": "LogoConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L85",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_logoconfig",
-      "community": 7,
-      "norm_label": "logoconfig"
-    },
-    {
-      "label": "BannerConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_bannerconfig",
-      "community": 7,
-      "norm_label": "bannerconfig"
-    },
-    {
-      "label": "BarConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L110",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_barconfig",
-      "community": 7,
-      "norm_label": "barconfig"
-    },
-    {
-      "label": "FillConfig",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L125",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_loadingconfig_fillconfig",
-      "community": 7,
-      "norm_label": "fillconfig"
-    },
-    {
       "label": "MenuConfig.java",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
@@ -346,7 +146,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_menuconfig",
-      "community": 0,
+      "community": 5,
       "norm_label": "menuconfig"
     },
     {
@@ -365,7 +165,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_menuconfig_java_gson",
+      "id": "gson",
       "community": 5,
       "norm_label": "gson"
     },
@@ -376,7 +176,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_menuconfig_getinstance",
-      "community": 0,
+      "community": 1,
       "norm_label": ".getinstance()"
     },
     {
@@ -386,7 +186,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_menuconfig_load",
-      "community": 0,
+      "community": 1,
       "norm_label": ".load()"
     },
     {
@@ -526,7 +326,7 @@
       "source_location": "L167",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_menuconfig_defaultbuttonlist",
-      "community": 0,
+      "community": 5,
       "norm_label": ".defaultbuttonlist()"
     },
     {
@@ -536,7 +336,7 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_defaultbutton",
-      "community": 0,
+      "community": 5,
       "norm_label": "defaultbutton"
     },
     {
@@ -546,7 +346,7 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_position",
-      "community": 5,
+      "community": 1,
       "norm_label": "position"
     },
     {
@@ -556,7 +356,7 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_menuconfig_position_position",
-      "community": 5,
+      "community": 1,
       "norm_label": ".position()"
     },
     {
@@ -846,7 +646,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_textureresolver_textureresolver_dimensions",
-      "community": 2,
+      "community": 8,
       "norm_label": ".dimensions()"
     },
     {
@@ -1020,236 +820,6 @@
       "norm_label": ".slugfor()"
     },
     {
-      "label": "LoadingOverlayMixin.java",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "community": 2,
-      "norm_label": "loadingoverlaymixin.java"
-    },
-    {
-      "label": "LoadingOverlayMixin",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "community": 2,
-      "norm_label": "loadingoverlaymixin"
-    },
-    {
-      "label": "Mixin",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_mixin",
-      "community": 2,
-      "norm_label": "mixin"
-    },
-    {
-      "label": "Minecraft",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_minecraft",
-      "community": 2,
-      "norm_label": "minecraft"
-    },
-    {
-      "label": "ReloadInstance",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "reloadinstance",
-      "community": 2,
-      "norm_label": "reloadinstance"
-    },
-    {
-      "label": ".onRender()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "community": 2,
-      "norm_label": ".onrender()"
-    },
-    {
-      "label": "GuiGraphics",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "community": 2,
-      "norm_label": "guigraphics"
-    },
-    {
-      "label": "CallbackInfo",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_callbackinfo",
-      "community": 2,
-      "norm_label": "callbackinfo"
-    },
-    {
-      "label": "Inject",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_inject",
-      "community": 2,
-      "norm_label": "inject"
-    },
-    {
-      "label": ".backgroundColor()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_backgroundcolor",
-      "community": 2,
-      "norm_label": ".backgroundcolor()"
-    },
-    {
-      "label": "Unique",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "community": 2,
-      "norm_label": "unique"
-    },
-    {
-      "label": ".renderBackground()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L115",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "community": 2,
-      "norm_label": ".renderbackground()"
-    },
-    {
-      "label": ".renderCoverImage()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L124",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "community": 2,
-      "norm_label": ".rendercoverimage()"
-    },
-    {
-      "label": "ImageConfig",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_imageconfig",
-      "community": 2,
-      "norm_label": "imageconfig"
-    },
-    {
-      "label": ".renderBanner()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L162",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "community": 2,
-      "norm_label": ".renderbanner()"
-    },
-    {
-      "label": ".renderLogo()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L187",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "community": 2,
-      "norm_label": ".renderlogo()"
-    },
-    {
-      "label": ".renderProgressBar()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L212",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "community": 2,
-      "norm_label": ".renderprogressbar()"
-    },
-    {
-      "label": ".renderHorizontalGradient()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L268",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderhorizontalgradient",
-      "community": 2,
-      "norm_label": ".renderhorizontalgradient()"
-    },
-    {
-      "label": ".replaceAlpha()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L283",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_replacealpha",
-      "community": 2,
-      "norm_label": ".replacealpha()"
-    },
-    {
-      "label": ".percentToPixels()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L288",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percenttopixels",
-      "community": 2,
-      "norm_label": ".percenttopixels()"
-    },
-    {
-      "label": ".percentOf()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L293",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percentof",
-      "community": 2,
-      "norm_label": ".percentof()"
-    },
-    {
-      "label": ".clampOnScreen()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L298",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_clamponscreen",
-      "community": 2,
-      "norm_label": ".clamponscreen()"
-    },
-    {
-      "label": ".parseColor()",
-      "file_type": "code",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L304",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_parsecolor",
-      "community": 2,
-      "norm_label": ".parsecolor()"
-    },
-    {
       "label": "ScreenInvoker.java",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/menu/mixin/ScreenInvoker.java",
@@ -1306,7 +876,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "community": 0,
+      "community": 1,
       "norm_label": "titlescreenmixin.java"
     },
     {
@@ -1326,7 +896,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_mixin",
-      "community": 0,
+      "community": 1,
       "norm_label": "mixin"
     },
     {
@@ -1346,7 +916,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "abstractwidget",
-      "community": 0,
+      "community": 1,
       "norm_label": "abstractwidget"
     },
     {
@@ -1356,7 +926,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_oninit",
-      "community": 0,
+      "community": 1,
       "norm_label": ".oninit()"
     },
     {
@@ -1365,8 +935,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_callbackinfo",
-      "community": 0,
+      "id": "callbackinfo",
+      "community": 1,
       "norm_label": "callbackinfo"
     },
     {
@@ -1375,8 +945,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_inject",
-      "community": 0,
+      "id": "inject",
+      "community": 1,
       "norm_label": "inject"
     },
     {
@@ -1386,7 +956,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_hidevanillawidgets",
-      "community": 0,
+      "community": 1,
       "norm_label": ".hidevanillawidgets()"
     },
     {
@@ -1395,7 +965,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "id": "unique",
       "community": 0,
       "norm_label": "unique"
     },
@@ -1455,7 +1025,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "id": "guigraphics",
       "community": 0,
       "norm_label": "guigraphics"
     },
@@ -1475,7 +1045,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_minecraft",
+      "id": "minecraft",
       "community": 0,
       "norm_label": "minecraft"
     },
@@ -1546,7 +1116,7 @@
       "source_location": "L283",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_imagebutton",
-      "community": 0,
+      "community": 1,
       "norm_label": "imagebutton"
     },
     {
@@ -1556,7 +1126,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "button",
-      "community": 0,
+      "community": 1,
       "norm_label": "button"
     },
     {
@@ -1566,7 +1136,7 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_imagebutton_imagebutton",
-      "community": 0,
+      "community": 1,
       "norm_label": ".imagebutton()"
     },
     {
@@ -1576,7 +1146,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "component",
-      "community": 0,
+      "community": 1,
       "norm_label": "component"
     },
     {
@@ -1586,7 +1156,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "onpress",
-      "community": 0,
+      "community": 1,
       "norm_label": "onpress"
     },
     {
@@ -1626,7 +1196,7 @@
       "source_location": "L340",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_ontick",
-      "community": 0,
+      "community": 1,
       "norm_label": ".ontick()"
     },
     {
@@ -1660,23 +1230,13 @@
       "norm_label": ".renderlogo()"
     },
     {
-      "label": "LogoConfig",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_logoconfig",
-      "community": 0,
-      "norm_label": "logoconfig"
-    },
-    {
       "label": ".loadCustomPanoramaTextures()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
       "source_location": "L418",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_loadcustompanoramatextures",
-      "community": 0,
+      "community": 8,
       "norm_label": ".loadcustompanoramatextures()"
     },
     {
@@ -1686,7 +1246,7 @@
       "source_location": "L436",
       "_origin": "ast",
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_setupbuttonanimation",
-      "community": 0,
+      "community": 1,
       "norm_label": ".setupbuttonanimation()"
     },
     {
@@ -1708,16 +1268,6 @@
       "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfixedimagebackground",
       "community": 0,
       "norm_label": ".renderfixedimagebackground()"
-    },
-    {
-      "label": "ImageConfig",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_imageconfig",
-      "community": 0,
-      "norm_label": "imageconfig"
     },
     {
       "label": ".computeZoomScale()",
@@ -1790,586 +1340,6 @@
       "norm_label": ".handlecustomaction()"
     },
     {
-      "label": "theme-skd.json",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd",
-      "community": 3,
-      "norm_label": "theme-skd.json"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L2",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_version",
-      "community": 3,
-      "norm_label": "version"
-    },
-    {
-      "label": "extends",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_extends",
-      "community": 3,
-      "norm_label": "extends"
-    },
-    {
-      "label": "default",
-      "file_type": "concept",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "ref_default",
-      "community": 3,
-      "norm_label": "default"
-    },
-    {
-      "label": "colorScheme",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_colorscheme",
-      "community": 3,
-      "norm_label": "colorscheme"
-    },
-    {
-      "label": "screenBackground",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_colorscheme_screenbackground",
-      "community": 3,
-      "norm_label": "screenbackground"
-    },
-    {
-      "label": "text",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_colorscheme_text",
-      "community": 3,
-      "norm_label": "text"
-    },
-    {
-      "label": "sprites",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_sprites",
-      "community": 3,
-      "norm_label": "sprites"
-    },
-    {
-      "label": "progressBarBackground",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarbackground",
-      "community": 3,
-      "norm_label": "progressbarbackground"
-    },
-    {
-      "label": "resource",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_resource",
-      "community": 3,
-      "norm_label": "resource"
-    },
-    {
-      "label": "scaling",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_scaling",
-      "community": 3,
-      "norm_label": "scaling"
-    },
-    {
-      "label": "type",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_scaling_type",
-      "community": 3,
-      "norm_label": "type"
-    },
-    {
-      "label": "width",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_scaling_width",
-      "community": 3,
-      "norm_label": "width"
-    },
-    {
-      "label": "height",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_scaling_height",
-      "community": 3,
-      "norm_label": "height"
-    },
-    {
-      "label": "linearScaling",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_scaling_linearscaling",
-      "community": 3,
-      "norm_label": "linearscaling"
-    },
-    {
-      "label": "progressBarForeground",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarforeground",
-      "community": 3,
-      "norm_label": "progressbarforeground"
-    },
-    {
-      "label": "resource",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_resource",
-      "community": 3,
-      "norm_label": "resource"
-    },
-    {
-      "label": "scaling",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_scaling",
-      "community": 3,
-      "norm_label": "scaling"
-    },
-    {
-      "label": "progressBarIndeterminate",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarindeterminate",
-      "community": 3,
-      "norm_label": "progressbarindeterminate"
-    },
-    {
-      "label": "resource",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_resource",
-      "community": 3,
-      "norm_label": "resource"
-    },
-    {
-      "label": "scaling",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_scaling",
-      "community": 3,
-      "norm_label": "scaling"
-    },
-    {
-      "label": "loadingScreen",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L37",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "community": 1,
-      "norm_label": "loadingscreen"
-    },
-    {
-      "label": "background",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "community": 1,
-      "norm_label": "background"
-    },
-    {
-      "label": "type",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_type",
-      "community": 1,
-      "norm_label": "type"
-    },
-    {
-      "label": "visible",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_visible",
-      "community": 1,
-      "norm_label": "visible"
-    },
-    {
-      "label": "maintainAspectRatio",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_maintainaspectratio",
-      "community": 1,
-      "norm_label": "maintainaspectratio"
-    },
-    {
-      "label": "centerHorizontally",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L42",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_centerhorizontally",
-      "community": 1,
-      "norm_label": "centerhorizontally"
-    },
-    {
-      "label": "centerVertically",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_centervertically",
-      "community": 1,
-      "norm_label": "centervertically"
-    },
-    {
-      "label": "left",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L44",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_left",
-      "community": 1,
-      "norm_label": "left"
-    },
-    {
-      "label": "right",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_right",
-      "community": 1,
-      "norm_label": "right"
-    },
-    {
-      "label": "top",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_top",
-      "community": 1,
-      "norm_label": "top"
-    },
-    {
-      "label": "bottom",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_bottom",
-      "community": 1,
-      "norm_label": "bottom"
-    },
-    {
-      "label": "font",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_font",
-      "community": 1,
-      "norm_label": "font"
-    },
-    {
-      "label": "texture",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L49",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_background_texture",
-      "community": 3,
-      "norm_label": "texture"
-    },
-    {
-      "label": "resource",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L50",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_texture_resource",
-      "community": 3,
-      "norm_label": "resource"
-    },
-    {
-      "label": "scaling",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L51",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "community": 3,
-      "norm_label": "scaling"
-    },
-    {
-      "label": "performance",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L59",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen_performance",
-      "community": 1,
-      "norm_label": "performance"
-    },
-    {
-      "label": "visible",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L60",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_performance_visible",
-      "community": 1,
-      "norm_label": "visible"
-    },
-    {
-      "label": "startupLog",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L62",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen_startuplog",
-      "community": 1,
-      "norm_label": "startuplog"
-    },
-    {
-      "label": "visible",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L63",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_startuplog_visible",
-      "community": 1,
-      "norm_label": "visible"
-    },
-    {
-      "label": "progressBars",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L65",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen_progressbars",
-      "community": 1,
-      "norm_label": "progressbars"
-    },
-    {
-      "label": "visible",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbars_visible",
-      "community": 1,
-      "norm_label": "visible"
-    },
-    {
-      "label": "left",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbars_left",
-      "community": 1,
-      "norm_label": "left"
-    },
-    {
-      "label": "right",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L68",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbars_right",
-      "community": 1,
-      "norm_label": "right"
-    },
-    {
-      "label": "top",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L69",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_progressbars_top",
-      "community": 1,
-      "norm_label": "top"
-    },
-    {
-      "label": "mojangLogo",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L71",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen_mojanglogo",
-      "community": 1,
-      "norm_label": "mojanglogo"
-    },
-    {
-      "label": "visible",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_mojanglogo_visible",
-      "community": 1,
-      "norm_label": "visible"
-    },
-    {
-      "label": "decoration",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L74",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_loadingscreen_decoration",
-      "community": 1,
-      "norm_label": "decoration"
-    },
-    {
-      "label": "skdBanner",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L75",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "community": 1,
-      "norm_label": "skdbanner"
-    },
-    {
-      "label": "type",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L76",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_type",
-      "community": 1,
-      "norm_label": "type"
-    },
-    {
-      "label": "texture",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L77",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_texture",
-      "community": 3,
-      "norm_label": "texture"
-    },
-    {
-      "label": "visible",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L86",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_visible",
-      "community": 1,
-      "norm_label": "visible"
-    },
-    {
-      "label": "maintainAspectRatio",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_maintainaspectratio",
-      "community": 1,
-      "norm_label": "maintainaspectratio"
-    },
-    {
-      "label": "left",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L88",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_left",
-      "community": 1,
-      "norm_label": "left"
-    },
-    {
-      "label": "top",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L89",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_top",
-      "community": 1,
-      "norm_label": "top"
-    },
-    {
-      "label": "centerHorizontally",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L90",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_centerhorizontally",
-      "community": 1,
-      "norm_label": "centerhorizontally"
-    },
-    {
-      "label": "centerVertically",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L91",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_centervertically",
-      "community": 1,
-      "norm_label": "centervertically"
-    },
-    {
-      "label": "font",
-      "file_type": "code",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L92",
-      "_origin": "ast",
-      "id": "src_main_resources_earlydisplay_theme_skd_skdbanner_font",
-      "community": 1,
-      "norm_label": "font"
-    },
-    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": ".claude/CLAUDE.md",
@@ -2430,10 +1400,30 @@
       "norm_label": "skd menu (1.21.1) \u2014 changelog"
     },
     {
-      "label": "[0.0.0-beta.3] - 2026-09-02",
+      "label": "[0.0.0-beta.4] - 2026-09-03",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L5",
+      "_origin": "ast",
+      "id": "changelog_0_0_0_beta_4_2026_09_03",
+      "community": 31,
+      "norm_label": "[0.0.0-beta.4] - 2026-09-03"
+    },
+    {
+      "label": "Removed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "changelog_removed",
+      "community": 31,
+      "norm_label": "removed"
+    },
+    {
+      "label": "[0.0.0-beta.3] - 2026-09-02",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_3_2026_09_02",
       "community": 31,
@@ -2443,7 +1433,7 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L7",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "changelog_fixed",
       "community": 31,
@@ -2453,7 +1443,7 @@
       "label": "Changed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L24",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "changelog_changed",
       "community": 31,
@@ -2463,7 +1453,7 @@
       "label": "[0.0.0-beta.2] - 2026-09-02",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L34",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_2_2026_09_02",
       "community": 31,
@@ -2473,7 +1463,7 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L36",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "changelog_added",
       "community": 31,
@@ -2483,9 +1473,9 @@
       "label": "Removed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L48",
+      "source_location": "L69",
       "_origin": "ast",
-      "id": "changelog_removed",
+      "id": "changelog_removed_69",
       "community": 31,
       "norm_label": "removed"
     },
@@ -2493,7 +1483,7 @@
       "label": "Technical",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L56",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "changelog_technical",
       "community": 31,
@@ -2503,7 +1493,7 @@
       "label": "[0.0.0-beta.1] - 2026-09-02",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L63",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_1_2026_09_02",
       "community": 31,
@@ -2513,9 +1503,9 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L65",
+      "source_location": "L86",
       "_origin": "ast",
-      "id": "changelog_added_65",
+      "id": "changelog_added_86",
       "community": 31,
       "norm_label": "added"
     },
@@ -2523,9 +1513,9 @@
       "label": "Technical",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L74",
+      "source_location": "L95",
       "_origin": "ast",
-      "id": "changelog_technical_74",
+      "id": "changelog_technical_95",
       "community": 31,
       "norm_label": "technical"
     },
@@ -2793,7 +1783,7 @@
       "label": "Summary",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L3",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_summary",
       "community": 28,
@@ -2803,7 +1793,7 @@
       "label": "Files Changed",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L7",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_files_changed",
       "community": 28,
@@ -2813,7 +1803,7 @@
       "label": "1. `src/main/java/com/skd/menu/TextureResolver.java`",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L9",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_1_src_main_java_com_skd_menu_textureresolver_java",
       "community": 28,
@@ -2823,7 +1813,7 @@
       "label": "2. `src/main/java/com/skd/menu/mixin/TitleScreenMixin.java`",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L22",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_2_src_main_java_com_skd_menu_mixin_titlescreenmixin_java",
       "community": 28,
@@ -2833,7 +1823,7 @@
       "label": "3. `src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java`",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L53",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_3_src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java",
       "community": 28,
@@ -2843,7 +1833,7 @@
       "label": "Files NOT Changed",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L83",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_files_not_changed",
       "community": 28,
@@ -2853,7 +1843,7 @@
       "label": "Reimplemented vs. Translated",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L98",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_reimplemented_vs_translated",
       "community": 28,
@@ -2863,7 +1853,7 @@
       "label": "Stubbed / Guarded",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L105",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_stubbed_guarded",
       "community": 28,
@@ -2873,7 +1863,7 @@
       "label": "Dropped Behaviour",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L109",
+      "source_location": "L115",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_dropped_behaviour",
       "community": 28,
@@ -2883,7 +1873,7 @@
       "label": "Verification",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L118",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_verification",
       "community": 28,
@@ -2893,7 +1883,7 @@
       "label": "Second-Pass Changes (compile error fixes)",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L130",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "docs_port_report_1_21_1_second_pass_changes_compile_error_fixes",
       "community": 28,
@@ -2903,9 +1893,9 @@
       "label": "1. `src/main/java/com/skd/menu/TextureResolver.java`",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L132",
+      "source_location": "L138",
       "_origin": "ast",
-      "id": "docs_port_report_1_21_1_1_src_main_java_com_skd_menu_textureresolver_java_132",
+      "id": "docs_port_report_1_21_1_1_src_main_java_com_skd_menu_textureresolver_java_138",
       "community": 28,
       "norm_label": "1. `src/main/java/com/skd/menu/textureresolver.java`"
     },
@@ -2913,9 +1903,9 @@
       "label": "2. `src/main/java/com/skd/menu/mixin/TitleScreenMixin.java`",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L138",
+      "source_location": "L144",
       "_origin": "ast",
-      "id": "docs_port_report_1_21_1_2_src_main_java_com_skd_menu_mixin_titlescreenmixin_java_138",
+      "id": "docs_port_report_1_21_1_2_src_main_java_com_skd_menu_mixin_titlescreenmixin_java_144",
       "community": 28,
       "norm_label": "2. `src/main/java/com/skd/menu/mixin/titlescreenmixin.java`"
     },
@@ -2923,9 +1913,9 @@
       "label": "3. `src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java`",
       "file_type": "document",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L150",
+      "source_location": "L156",
       "_origin": "ast",
-      "id": "docs_port_report_1_21_1_3_src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_150",
+      "id": "docs_port_report_1_21_1_3_src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_156",
       "community": 28,
       "norm_label": "3. `src/main/java/com/skd/menu/mixin/loadingoverlaymixin.java`"
     },
@@ -3170,6 +2160,16 @@
       "norm_label": "0.0.0-beta.3.md"
     },
     {
+      "label": "0.0.0-beta.4.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/0.0.0-beta.4.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_0_0_0_beta_4",
+      "community": 2,
+      "norm_label": "0.0.0-beta.4.md"
+    },
+    {
       "label": "Gradle Properties",
       "file_type": "document",
       "source_file": "gradle.properties",
@@ -3408,551 +2408,14 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_earlydisplayinstaller",
-      "target": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
+      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_earlydisplayinstaller",
-      "target": "src_main_java_com_skd_menu_earlydisplayinstaller_java_logger",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller",
-      "target": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller_earlydisplayinstaller",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller",
-      "target": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller_install",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/EarlyDisplayInstaller.java",
-      "source_location": "L11",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller",
-      "target": "src_main_java_com_skd_menu_earlydisplayinstaller_java_logger",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/SkdMenuClient.java",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_skdmenuclient_skdmenuclient_onclientsetup",
-      "target": "src_main_java_com_skd_menu_earlydisplayinstaller_earlydisplayinstaller_install"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L98",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_bannerconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_barconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_colorconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L125",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_fillconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_imageconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_java_gson",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_java_logger",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L85",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_logoconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L17",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L19",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_bannerconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L20",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_barconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L13",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_java_gson",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L12",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_java_logger",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L22",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_getinstance",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L35",
-      "weight": 1.0,
-      "context": "call",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_load",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_save",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L18",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_logoconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L107",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_backgroundcolor",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L115",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L162",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L187",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L212",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_getinstance",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_load",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L44",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_getinstance"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L42",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_load",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_load",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_save",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/SkdMenuClient.java",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_skdmenuclient_skdmenuclient_onclientsetup",
-      "target": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_load"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L50",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_bannerconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L51",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_barconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_colorconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L52",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_fillconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_imageconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L49",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_loadingconfig_loadingconfig_initdefaults",
-      "target": "src_main_java_com_skd_menu_loadingconfig_logoconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L71",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_colorconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L70",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_imageconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
-      "source_location": "L18",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_menuconfig_menuconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_backgroundconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
-      "source_location": "L83",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_imageconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
-      "source_location": "L84",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_colorconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
-      "source_location": "L118",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_menuconfig_logosconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_logoconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/LoadingConfig.java",
-      "source_location": "L122",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_loadingconfig_barconfig",
-      "target": "src_main_java_com_skd_menu_loadingconfig_fillconfig",
+      "source": "src_main_java_com_skd_menu_menuconfig",
+      "target": "gson",
       "confidence_score": 1.0
     },
     {
@@ -4060,17 +2523,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_menuconfig",
-      "target": "src_main_java_com_skd_menu_menuconfig_java_gson",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
       "source_location": "L5",
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_menuconfig",
@@ -4161,6 +2613,28 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "source": "src_main_java_com_skd_menu_menuconfig_menuconfig",
+      "target": "gson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "source": "src_main_java_com_skd_menu_menuconfig_menuconfig",
+      "target": "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
       "source_location": "L23",
       "weight": 1.0,
       "context": "field",
@@ -4188,17 +2662,6 @@
       "context": "generic_arg",
       "source": "src_main_java_com_skd_menu_menuconfig_menuconfig",
       "target": "src_main_java_com_skd_menu_menuconfig_imageoverlay",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_menuconfig_menuconfig",
-      "target": "src_main_java_com_skd_menu_menuconfig_java_gson",
       "confidence_score": 1.0
     },
     {
@@ -4686,6 +3149,28 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "field",
+      "source": "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
+      "target": "src_main_java_com_skd_menu_menuconfig_colorconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "context": "field",
+      "source": "src_main_java_com_skd_menu_menuconfig_backgroundconfig",
+      "target": "src_main_java_com_skd_menu_menuconfig_imageconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
       "source_location": "L86",
       "weight": 1.0,
       "context": "field",
@@ -4708,11 +3193,33 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
+      "source_location": "L463",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfixedimagebackground",
+      "target": "src_main_java_com_skd_menu_menuconfig_imageconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
       "source_location": "L493",
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_computezoomscale",
       "target": "src_main_java_com_skd_menu_menuconfig_effectconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/MenuConfig.java",
+      "source_location": "L118",
+      "weight": 1.0,
+      "context": "field",
+      "source": "src_main_java_com_skd_menu_menuconfig_logosconfig",
+      "target": "src_main_java_com_skd_menu_menuconfig_logoconfig",
       "confidence_score": 1.0
     },
     {
@@ -4723,6 +3230,17 @@
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_menuconfig_logoconfig",
       "target": "src_main_java_com_skd_menu_menuconfig_logoconfig_logoconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
+      "source_location": "L396",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderlogo",
+      "target": "src_main_java_com_skd_menu_menuconfig_logoconfig",
       "confidence_score": 1.0
     },
     {
@@ -5119,17 +3637,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_textureresolver",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
       "source_location": "L7",
       "weight": 1.0,
@@ -5146,6 +3653,17 @@
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_textureresolver",
       "target": "httpclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/TextureResolver.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_menu_textureresolver",
+      "target": "minecraft",
       "confidence_score": 1.0
     },
     {
@@ -5374,50 +3892,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L167",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_resolve"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L128",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_resolve"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L192",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_resolve"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L258",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_resolve"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
       "source_location": "L295",
       "weight": 1.0,
@@ -5511,50 +3985,6 @@
       "source": "src_main_java_com_skd_menu_textureresolver_textureresolver_resolve",
       "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_resolvehttp",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L172",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_dimensions"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L131",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_dimensions"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L197",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_dimensions"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L221",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_textureresolver_textureresolver_dimensions"
     },
     {
       "relation": "calls",
@@ -5851,652 +4281,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "reloadinstance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_callbackinfo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_inject",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_minecraft",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_mixin",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L34",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "reloadinstance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L33",
-      "weight": 1.0,
-      "context": "field",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_minecraft",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L31",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_mixin",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L107",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_backgroundcolor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L298",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_clamponscreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L304",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_parsecolor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L293",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percentof",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L288",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percenttopixels",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L115",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L162",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L124",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L268",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderhorizontalgradient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L187",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L212",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L283",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_replacealpha",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_callbackinfo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_inject",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_backgroundcolor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L86",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_replacealpha",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L115",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L162",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L124",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L268",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderhorizontalgradient",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L187",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L212",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_guigraphics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L107",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_backgroundcolor",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L298",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_clamponscreen",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L304",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_parsecolor",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L293",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percentof",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L288",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percenttopixels",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L115",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L162",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L124",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L268",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderhorizontalgradient",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L187",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L212",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L283",
-      "weight": 1.0,
-      "context": "attribute",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_replacealpha",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L119",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbackground",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L124",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_rendercoverimage",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_imageconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L176",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderbanner",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percenttopixels",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L201",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percenttopixels",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L228",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_clamponscreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L245",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_parsecolor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L237",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percentof",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L216",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_percenttopixels",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/LoadingOverlayMixin.java",
-      "source_location": "L253",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderprogressbar",
-      "target": "src_main_java_com_skd_menu_mixin_loadingoverlaymixin_loadingoverlaymixin_renderhorizontalgradient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/mixin/ScreenInvoker.java",
       "source_location": "L8",
       "weight": 1.0,
@@ -6584,20 +4368,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
-      "source_location": "L23",
+      "source_location": "L30",
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "component",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
-      "source_location": "L283",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_imagebutton",
+      "target": "callbackinfo",
       "confidence_score": 1.0
     },
     {
@@ -6605,10 +4379,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
-      "source_location": "L30",
+      "source_location": "L23",
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_callbackinfo",
+      "target": "component",
       "confidence_score": 1.0
     },
     {
@@ -6619,7 +4393,7 @@
       "source_location": "L9",
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -6630,7 +4404,7 @@
       "source_location": "L29",
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_inject",
+      "target": "inject",
       "confidence_score": 1.0
     },
     {
@@ -6641,7 +4415,17 @@
       "source_location": "L8",
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_minecraft",
+      "target": "minecraft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
+      "source_location": "L283",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
+      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_imagebutton",
       "confidence_score": 1.0
     },
     {
@@ -6667,17 +4451,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
@@ -6696,6 +4469,17 @@
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
       "target": "titlescreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7062,7 +4846,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_oninit",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_callbackinfo",
+      "target": "callbackinfo",
       "confidence_score": 1.0
     },
     {
@@ -7073,7 +4857,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_oninit",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_inject",
+      "target": "inject",
       "confidence_score": 1.0
     },
     {
@@ -7139,7 +4923,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_callbackinfo",
+      "target": "callbackinfo",
       "confidence_score": 1.0
     },
     {
@@ -7150,7 +4934,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_ontick",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_callbackinfo",
+      "target": "callbackinfo",
       "confidence_score": 1.0
     },
     {
@@ -7161,7 +4945,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_inject",
+      "target": "inject",
       "confidence_score": 1.0
     },
     {
@@ -7172,7 +4956,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_ontick",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_inject",
+      "target": "inject",
       "confidence_score": 1.0
     },
     {
@@ -7183,7 +4967,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_hidevanillawidgets",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7194,7 +4978,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_addbuiltbutton",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7205,7 +4989,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_addcustombuttons",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7216,7 +5000,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_adddefaultbutton",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7227,7 +5011,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_addiconrowbuttons",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7238,7 +5022,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_blitstretch",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7249,7 +5033,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_clamponscreen",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7260,7 +5044,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_computezoomscale",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7271,7 +5055,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_createdefaultbuttons",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7282,7 +5066,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_handlecustomaction",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7293,7 +5077,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_loadcustompanoramatextures",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7304,7 +5088,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_percenttopixels",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7315,7 +5099,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderanimatedbackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7326,7 +5110,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustombackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7337,7 +5121,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustomtitle",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7348,7 +5132,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfallback",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7359,7 +5143,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfixedimagebackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7370,7 +5154,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderimagebackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7381,7 +5165,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderimageoverlays",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7392,7 +5176,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7403,7 +5187,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderlogos",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7414,7 +5198,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendertitlewidgets",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7425,7 +5209,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_resolvebuttonimage",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7436,7 +5220,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rundefaultaction",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7447,7 +5231,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_setupbuttonanimation",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7458,7 +5242,7 @@
       "weight": 1.0,
       "context": "attribute",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_vanillakey",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_unique",
+      "target": "unique",
       "confidence_score": 1.0
     },
     {
@@ -7700,7 +5484,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_blitstretch",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7766,7 +5550,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_imagebutton_renderwidget",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7777,7 +5561,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_onrender",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7788,7 +5572,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderanimatedbackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7799,7 +5583,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustombackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7810,7 +5594,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustomtitle",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7821,7 +5605,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfallback",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7832,7 +5616,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfixedimagebackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7843,7 +5627,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderimagebackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7854,7 +5638,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderimageoverlays",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7865,7 +5649,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7876,7 +5660,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderlogos",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7887,7 +5671,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendertitlewidgets",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_guigraphics",
+      "target": "guigraphics",
       "confidence_score": 1.0
     },
     {
@@ -7898,7 +5682,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_adddefaultbutton",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_minecraft",
+      "target": "minecraft",
       "confidence_score": 1.0
     },
     {
@@ -7920,7 +5704,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_addbuiltbutton",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_minecraft",
+      "target": "minecraft",
       "confidence_score": 1.0
     },
     {
@@ -7931,7 +5715,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_addiconrowbuttons",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_minecraft",
+      "target": "minecraft",
       "confidence_score": 1.0
     },
     {
@@ -7942,7 +5726,7 @@
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rundefaultaction",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_minecraft",
+      "target": "minecraft",
       "confidence_score": 1.0
     },
     {
@@ -8174,17 +5958,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
-      "source_location": "L396",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderlogo",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_logoconfig",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -8204,17 +5977,6 @@
       "weight": 1.0,
       "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_rendercustombackground",
       "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfixedimagebackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/menu/mixin/TitleScreenMixin.java",
-      "source_location": "L463",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "src_main_java_com_skd_menu_mixin_titlescreenmixin_titlescreenmixin_renderfixedimagebackground",
-      "target": "src_main_java_com_skd_menu_mixin_titlescreenmixin_java_imageconfig",
       "confidence_score": 1.0
     },
     {
@@ -8273,717 +6035,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "extends",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "context": "import",
-      "source": "src_main_resources_earlydisplay_theme_skd",
-      "target": "ref_default",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd",
-      "target": "src_main_resources_earlydisplay_theme_skd_colorscheme",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd",
-      "target": "src_main_resources_earlydisplay_theme_skd_extends",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L37",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd",
-      "target": "src_main_resources_earlydisplay_theme_skd_sprites",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd",
-      "target": "src_main_resources_earlydisplay_theme_skd_version",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_colorscheme",
-      "target": "src_main_resources_earlydisplay_theme_skd_colorscheme_screenbackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_colorscheme",
-      "target": "src_main_resources_earlydisplay_theme_skd_colorscheme_text",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites",
-      "target": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarbackground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites",
-      "target": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarforeground",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites",
-      "target": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarindeterminate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarbackground",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_resource",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarbackground",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_scaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_height",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_linearscaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_type",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarbackground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_width",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_type",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_type",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_type",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_width",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_width",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_width",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_height",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_height",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L82",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_height",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_linearscaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_linearscaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L83",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "target": "src_main_resources_earlydisplay_theme_skd_scaling_linearscaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarforeground",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_resource",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarforeground",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbarforeground_scaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L28",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarindeterminate",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_resource",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_sprites_progressbarindeterminate",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbarindeterminate_scaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen_decoration",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L71",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen_mojanglogo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen_performance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L65",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen_progressbars",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L62",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen",
-      "target": "src_main_resources_earlydisplay_theme_skd_loadingscreen_startuplog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_bottom",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L42",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_centerhorizontally",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_centervertically",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_font",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L44",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_left",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_maintainaspectratio",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_right",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L49",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_texture",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_top",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_type",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_background",
-      "target": "src_main_resources_earlydisplay_theme_skd_background_visible",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L50",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_background_texture",
-      "target": "src_main_resources_earlydisplay_theme_skd_texture_resource",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L51",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_background_texture",
-      "target": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L78",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_skdbanner_texture",
-      "target": "src_main_resources_earlydisplay_theme_skd_texture_resource",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_skdbanner_texture",
-      "target": "src_main_resources_earlydisplay_theme_skd_texture_scaling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_performance",
-      "target": "src_main_resources_earlydisplay_theme_skd_performance_visible",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_startuplog",
-      "target": "src_main_resources_earlydisplay_theme_skd_startuplog_visible",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_progressbars",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbars_left",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L68",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_progressbars",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbars_right",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L69",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_progressbars",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbars_top",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L66",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_progressbars",
-      "target": "src_main_resources_earlydisplay_theme_skd_progressbars_visible",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L72",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_mojanglogo",
-      "target": "src_main_resources_earlydisplay_theme_skd_mojanglogo_visible",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L75",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_loadingscreen_decoration",
-      "target": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L90",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_centerhorizontally",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L91",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_centervertically",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L92",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_font",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L88",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_left",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_maintainaspectratio",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L77",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_texture",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L89",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_top",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L76",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_type",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/resources/earlydisplay/theme-skd.json",
-      "source_location": "L86",
-      "weight": 1.0,
-      "source": "src_main_resources_earlydisplay_theme_skd_decoration_skdbanner",
-      "target": "src_main_resources_earlydisplay_theme_skd_skdbanner_visible",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/CLAUDE.md",
@@ -9027,7 +6078,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L63",
+      "source_location": "L84",
       "weight": 1.0,
       "source": "changelog_skd_menu_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_1_2026_09_02",
@@ -9037,7 +6088,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L34",
+      "source_location": "L55",
       "weight": 1.0,
       "source": "changelog_skd_menu_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_2_2026_09_02",
@@ -9047,7 +6098,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L5",
+      "source_location": "L26",
       "weight": 1.0,
       "source": "changelog_skd_menu_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_3_2026_09_02",
@@ -9057,7 +6108,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L24",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "changelog_skd_menu_1_21_1_changelog",
+      "target": "changelog_0_0_0_beta_4_2026_09_03",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_4_2026_09_03",
+      "target": "changelog_removed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L45",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_3_2026_09_02",
       "target": "changelog_changed",
@@ -9067,7 +6138,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L7",
+      "source_location": "L28",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_3_2026_09_02",
       "target": "changelog_fixed",
@@ -9077,7 +6148,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L36",
+      "source_location": "L57",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_2_2026_09_02",
       "target": "changelog_added",
@@ -9087,17 +6158,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L48",
+      "source_location": "L69",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_2_2026_09_02",
-      "target": "changelog_removed",
+      "target": "changelog_removed_69",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L56",
+      "source_location": "L77",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_2_2026_09_02",
       "target": "changelog_technical",
@@ -9107,20 +6178,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L65",
+      "source_location": "L86",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1_2026_09_02",
-      "target": "changelog_added_65",
+      "target": "changelog_added_86",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L74",
+      "source_location": "L95",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1_2026_09_02",
-      "target": "changelog_technical_74",
+      "target": "changelog_technical_95",
       "confidence_score": 1.0
     },
     {
@@ -9367,7 +6438,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L109",
+      "source_location": "L115",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_dropped_behaviour",
@@ -9377,7 +6448,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L7",
+      "source_location": "L13",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_files_changed",
@@ -9387,7 +6458,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L83",
+      "source_location": "L89",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_files_not_changed",
@@ -9397,7 +6468,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L98",
+      "source_location": "L104",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_reimplemented_vs_translated",
@@ -9407,7 +6478,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L130",
+      "source_location": "L136",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_second_pass_changes_compile_error_fixes",
@@ -9417,7 +6488,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L105",
+      "source_location": "L111",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_stubbed_guarded",
@@ -9427,7 +6498,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L3",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_summary",
@@ -9437,7 +6508,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L118",
+      "source_location": "L124",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_port_report_skd_menu_26_2_1_21_1_neoforge_21_1_249",
       "target": "docs_port_report_1_21_1_verification",
@@ -9447,7 +6518,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L9",
+      "source_location": "L15",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_files_changed",
       "target": "docs_port_report_1_21_1_1_src_main_java_com_skd_menu_textureresolver_java",
@@ -9457,7 +6528,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L22",
+      "source_location": "L28",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_files_changed",
       "target": "docs_port_report_1_21_1_2_src_main_java_com_skd_menu_mixin_titlescreenmixin_java",
@@ -9467,7 +6538,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L53",
+      "source_location": "L59",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_files_changed",
       "target": "docs_port_report_1_21_1_3_src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java",
@@ -9477,30 +6548,30 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L132",
-      "weight": 1.0,
-      "source": "docs_port_report_1_21_1_second_pass_changes_compile_error_fixes",
-      "target": "docs_port_report_1_21_1_1_src_main_java_com_skd_menu_textureresolver_java_132",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/PORT_REPORT_1.21.1.md",
       "source_location": "L138",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_second_pass_changes_compile_error_fixes",
-      "target": "docs_port_report_1_21_1_2_src_main_java_com_skd_menu_mixin_titlescreenmixin_java_138",
+      "target": "docs_port_report_1_21_1_1_src_main_java_com_skd_menu_textureresolver_java_138",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PORT_REPORT_1.21.1.md",
-      "source_location": "L150",
+      "source_location": "L144",
       "weight": 1.0,
       "source": "docs_port_report_1_21_1_second_pass_changes_compile_error_fixes",
-      "target": "docs_port_report_1_21_1_3_src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_150",
+      "target": "docs_port_report_1_21_1_2_src_main_java_com_skd_menu_mixin_titlescreenmixin_java_144",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PORT_REPORT_1.21.1.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "docs_port_report_1_21_1_second_pass_changes_compile_error_fixes",
+      "target": "docs_port_report_1_21_1_3_src_main_java_com_skd_menu_mixin_loadingoverlaymixin_java_156",
       "confidence_score": 1.0
     },
     {
@@ -9685,5 +6756,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d8601356aafa43630c02c15081eb3e0349ba224e"
+  "built_at_commit": "64a815f5349824aa84b5ac79f00b15f63bee5ff2"
 }
