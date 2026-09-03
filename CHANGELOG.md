@@ -2,6 +2,27 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.4] - 2026-09-03
+
+### Removed
+
+- **The custom loading-screen feature is gone on this branch.** `LoadingOverlayMixin` replaced the
+  whole vanilla loading overlay, but on a real modpack its textured draws (background, banner,
+  logo, progress-bar frame) rendered nothing during an in-game resource reload — the one triggered
+  when a server applies its resource pack, and again on disconnect. Only `GuiGraphics.fill`
+  primitives showed, so the screen was black with just the procedural progress bar. Diagnostics
+  confirmed the texture resolved to a valid registered `DynamicTexture` with a clean GL state
+  (`shaderColor` white, shader non-null, `glGetError` 0); the blits were still swallowed, pointing
+  at a `GuiGraphics` batching interaction with another client mod on the overlay code path (the
+  same blit works on the title screen). Rather than fight that, the overlay is removed: server-pack
+  reloads now show NeoForge's own vanilla loading screen. The title-screen customization
+  (background, buttons, logos, title image, overlays, third-party button control) is unchanged.
+- Deleted `LoadingOverlayMixin`, `LoadingConfig` (the `config/skd_menu/loading.json` model) and
+  `EarlyDisplayInstaller` (already a no-op on NeoForge 21.1.x). Removed the bundled
+  `earlydisplay/` theme resources and `textures/gui/bar_track.png`. `TextureResolver` and
+  `SkdMenuClient` are back to their beta.3 state. `config/skd_menu/loading.json` is no longer
+  read or generated; an existing one is harmless.
+
 ## [0.0.0-beta.3] - 2026-09-02
 
 ### Fixed
