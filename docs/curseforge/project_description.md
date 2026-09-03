@@ -52,8 +52,8 @@
 <h3>&#128444;&#65039; Image Overlays</h3>
 <p>Render images at any position with configurable width, height and scale &mdash; watermarks, decorations, extra logos.</p>
 
-<h3>&#9203; Loading Screen</h3>
-<p>The loading / resource-reload screen gets the same custom background plus a themed progress bar. (The FML early-window shown while mods load is not themeable on NeoForge 21.1.x, so it keeps the vanilla look.)</p>
+<h3>&#9203; Loading Screen <em>(26.2 only)</em></h3>
+<p>On Minecraft 26.2 the loading / resource-reload screen gets the same custom background plus a themed progress bar. On 1.21.1 the custom loading screen was removed in <code>beta.4</code> (it did not render reliably during server resource-pack reloads on large modpacks); NeoForge's vanilla loading screen is used there instead.</p>
 
 <h3>&#9881;&#65039; JSON Config</h3>
 <p>All settings live in <code>config/skd_menu/menu.json</code>, auto-generated on first launch. Edit with any text editor; re-open the title screen to reload. See <a href="https://gitlab.com/stalking-dragons/minecraft/skd-menu">the repository</a> for the full config reference.</p>
@@ -88,7 +88,7 @@
 <table>
 <tr><th align="left">Minecraft</th><th align="left">NeoForge</th><th align="left">Java</th><th align="left">Latest build</th><th align="left">Status</th></tr>
 <tr><td>26.2</td><td>26.2.0.57+</td><td>25</td><td><code>1.2.4</code></td><td>Stable</td></tr>
-<tr><td>1.21.1</td><td>21.1.249+</td><td>21</td><td><code>0.0.0-beta.1</code></td><td>Beta &mdash; API port from the 26.2 line</td></tr>
+<tr><td>1.21.1</td><td>21.1.249+</td><td>21</td><td><code>0.0.0-beta.4</code></td><td>Beta &mdash; API port from the 26.2 line (title-screen customization only)</td></tr>
 </table>
 
 <p><em>Both versions share this CurseForge project. Pick the file that matches your Minecraft version.</em></p>

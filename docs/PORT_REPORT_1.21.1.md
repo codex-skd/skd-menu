@@ -1,5 +1,11 @@
 # Port Report: SKD Menu 26.2 → 1.21.1 / NeoForge 21.1.249
 
+> **Nota (beta.4, 2026-09-03):** la feature de pantalla de carga custom se eliminó en 1.21.1
+> (`LoadingOverlayMixin`, `LoadingConfig`, `EarlyDisplayInstaller` y recursos `earlydisplay/`).
+> No renderizaba de forma fiable durante los reloads de resource pack de servidor en modpacks
+> grandes. El resto de este documento describe el estado del port original y se conserva como
+> registro histórico.
+
 ## Summary
 
 Ported all 10 source files from MC 26.2 to MC 1.21.1 / NeoForge 21.1.249 / Java 21. Three files required substantial API reversions; seven files required no changes. All 26.2 features are preserved: custom backgrounds (image/color/animated/panorama/custom_panorama) with breathing zoom, corner logos, title image, per-button repositioning/hiding/custom buttons/button images, image overlays, and the custom loading screen with background, banner, logo, and procedural progress bar.
