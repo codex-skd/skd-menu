@@ -2,6 +2,14 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.5] - 2026-09-08
+
+### Added
+
+- **Spanish (`es_es`) locale**: full translation of all 9 keys (config screen title/sections,
+  `enableMod` / `reloadJsonOnTitle` labels and tooltips). Taken from the Mystical Realms
+  Translation & Fixes resource-pack QA pass so it ships with the mod. No code change.
+
 ## [0.0.0-beta.4] - 2026-09-03
 
 ### Removed
