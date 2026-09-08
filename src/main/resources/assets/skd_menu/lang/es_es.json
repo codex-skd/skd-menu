@@ -1,0 +1,11 @@
+{
+	"skd_menu.configuration.title": "Configuración de SKD Menu",
+	"skd_menu.configuration.section.skd_menu.common.toml": "Configuración de SKD Menu",
+	"skd_menu.configuration.section.skd_menu.common.toml.title": "Configuración de SKD Menu",
+	"skd_menu.configuration.enableMod": "Activar mod",
+	"skd_menu.configuration.reloadJsonOnTitle": "Recargar configuración JSON al abrir título",
+	"skd_menu.config.enableMod": "Activar mod",
+	"skd_menu.config.enableMod.tooltip": "Activar las modificaciones de SKD Menu en el menú principal",
+	"skd_menu.config.reloadJsonOnTitle": "Recargar configuración JSON al abrir título",
+	"skd_menu.config.reloadJsonOnTitle.tooltip": "Recargar la configuración JSON del menú cada vez que se abre la pantalla de título"
+}
