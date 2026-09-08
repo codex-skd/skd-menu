@@ -1,16 +1,16 @@
-# Graph Report - 1.21.1  (2026-09-03)
+# Graph Report - 1.21.1  (2026-09-08)
 
 ## Corpus Check
-- 25 files · ~296,159 words
+- 27 files · ~296,354 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 228 nodes · 419 edges · 36 communities (23 shown, 13 thin omitted)
+- 231 nodes · 421 edges · 37 communities (24 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `64a815f5`
+- Built from commit: `6f682f05`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,11 +64,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (36 total, 13 thin omitted)
+## Communities (37 total, 13 thin omitted)
 
 ### Community 0 - "GUI Components"
-Cohesion: 0.26
-Nodes (6): GuiGraphics, Minecraft, ResourceLocation, TitleScreenMixin, TitleScreen, Unique
+Cohesion: 0.22
+Nodes (8): GuiGraphics, Minecraft, Override, DefaultButton, ResourceLocation, TitleScreenMixin, TitleScreen, Unique
 
 ### Community 1 - "Screen Layout"
 Cohesion: 0.16
@@ -80,15 +80,15 @@ Nodes (4): BooleanValue, Builder, ModConfigSpec, Config
 
 ### Community 5 - "Menu Configuration"
 Cohesion: 0.21
-Nodes (19): Gson, AnimationConfig, BackgroundConfig, ButtonAnimation, ButtonsConfig, ColorConfig, CustomButton, DefaultButton (+11 more)
+Nodes (18): Gson, AnimationConfig, BackgroundConfig, ButtonAnimation, ButtonsConfig, ColorConfig, CustomButton, EffectConfig (+10 more)
 
 ### Community 6 - "Mod Initialization"
 Cohesion: 0.36
 Nodes (6): FMLClientSetupEvent, EventBusSubscriber, Mod, ModContainer, SubscribeEvent, SkdMenuClient
 
 ### Community 8 - "Texture Handling"
-Cohesion: 0.23
-Nodes (6): HttpClient, NativeImage, Override, Logger, ResourceLocation, TextureResolver
+Cohesion: 0.29
+Nodes (5): HttpClient, NativeImage, Logger, ResourceLocation, TextureResolver
 
 ### Community 9 - "Mod Event Handling"
 Cohesion: 0.48
@@ -119,8 +119,8 @@ Cohesion: 0.27
 Nodes (4): Post, EventBusSubscriber, SubscribeEvent, ThirdPartyButtons
 
 ### Community 31 - "[0.0.0-beta.2] - 2026-09-02"
-Cohesion: 0.14
-Nodes (13): [0.0.0-beta.1] - 2026-09-02, [0.0.0-beta.2] - 2026-09-02, [0.0.0-beta.3] - 2026-09-02, [0.0.0-beta.4] - 2026-09-03, Added, Added, Changed, Fixed (+5 more)
+Cohesion: 0.12
+Nodes (15): [0.0.0-beta.1] - 2026-09-02, [0.0.0-beta.2] - 2026-09-02, [0.0.0-beta.3] - 2026-09-02, [0.0.0-beta.4] - 2026-09-03, [0.0.0-beta.5] - 2026-09-08, Added, Added, Added (+7 more)
 
 ### Community 32 - "Project Variables — SKD Menu (1.21.1)"
 Cohesion: 0.25
@@ -131,7 +131,7 @@ Cohesion: 0.50
 Nodes (3): CLAUDE.md — skd_menu (26.2), Prioridad de instrucciones, Workflow del mod
 
 ## Knowledge Gaps
-- **70 isolated node(s):** `Workflow del mod`, `Prioridad de instrucciones`, `Removed`, `Fixed`, `Changed` (+65 more)
+- **71 isolated node(s):** `Workflow del mod`, `Prioridad de instrucciones`, `Added`, `Removed`, `Fixed` (+66 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -139,14 +139,14 @@ Nodes (3): CLAUDE.md — skd_menu (26.2), Prioridad de instrucciones, Workflow d
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `MenuConfig` connect `Menu Configuration` to `GUI Components`, `Screen Layout`, `.onScreenInitPost`, `Texture Handling`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
 - **Why does `TitleScreenMixin` connect `GUI Components` to `Texture Handling`, `Screen Layout`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
-- **What connects `Workflow del mod`, `Prioridad de instrucciones`, `Removed` to the rest of the system?**
-  _70 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **What connects `Workflow del mod`, `Prioridad de instrucciones`, `Added` to the rest of the system?**
+  _71 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Project Variables` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Port Report: SKD Menu 26.2 → 1.21.1 / NeoForge 21.1.249` be split into smaller, more focused modules?**
   _Cohesion score 0.125 - nodes in this community are weakly interconnected._
 - **Should `[0.0.0-beta.2] - 2026-09-02` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
