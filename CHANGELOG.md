@@ -2,6 +2,45 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.0.0] - 2026-09-09
+
+First stable release for **Minecraft 1.21.1 / NeoForge 21.1.249** (Java 21). Consolidates the
+`0.0.0-beta.1` → `0.0.0-beta.5` line with no further code changes. This build has been running in
+the *(Develop) Mystical Realms* modded-server pack.
+
+### Summary of the beta line
+
+- **beta.1** — initial API port of the stable 26.2 line (1.2.4): 10 classes, 3 client mixins
+  (`TitleScreenMixin`, `LoadingOverlayMixin`, `ScreenInvoker`), no dependencies. 26.2 → 1.21.1
+  client render API reversions in the title-screen and loading-overlay code
+  (`GuiGraphicsExtractor` → `GuiGraphics` with the `@Inject` moved from `extractRenderState` to
+  `render`, `ARGB` → `FastColor.ARGB32`, the 8-arg stretch blit replaced with a `blitStretch`
+  helper, the Friends route → `RealmsMainScreen`, and more).
+- **beta.2** — added generic third-party title-screen button control (`buttons.thirdParty` in
+  `menu.json`): buttons other mods add to the vanilla title screen (Create, Quark, Configured,
+  Catalogue, …) are detected by non-vanilla class package and can be repositioned, resized or
+  hidden, stacked in a left column by default. Removed the dead `friends` default button (no
+  Friends feature on 1.21.1).
+- **beta.3** — fixed the custom loading screen hanging on an in-game resource reload (restored the
+  vanilla reload-finished block the mixin had dropped) and the black background on those screens
+  (`TextureResolver.dimensions()` now reads from the classpath first). `EarlyDisplayInstaller`
+  became a no-op (NeoForge 21.1.x / FML 1.21.1 has no JSON early-display theme system).
+- **beta.4** — **removed the custom loading-screen feature on this branch**: on a real modpack its
+  textured draws rendered nothing during a server resource-pack reload (a `GuiGraphics` batching
+  interaction with another client mod). Server-pack reloads now show NeoForge's vanilla loading
+  screen; the title-screen customization is unchanged. Deleted `LoadingOverlayMixin`,
+  `LoadingConfig`, `EarlyDisplayInstaller` and the bundled `earlydisplay/` resources. Verified
+  in-game: custom title screen intact, join/disconnect shows the vanilla screen.
+- **beta.5** — bundled the Spanish (`es_es`) locale: all 9 keys.
+
+### Notes
+
+- No code change relative to `0.0.0-beta.5`. Verified: `./gradlew clean build` is green;
+  `./gradlew runClient` loads with the title-screen mixin applied, 0 FATAL.
+- Client-side only. Same CurseForge project as the 26.2 line (`1626937`); pick the file that
+  matches your Minecraft version. On 1.21.1 this build is title-screen customization only (no
+  custom loading screen — see beta.4).
+
 ## [0.0.0-beta.5] - 2026-09-08
 
 ### Added

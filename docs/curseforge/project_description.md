@@ -88,7 +88,7 @@
 <table>
 <tr><th align="left">Minecraft</th><th align="left">NeoForge</th><th align="left">Java</th><th align="left">Latest build</th><th align="left">Status</th></tr>
 <tr><td>26.2</td><td>26.2.0.57+</td><td>25</td><td><code>1.2.4</code></td><td>Stable</td></tr>
-<tr><td>1.21.1</td><td>21.1.249+</td><td>21</td><td><code>0.0.0-beta.4</code></td><td>Beta &mdash; API port from the 26.2 line (title-screen customization only)</td></tr>
+<tr><td>1.21.1</td><td>21.1.249+</td><td>21</td><td><code>1.0.0</code></td><td>Stable &mdash; title-screen customization only</td></tr>
 </table>
 
 <p><em>Both versions share this CurseForge project. Pick the file that matches your Minecraft version.</em></p>

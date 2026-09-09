@@ -4,7 +4,7 @@ Fully customize your Minecraft main menu for 1.21.1. Change backgrounds, reposit
 
 ## Status
 
-Beta (`0.0.0-beta.1`). API port of the stable 26.2 line (1.2.4) to the 1.21.1 client render API — 10 classes, 3 client mixins, no dependencies. `./gradlew build` OK; `./gradlew runClient` loads with both client mixins applied into `TitleScreen` / `LoadingOverlay`, all injects recognized, mod initializes, 0 FATAL. Not yet reviewed visually on screen.
+Stable (`1.0.0`). API port of the stable 26.2 line (1.2.4) to the 1.21.1 client render API — no dependencies. On 1.21.1 this is title-screen customization only; the custom loading screen was removed in `beta.4` (it did not render reliably during server resource-pack reloads on large modpacks). `./gradlew build` OK; `./gradlew runClient` loads with the title-screen mixin applied, 0 FATAL. Verified in-game and running in a full modded-server pack.
 
 ## Features
 
